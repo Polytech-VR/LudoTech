@@ -70,6 +70,48 @@
 		A5F145D01ABC7DA700133B8D /* ThemeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C41ABC7DA700133B8D /* ThemeList.m */; };
 		A5F145D11ABC7DA700133B8D /* TypeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C61ABC7DA700133B8D /* TypeList.m */; };
 		A5F145D21ABC7DA700133B8D /* TypeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C61ABC7DA700133B8D /* TypeList.m */; };
+		A5F1461C1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145D71ABC7E4C00133B8D /* AddDifficultyViewController.m */; };
+		A5F1461D1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145D71ABC7E4C00133B8D /* AddDifficultyViewController.m */; };
+		A5F1461E1ABC7E4C00133B8D /* DifficultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145DA1ABC7E4C00133B8D /* DifficultyTableViewController.m */; };
+		A5F1461F1ABC7E4C00133B8D /* DifficultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145DA1ABC7E4C00133B8D /* DifficultyTableViewController.m */; };
+		A5F146201ABC7E4C00133B8D /* AddEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145DE1ABC7E4C00133B8D /* AddEditionViewController.m */; };
+		A5F146211ABC7E4C00133B8D /* AddEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145DE1ABC7E4C00133B8D /* AddEditionViewController.m */; };
+		A5F146221ABC7E4C00133B8D /* EditionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145E11ABC7E4C00133B8D /* EditionTableViewController.m */; };
+		A5F146231ABC7E4C00133B8D /* EditionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145E11ABC7E4C00133B8D /* EditionTableViewController.m */; };
+		A5F146241ABC7E4C00133B8D /* AddEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145E51ABC7E4C00133B8D /* AddEditorViewController.m */; };
+		A5F146251ABC7E4C00133B8D /* AddEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145E51ABC7E4C00133B8D /* AddEditorViewController.m */; };
+		A5F146261ABC7E4C00133B8D /* EditorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145E81ABC7E4C00133B8D /* EditorTableViewController.m */; };
+		A5F146271ABC7E4C00133B8D /* EditorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145E81ABC7E4C00133B8D /* EditorTableViewController.m */; };
+		A5F146281ABC7E4C00133B8D /* AddExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145EC1ABC7E4C00133B8D /* AddExtensionViewController.m */; };
+		A5F146291ABC7E4C00133B8D /* AddExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145EC1ABC7E4C00133B8D /* AddExtensionViewController.m */; };
+		A5F1462A1ABC7E4C00133B8D /* ExtensionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145EF1ABC7E4C00133B8D /* ExtensionTableViewController.m */; };
+		A5F1462B1ABC7E4C00133B8D /* ExtensionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145EF1ABC7E4C00133B8D /* ExtensionTableViewController.m */; };
+		A5F1462C1ABC7E4C00133B8D /* AddGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145F31ABC7E4C00133B8D /* AddGameViewController.m */; };
+		A5F1462D1ABC7E4C00133B8D /* AddGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145F31ABC7E4C00133B8D /* AddGameViewController.m */; };
+		A5F1462E1ABC7E4C00133B8D /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145F61ABC7E4C00133B8D /* GameTableViewCell.m */; };
+		A5F1462F1ABC7E4C00133B8D /* GameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145F61ABC7E4C00133B8D /* GameTableViewCell.m */; };
+		A5F146301ABC7E4C00133B8D /* GameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145F81ABC7E4C00133B8D /* GameTableViewController.m */; };
+		A5F146311ABC7E4C00133B8D /* GameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145F81ABC7E4C00133B8D /* GameTableViewController.m */; };
+		A5F146321ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145FC1ABC7E4C00133B8D /* AddGamePlayedViewController.m */; };
+		A5F146331ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145FC1ABC7E4C00133B8D /* AddGamePlayedViewController.m */; };
+		A5F146341ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145FF1ABC7E4C00133B8D /* GamePlayedTableViewController.m */; };
+		A5F146351ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145FF1ABC7E4C00133B8D /* GamePlayedTableViewController.m */; };
+		A5F146361ABC7E4C00133B8D /* AddLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146031ABC7E4C00133B8D /* AddLanguageViewController.m */; };
+		A5F146371ABC7E4C00133B8D /* AddLanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146031ABC7E4C00133B8D /* AddLanguageViewController.m */; };
+		A5F146381ABC7E4C00133B8D /* LanguageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146061ABC7E4C00133B8D /* LanguageTableViewController.m */; };
+		A5F146391ABC7E4C00133B8D /* LanguageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146061ABC7E4C00133B8D /* LanguageTableViewController.m */; };
+		A5F1463A1ABC7E4C00133B8D /* AddThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1460A1ABC7E4C00133B8D /* AddThemeViewController.m */; };
+		A5F1463B1ABC7E4C00133B8D /* AddThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1460A1ABC7E4C00133B8D /* AddThemeViewController.m */; };
+		A5F1463C1ABC7E4C00133B8D /* ThemeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1460D1ABC7E4C00133B8D /* ThemeTableViewController.m */; };
+		A5F1463D1ABC7E4C00133B8D /* ThemeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1460D1ABC7E4C00133B8D /* ThemeTableViewController.m */; };
+		A5F1463E1ABC7E4C00133B8D /* AddTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146111ABC7E4C00133B8D /* AddTypeViewController.m */; };
+		A5F1463F1ABC7E4C00133B8D /* AddTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146111ABC7E4C00133B8D /* AddTypeViewController.m */; };
+		A5F146401ABC7E4C00133B8D /* TypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146141ABC7E4C00133B8D /* TypeTableViewController.m */; };
+		A5F146411ABC7E4C00133B8D /* TypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146141ABC7E4C00133B8D /* TypeTableViewController.m */; };
+		A5F146421ABC7E4C00133B8D /* AddVariantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146181ABC7E4C00133B8D /* AddVariantViewController.m */; };
+		A5F146431ABC7E4C00133B8D /* AddVariantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146181ABC7E4C00133B8D /* AddVariantViewController.m */; };
+		A5F146441ABC7E4C00133B8D /* VariantTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */; };
+		A5F146451ABC7E4C00133B8D /* VariantTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +193,48 @@
 		A5F145C41ABC7DA700133B8D /* ThemeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeList.m; sourceTree = "<group>"; };
 		A5F145C51ABC7DA700133B8D /* TypeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeList.h; sourceTree = "<group>"; };
 		A5F145C61ABC7DA700133B8D /* TypeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeList.m; sourceTree = "<group>"; };
+		A5F145D61ABC7E4C00133B8D /* AddDifficultyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDifficultyViewController.h; sourceTree = "<group>"; };
+		A5F145D71ABC7E4C00133B8D /* AddDifficultyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDifficultyViewController.m; sourceTree = "<group>"; };
+		A5F145D91ABC7E4C00133B8D /* DifficultyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifficultyTableViewController.h; sourceTree = "<group>"; };
+		A5F145DA1ABC7E4C00133B8D /* DifficultyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifficultyTableViewController.m; sourceTree = "<group>"; };
+		A5F145DD1ABC7E4C00133B8D /* AddEditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditionViewController.h; sourceTree = "<group>"; };
+		A5F145DE1ABC7E4C00133B8D /* AddEditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditionViewController.m; sourceTree = "<group>"; };
+		A5F145E01ABC7E4C00133B8D /* EditionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditionTableViewController.h; sourceTree = "<group>"; };
+		A5F145E11ABC7E4C00133B8D /* EditionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditionTableViewController.m; sourceTree = "<group>"; };
+		A5F145E41ABC7E4C00133B8D /* AddEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditorViewController.h; sourceTree = "<group>"; };
+		A5F145E51ABC7E4C00133B8D /* AddEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditorViewController.m; sourceTree = "<group>"; };
+		A5F145E71ABC7E4C00133B8D /* EditorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorTableViewController.h; sourceTree = "<group>"; };
+		A5F145E81ABC7E4C00133B8D /* EditorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorTableViewController.m; sourceTree = "<group>"; };
+		A5F145EB1ABC7E4C00133B8D /* AddExtensionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddExtensionViewController.h; sourceTree = "<group>"; };
+		A5F145EC1ABC7E4C00133B8D /* AddExtensionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddExtensionViewController.m; sourceTree = "<group>"; };
+		A5F145EE1ABC7E4C00133B8D /* ExtensionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionTableViewController.h; sourceTree = "<group>"; };
+		A5F145EF1ABC7E4C00133B8D /* ExtensionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionTableViewController.m; sourceTree = "<group>"; };
+		A5F145F21ABC7E4C00133B8D /* AddGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGameViewController.h; sourceTree = "<group>"; };
+		A5F145F31ABC7E4C00133B8D /* AddGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGameViewController.m; sourceTree = "<group>"; };
+		A5F145F51ABC7E4C00133B8D /* GameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewCell.h; sourceTree = "<group>"; };
+		A5F145F61ABC7E4C00133B8D /* GameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewCell.m; sourceTree = "<group>"; };
+		A5F145F71ABC7E4C00133B8D /* GameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewController.h; sourceTree = "<group>"; };
+		A5F145F81ABC7E4C00133B8D /* GameTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewController.m; sourceTree = "<group>"; };
+		A5F145FB1ABC7E4C00133B8D /* AddGamePlayedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGamePlayedViewController.h; sourceTree = "<group>"; };
+		A5F145FC1ABC7E4C00133B8D /* AddGamePlayedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGamePlayedViewController.m; sourceTree = "<group>"; };
+		A5F145FE1ABC7E4C00133B8D /* GamePlayedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayedTableViewController.h; sourceTree = "<group>"; };
+		A5F145FF1ABC7E4C00133B8D /* GamePlayedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayedTableViewController.m; sourceTree = "<group>"; };
+		A5F146021ABC7E4C00133B8D /* AddLanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddLanguageViewController.h; sourceTree = "<group>"; };
+		A5F146031ABC7E4C00133B8D /* AddLanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddLanguageViewController.m; sourceTree = "<group>"; };
+		A5F146051ABC7E4C00133B8D /* LanguageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageTableViewController.h; sourceTree = "<group>"; };
+		A5F146061ABC7E4C00133B8D /* LanguageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageTableViewController.m; sourceTree = "<group>"; };
+		A5F146091ABC7E4C00133B8D /* AddThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddThemeViewController.h; sourceTree = "<group>"; };
+		A5F1460A1ABC7E4C00133B8D /* AddThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddThemeViewController.m; sourceTree = "<group>"; };
+		A5F1460C1ABC7E4C00133B8D /* ThemeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeTableViewController.h; sourceTree = "<group>"; };
+		A5F1460D1ABC7E4C00133B8D /* ThemeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeTableViewController.m; sourceTree = "<group>"; };
+		A5F146101ABC7E4C00133B8D /* AddTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTypeViewController.h; sourceTree = "<group>"; };
+		A5F146111ABC7E4C00133B8D /* AddTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTypeViewController.m; sourceTree = "<group>"; };
+		A5F146131ABC7E4C00133B8D /* TypeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewController.h; sourceTree = "<group>"; };
+		A5F146141ABC7E4C00133B8D /* TypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewController.m; sourceTree = "<group>"; };
+		A5F146171ABC7E4C00133B8D /* AddVariantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddVariantViewController.h; sourceTree = "<group>"; };
+		A5F146181ABC7E4C00133B8D /* AddVariantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVariantViewController.m; sourceTree = "<group>"; };
+		A5F1461A1ABC7E4C00133B8D /* VariantTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariantTableViewController.h; sourceTree = "<group>"; };
+		A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +276,7 @@
 		A519BE421ABC78230014E71C /* LudoTech */ = {
 			isa = PBXGroup;
 			children = (
+				A5F145D31ABC7E4C00133B8D /* UI */,
 				A5F145BA1ABC7DA700133B8D /* Business */,
 				A519BEA61ABC7C280014E71C /* DataModel */,
 				A519BE791ABC7A7B0014E71C /* CoreData */,
@@ -325,6 +410,295 @@
 			path = Business;
 			sourceTree = "<group>";
 		};
+		A5F145D31ABC7E4C00133B8D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145F01ABC7E4C00133B8D /* Game */,
+				A5F146151ABC7E4C00133B8D /* Variant */,
+				A5F145DB1ABC7E4C00133B8D /* Edition */,
+				A5F145E91ABC7E4C00133B8D /* Extension */,
+				A5F145F91ABC7E4C00133B8D /* GamePlayed */,
+				A5F1460E1ABC7E4C00133B8D /* Type */,
+				A5F145D41ABC7E4C00133B8D /* Difficulty */,
+				A5F145E21ABC7E4C00133B8D /* Editor */,
+				A5F146001ABC7E4C00133B8D /* Language */,
+				A5F146071ABC7E4C00133B8D /* Theme */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A5F145D41ABC7E4C00133B8D /* Difficulty */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145D81ABC7E4C00133B8D /* View */,
+				A5F145D51ABC7E4C00133B8D /* Add */,
+			);
+			path = Difficulty;
+			sourceTree = "<group>";
+		};
+		A5F145D51ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145D61ABC7E4C00133B8D /* AddDifficultyViewController.h */,
+				A5F145D71ABC7E4C00133B8D /* AddDifficultyViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F145D81ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145D91ABC7E4C00133B8D /* DifficultyTableViewController.h */,
+				A5F145DA1ABC7E4C00133B8D /* DifficultyTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F145DB1ABC7E4C00133B8D /* Edition */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145DC1ABC7E4C00133B8D /* Add */,
+				A5F145DF1ABC7E4C00133B8D /* View */,
+			);
+			path = Edition;
+			sourceTree = "<group>";
+		};
+		A5F145DC1ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145DD1ABC7E4C00133B8D /* AddEditionViewController.h */,
+				A5F145DE1ABC7E4C00133B8D /* AddEditionViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F145DF1ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145E01ABC7E4C00133B8D /* EditionTableViewController.h */,
+				A5F145E11ABC7E4C00133B8D /* EditionTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F145E21ABC7E4C00133B8D /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145E61ABC7E4C00133B8D /* View */,
+				A5F145E31ABC7E4C00133B8D /* Add */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		A5F145E31ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145E41ABC7E4C00133B8D /* AddEditorViewController.h */,
+				A5F145E51ABC7E4C00133B8D /* AddEditorViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F145E61ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145E71ABC7E4C00133B8D /* EditorTableViewController.h */,
+				A5F145E81ABC7E4C00133B8D /* EditorTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F145E91ABC7E4C00133B8D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145ED1ABC7E4C00133B8D /* View */,
+				A5F145EA1ABC7E4C00133B8D /* Add */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A5F145EA1ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145EB1ABC7E4C00133B8D /* AddExtensionViewController.h */,
+				A5F145EC1ABC7E4C00133B8D /* AddExtensionViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F145ED1ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145EE1ABC7E4C00133B8D /* ExtensionTableViewController.h */,
+				A5F145EF1ABC7E4C00133B8D /* ExtensionTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F145F01ABC7E4C00133B8D /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145F41ABC7E4C00133B8D /* View */,
+				A5F145F11ABC7E4C00133B8D /* Add */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A5F145F11ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145F21ABC7E4C00133B8D /* AddGameViewController.h */,
+				A5F145F31ABC7E4C00133B8D /* AddGameViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F145F41ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145F51ABC7E4C00133B8D /* GameTableViewCell.h */,
+				A5F145F61ABC7E4C00133B8D /* GameTableViewCell.m */,
+				A5F145F71ABC7E4C00133B8D /* GameTableViewController.h */,
+				A5F145F81ABC7E4C00133B8D /* GameTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F145F91ABC7E4C00133B8D /* GamePlayed */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145FD1ABC7E4C00133B8D /* View */,
+				A5F145FA1ABC7E4C00133B8D /* Add */,
+			);
+			path = GamePlayed;
+			sourceTree = "<group>";
+		};
+		A5F145FA1ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145FB1ABC7E4C00133B8D /* AddGamePlayedViewController.h */,
+				A5F145FC1ABC7E4C00133B8D /* AddGamePlayedViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F145FD1ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145FE1ABC7E4C00133B8D /* GamePlayedTableViewController.h */,
+				A5F145FF1ABC7E4C00133B8D /* GamePlayedTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F146001ABC7E4C00133B8D /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146041ABC7E4C00133B8D /* View */,
+				A5F146011ABC7E4C00133B8D /* Add */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		A5F146011ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146021ABC7E4C00133B8D /* AddLanguageViewController.h */,
+				A5F146031ABC7E4C00133B8D /* AddLanguageViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F146041ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146051ABC7E4C00133B8D /* LanguageTableViewController.h */,
+				A5F146061ABC7E4C00133B8D /* LanguageTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F146071ABC7E4C00133B8D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A5F1460B1ABC7E4C00133B8D /* View */,
+				A5F146081ABC7E4C00133B8D /* Add */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A5F146081ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146091ABC7E4C00133B8D /* AddThemeViewController.h */,
+				A5F1460A1ABC7E4C00133B8D /* AddThemeViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F1460B1ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F1460C1ABC7E4C00133B8D /* ThemeTableViewController.h */,
+				A5F1460D1ABC7E4C00133B8D /* ThemeTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F1460E1ABC7E4C00133B8D /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146121ABC7E4C00133B8D /* View */,
+				A5F1460F1ABC7E4C00133B8D /* Add */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		A5F1460F1ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146101ABC7E4C00133B8D /* AddTypeViewController.h */,
+				A5F146111ABC7E4C00133B8D /* AddTypeViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F146121ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146131ABC7E4C00133B8D /* TypeTableViewController.h */,
+				A5F146141ABC7E4C00133B8D /* TypeTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5F146151ABC7E4C00133B8D /* Variant */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146191ABC7E4C00133B8D /* View */,
+				A5F146161ABC7E4C00133B8D /* Add */,
+			);
+			path = Variant;
+			sourceTree = "<group>";
+		};
+		A5F146161ABC7E4C00133B8D /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A5F146171ABC7E4C00133B8D /* AddVariantViewController.h */,
+				A5F146181ABC7E4C00133B8D /* AddVariantViewController.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		A5F146191ABC7E4C00133B8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5F1461A1ABC7E4C00133B8D /* VariantTableViewController.h */,
+				A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,28 +801,41 @@
 			files = (
 				A519BECD1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
 				A519BEC71ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
+				A5F1462E1ABC7E4C00133B8D /* GameTableViewCell.m in Sources */,
 				A519BEBF1ABC7C280014E71C /* Edition+DataModel.m in Sources */,
+				A5F146241ABC7E4C00133B8D /* AddEditorViewController.m in Sources */,
 				A5F145CD1ABC7DA700133B8D /* LanguageList.m in Sources */,
+				A5F146341ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */,
+				A5F146321ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */,
+				A5F1461E1ABC7E4C00133B8D /* DifficultyTableViewController.m in Sources */,
 				A519BECF1ABC7C280014E71C /* Type+DataModel.m in Sources */,
+				A5F1463E1ABC7E4C00133B8D /* AddTypeViewController.m in Sources */,
+				A5F146441ABC7E4C00133B8D /* VariantTableViewController.m in Sources */,
 				A519BEA01ABC7AA70014E71C /* GamePlayed.m in Sources */,
 				A519BE9C1ABC7AA70014E71C /* Edition.m in Sources */,
 				A519BED11ABC7C280014E71C /* Variant+DataModel.m in Sources */,
 				A519BEC31ABC7C280014E71C /* Extension+DataModel.m in Sources */,
 				A5F145CF1ABC7DA700133B8D /* ThemeList.m in Sources */,
 				A519BEC51ABC7C280014E71C /* Game+DataModel.m in Sources */,
+				A5F146401ABC7E4C00133B8D /* TypeTableViewController.m in Sources */,
 				A519BE981ABC7AA70014E71C /* Editor.m in Sources */,
+				A5F146301ABC7E4C00133B8D /* GameTableViewController.m in Sources */,
 				A5F145C71ABC7DA700133B8D /* DifficultyList.m in Sources */,
 				A519BEBD1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BE491ABC78230014E71C /* AppDelegate.m in Sources */,
 				A519BEC91ABC7C280014E71C /* Language+DataModel.m in Sources */,
+				A5F146281ABC7E4C00133B8D /* AddExtensionViewController.m in Sources */,
 				A5F145D11ABC7DA700133B8D /* TypeList.m in Sources */,
 				A519BECB1ABC7C280014E71C /* Person+DataModel.m in Sources */,
 				A5F145C91ABC7DA700133B8D /* EditorList.m in Sources */,
+				A5F1461C1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
 				A519BE8C1ABC7AA70014E71C /* Variant.m in Sources */,
 				A519BE7C1ABC7AA60014E71C /* Theme.m in Sources */,
 				A519BE881ABC7AA60014E71C /* Extension.m in Sources */,
 				A519BE901ABC7AA70014E71C /* Type.m in Sources */,
 				A519BE941ABC7AA70014E71C /* Game.m in Sources */,
+				A5F1463A1ABC7E4C00133B8D /* AddThemeViewController.m in Sources */,
+				A5F1462C1ABC7E4C00133B8D /* AddGameViewController.m in Sources */,
 				A519BE801ABC7AA60014E71C /* Person.m in Sources */,
 				A519BE781ABC79D90014E71C /* LudoTech.xcdatamodeld in Sources */,
 				A519BE841ABC7AA60014E71C /* Difficulty.m in Sources */,
@@ -456,6 +843,14 @@
 				A519BE461ABC78230014E71C /* main.m in Sources */,
 				A519BEA41ABC7AA70014E71C /* Language.m in Sources */,
 				A5F145CB1ABC7DA700133B8D /* GameList.m in Sources */,
+				A5F1462A1ABC7E4C00133B8D /* ExtensionTableViewController.m in Sources */,
+				A5F146221ABC7E4C00133B8D /* EditionTableViewController.m in Sources */,
+				A5F146261ABC7E4C00133B8D /* EditorTableViewController.m in Sources */,
+				A5F146381ABC7E4C00133B8D /* LanguageTableViewController.m in Sources */,
+				A5F146201ABC7E4C00133B8D /* AddEditionViewController.m in Sources */,
+				A5F146361ABC7E4C00133B8D /* AddLanguageViewController.m in Sources */,
+				A5F146421ABC7E4C00133B8D /* AddVariantViewController.m in Sources */,
+				A5F1463C1ABC7E4C00133B8D /* ThemeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,22 +865,43 @@
 				A519BE991ABC7AA70014E71C /* Editor.m in Sources */,
 				A519BEC41ABC7C280014E71C /* Extension+DataModel.m in Sources */,
 				A519BE631ABC78230014E71C /* LudoTechTests.m in Sources */,
+				A5F146231ABC7E4C00133B8D /* EditionTableViewController.m in Sources */,
+				A5F146371ABC7E4C00133B8D /* AddLanguageViewController.m in Sources */,
+				A5F1463F1ABC7E4C00133B8D /* AddTypeViewController.m in Sources */,
 				A519BE951ABC7AA70014E71C /* Game.m in Sources */,
 				A519BECC1ABC7C280014E71C /* Person+DataModel.m in Sources */,
+				A5F146211ABC7E4C00133B8D /* AddEditionViewController.m in Sources */,
 				A5F145D21ABC7DA700133B8D /* TypeList.m in Sources */,
+				A5F1462D1ABC7E4C00133B8D /* AddGameViewController.m in Sources */,
+				A5F146311ABC7E4C00133B8D /* GameTableViewController.m in Sources */,
 				A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */,
+				A5F146451ABC7E4C00133B8D /* VariantTableViewController.m in Sources */,
+				A5F1461F1ABC7E4C00133B8D /* DifficultyTableViewController.m in Sources */,
+				A5F1463D1ABC7E4C00133B8D /* ThemeTableViewController.m in Sources */,
 				A5F145CE1ABC7DA700133B8D /* LanguageList.m in Sources */,
 				A519BEC81ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
 				A519BE851ABC7AA60014E71C /* Difficulty.m in Sources */,
+				A5F146331ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */,
+				A5F1463B1ABC7E4C00133B8D /* AddThemeViewController.m in Sources */,
 				A5F145C81ABC7DA700133B8D /* DifficultyList.m in Sources */,
+				A5F146271ABC7E4C00133B8D /* EditorTableViewController.m in Sources */,
+				A5F146351ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */,
 				A519BECE1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
+				A5F1462B1ABC7E4C00133B8D /* ExtensionTableViewController.m in Sources */,
+				A5F146411ABC7E4C00133B8D /* TypeTableViewController.m in Sources */,
 				A519BEC21ABC7C280014E71C /* Editor+DataModel.m in Sources */,
+				A5F146391ABC7E4C00133B8D /* LanguageTableViewController.m in Sources */,
+				A5F1462F1ABC7E4C00133B8D /* GameTableViewCell.m in Sources */,
 				A519BE9D1ABC7AA70014E71C /* Edition.m in Sources */,
+				A5F146251ABC7E4C00133B8D /* AddEditorViewController.m in Sources */,
 				A519BEC61ABC7C280014E71C /* Game+DataModel.m in Sources */,
+				A5F146431ABC7E4C00133B8D /* AddVariantViewController.m in Sources */,
+				A5F146291ABC7E4C00133B8D /* AddExtensionViewController.m in Sources */,
 				A519BE7D1ABC7AA60014E71C /* Theme.m in Sources */,
 				A519BE911ABC7AA70014E71C /* Type.m in Sources */,
 				A519BEA51ABC7AA70014E71C /* Language.m in Sources */,
 				A519BECA1ABC7C280014E71C /* Language+DataModel.m in Sources */,
+				A5F1461D1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
 				A519BEBE1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BEA11ABC7AA70014E71C /* GamePlayed.m in Sources */,
 				A519BEC01ABC7C280014E71C /* Edition+DataModel.m in Sources */,
