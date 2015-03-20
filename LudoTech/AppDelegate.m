@@ -10,6 +10,7 @@
 #import "Type+DataModel.h"
 #import "Game+DataModel.h"
 #import "GameTableViewController.h"
+#import "TypeTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,9 +25,17 @@
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     UINavigationController *navController = tabBarController.viewControllers[0];
     
+    TypeTableViewController * typeTableViewController=(TypeTableViewController *) navController.topViewController;
+    
+    typeTableViewController.managedObjectContext = self.managedObjectContext;
+    
+    
     GameTableViewController * gameTableViewController = (GameTableViewController *) navController.topViewController;
     
     gameTableViewController.managedObjectContext = self.managedObjectContext;
+    
+
+    
     
     return YES;
 }
