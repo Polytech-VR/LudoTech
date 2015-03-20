@@ -36,6 +36,28 @@
 		A519BEA11ABC7AA70014E71C /* GamePlayed.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE9F1ABC7AA70014E71C /* GamePlayed.m */; };
 		A519BEA41ABC7AA70014E71C /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEA31ABC7AA70014E71C /* Language.m */; };
 		A519BEA51ABC7AA70014E71C /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEA31ABC7AA70014E71C /* Language.m */; };
+		A519BEBD1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEA81ABC7C280014E71C /* Difficulty+DataModel.m */; };
+		A519BEBE1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEA81ABC7C280014E71C /* Difficulty+DataModel.m */; };
+		A519BEBF1ABC7C280014E71C /* Edition+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEAA1ABC7C280014E71C /* Edition+DataModel.m */; };
+		A519BEC01ABC7C280014E71C /* Edition+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEAA1ABC7C280014E71C /* Edition+DataModel.m */; };
+		A519BEC11ABC7C280014E71C /* Editor+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEAC1ABC7C280014E71C /* Editor+DataModel.m */; };
+		A519BEC21ABC7C280014E71C /* Editor+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEAC1ABC7C280014E71C /* Editor+DataModel.m */; };
+		A519BEC31ABC7C280014E71C /* Extension+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEAE1ABC7C280014E71C /* Extension+DataModel.m */; };
+		A519BEC41ABC7C280014E71C /* Extension+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEAE1ABC7C280014E71C /* Extension+DataModel.m */; };
+		A519BEC51ABC7C280014E71C /* Game+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB01ABC7C280014E71C /* Game+DataModel.m */; };
+		A519BEC61ABC7C280014E71C /* Game+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB01ABC7C280014E71C /* Game+DataModel.m */; };
+		A519BEC71ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB21ABC7C280014E71C /* GamePlayed+DataModel.m */; };
+		A519BEC81ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB21ABC7C280014E71C /* GamePlayed+DataModel.m */; };
+		A519BEC91ABC7C280014E71C /* Language+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB41ABC7C280014E71C /* Language+DataModel.m */; };
+		A519BECA1ABC7C280014E71C /* Language+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB41ABC7C280014E71C /* Language+DataModel.m */; };
+		A519BECB1ABC7C280014E71C /* Person+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB61ABC7C280014E71C /* Person+DataModel.m */; };
+		A519BECC1ABC7C280014E71C /* Person+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB61ABC7C280014E71C /* Person+DataModel.m */; };
+		A519BECD1ABC7C280014E71C /* Theme+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB81ABC7C280014E71C /* Theme+DataModel.m */; };
+		A519BECE1ABC7C280014E71C /* Theme+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEB81ABC7C280014E71C /* Theme+DataModel.m */; };
+		A519BECF1ABC7C280014E71C /* Type+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBA1ABC7C280014E71C /* Type+DataModel.m */; };
+		A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBA1ABC7C280014E71C /* Type+DataModel.m */; };
+		A519BED11ABC7C280014E71C /* Variant+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */; };
+		A519BED21ABC7C280014E71C /* Variant+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +105,28 @@
 		A519BE9F1ABC7AA70014E71C /* GamePlayed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlayed.m; path = CoreData/GamePlayed.m; sourceTree = "<group>"; };
 		A519BEA21ABC7AA70014E71C /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Language.h; path = CoreData/Language.h; sourceTree = "<group>"; };
 		A519BEA31ABC7AA70014E71C /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Language.m; path = CoreData/Language.m; sourceTree = "<group>"; };
+		A519BEA71ABC7C280014E71C /* Difficulty+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Difficulty+DataModel.h"; sourceTree = "<group>"; };
+		A519BEA81ABC7C280014E71C /* Difficulty+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Difficulty+DataModel.m"; sourceTree = "<group>"; };
+		A519BEA91ABC7C280014E71C /* Edition+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Edition+DataModel.h"; sourceTree = "<group>"; };
+		A519BEAA1ABC7C280014E71C /* Edition+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Edition+DataModel.m"; sourceTree = "<group>"; };
+		A519BEAB1ABC7C280014E71C /* Editor+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Editor+DataModel.h"; sourceTree = "<group>"; };
+		A519BEAC1ABC7C280014E71C /* Editor+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Editor+DataModel.m"; sourceTree = "<group>"; };
+		A519BEAD1ABC7C280014E71C /* Extension+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Extension+DataModel.h"; sourceTree = "<group>"; };
+		A519BEAE1ABC7C280014E71C /* Extension+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Extension+DataModel.m"; sourceTree = "<group>"; };
+		A519BEAF1ABC7C280014E71C /* Game+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Game+DataModel.h"; sourceTree = "<group>"; };
+		A519BEB01ABC7C280014E71C /* Game+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Game+DataModel.m"; sourceTree = "<group>"; };
+		A519BEB11ABC7C280014E71C /* GamePlayed+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GamePlayed+DataModel.h"; sourceTree = "<group>"; };
+		A519BEB21ABC7C280014E71C /* GamePlayed+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GamePlayed+DataModel.m"; sourceTree = "<group>"; };
+		A519BEB31ABC7C280014E71C /* Language+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Language+DataModel.h"; sourceTree = "<group>"; };
+		A519BEB41ABC7C280014E71C /* Language+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Language+DataModel.m"; sourceTree = "<group>"; };
+		A519BEB51ABC7C280014E71C /* Person+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+DataModel.h"; sourceTree = "<group>"; };
+		A519BEB61ABC7C280014E71C /* Person+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+DataModel.m"; sourceTree = "<group>"; };
+		A519BEB71ABC7C280014E71C /* Theme+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Theme+DataModel.h"; sourceTree = "<group>"; };
+		A519BEB81ABC7C280014E71C /* Theme+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Theme+DataModel.m"; sourceTree = "<group>"; };
+		A519BEB91ABC7C280014E71C /* Type+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Type+DataModel.h"; sourceTree = "<group>"; };
+		A519BEBA1ABC7C280014E71C /* Type+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Type+DataModel.m"; sourceTree = "<group>"; };
+		A519BEBB1ABC7C280014E71C /* Variant+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Variant+DataModel.h"; sourceTree = "<group>"; };
+		A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Variant+DataModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +168,7 @@
 		A519BE421ABC78230014E71C /* LudoTech */ = {
 			isa = PBXGroup;
 			children = (
+				A519BEA61ABC7C280014E71C /* DataModel */,
 				A519BE791ABC7A7B0014E71C /* CoreData */,
 				A519BE6D1ABC79760014E71C /* Application */,
 				A519BE6C1ABC79700014E71C /* Ressources */,
@@ -205,6 +250,35 @@
 				A519BE7B1ABC7AA60014E71C /* Theme.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		A519BEA61ABC7C280014E71C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A519BEAF1ABC7C280014E71C /* Game+DataModel.h */,
+				A519BEB01ABC7C280014E71C /* Game+DataModel.m */,
+				A519BEBB1ABC7C280014E71C /* Variant+DataModel.h */,
+				A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */,
+				A519BEA91ABC7C280014E71C /* Edition+DataModel.h */,
+				A519BEAA1ABC7C280014E71C /* Edition+DataModel.m */,
+				A519BEAD1ABC7C280014E71C /* Extension+DataModel.h */,
+				A519BEAE1ABC7C280014E71C /* Extension+DataModel.m */,
+				A519BEB11ABC7C280014E71C /* GamePlayed+DataModel.h */,
+				A519BEB21ABC7C280014E71C /* GamePlayed+DataModel.m */,
+				A519BEB91ABC7C280014E71C /* Type+DataModel.h */,
+				A519BEBA1ABC7C280014E71C /* Type+DataModel.m */,
+				A519BEA71ABC7C280014E71C /* Difficulty+DataModel.h */,
+				A519BEA81ABC7C280014E71C /* Difficulty+DataModel.m */,
+				A519BEB51ABC7C280014E71C /* Person+DataModel.h */,
+				A519BEB61ABC7C280014E71C /* Person+DataModel.m */,
+				A519BEAB1ABC7C280014E71C /* Editor+DataModel.h */,
+				A519BEAC1ABC7C280014E71C /* Editor+DataModel.m */,
+				A519BEB31ABC7C280014E71C /* Language+DataModel.h */,
+				A519BEB41ABC7C280014E71C /* Language+DataModel.m */,
+				A519BEB71ABC7C280014E71C /* Theme+DataModel.h */,
+				A519BEB81ABC7C280014E71C /* Theme+DataModel.m */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,10 +381,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A519BECD1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
+				A519BEC71ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
+				A519BEBF1ABC7C280014E71C /* Edition+DataModel.m in Sources */,
+				A519BECF1ABC7C280014E71C /* Type+DataModel.m in Sources */,
 				A519BEA01ABC7AA70014E71C /* GamePlayed.m in Sources */,
 				A519BE9C1ABC7AA70014E71C /* Edition.m in Sources */,
+				A519BED11ABC7C280014E71C /* Variant+DataModel.m in Sources */,
+				A519BEC31ABC7C280014E71C /* Extension+DataModel.m in Sources */,
+				A519BEC51ABC7C280014E71C /* Game+DataModel.m in Sources */,
 				A519BE981ABC7AA70014E71C /* Editor.m in Sources */,
+				A519BEBD1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BE491ABC78230014E71C /* AppDelegate.m in Sources */,
+				A519BEC91ABC7C280014E71C /* Language+DataModel.m in Sources */,
+				A519BECB1ABC7C280014E71C /* Person+DataModel.m in Sources */,
 				A519BE8C1ABC7AA70014E71C /* Variant.m in Sources */,
 				A519BE7C1ABC7AA60014E71C /* Theme.m in Sources */,
 				A519BE881ABC7AA60014E71C /* Extension.m in Sources */,
@@ -319,6 +403,7 @@
 				A519BE801ABC7AA60014E71C /* Person.m in Sources */,
 				A519BE781ABC79D90014E71C /* LudoTech.xcdatamodeld in Sources */,
 				A519BE841ABC7AA60014E71C /* Difficulty.m in Sources */,
+				A519BEC11ABC7C280014E71C /* Editor+DataModel.m in Sources */,
 				A519BE461ABC78230014E71C /* main.m in Sources */,
 				A519BEA41ABC7AA70014E71C /* Language.m in Sources */,
 			);
@@ -331,14 +416,25 @@
 				A519BE811ABC7AA60014E71C /* Person.m in Sources */,
 				A519BE891ABC7AA60014E71C /* Extension.m in Sources */,
 				A519BE991ABC7AA70014E71C /* Editor.m in Sources */,
+				A519BEC41ABC7C280014E71C /* Extension+DataModel.m in Sources */,
 				A519BE631ABC78230014E71C /* LudoTechTests.m in Sources */,
 				A519BE951ABC7AA70014E71C /* Game.m in Sources */,
+				A519BECC1ABC7C280014E71C /* Person+DataModel.m in Sources */,
+				A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */,
+				A519BEC81ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
 				A519BE851ABC7AA60014E71C /* Difficulty.m in Sources */,
+				A519BECE1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
+				A519BEC21ABC7C280014E71C /* Editor+DataModel.m in Sources */,
 				A519BE9D1ABC7AA70014E71C /* Edition.m in Sources */,
+				A519BEC61ABC7C280014E71C /* Game+DataModel.m in Sources */,
 				A519BE7D1ABC7AA60014E71C /* Theme.m in Sources */,
 				A519BE911ABC7AA70014E71C /* Type.m in Sources */,
 				A519BEA51ABC7AA70014E71C /* Language.m in Sources */,
+				A519BECA1ABC7C280014E71C /* Language+DataModel.m in Sources */,
+				A519BEBE1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BEA11ABC7AA70014E71C /* GamePlayed.m in Sources */,
+				A519BEC01ABC7C280014E71C /* Edition+DataModel.m in Sources */,
+				A519BED21ABC7C280014E71C /* Variant+DataModel.m in Sources */,
 				A519BE8D1ABC7AA70014E71C /* Variant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
