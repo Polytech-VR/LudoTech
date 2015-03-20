@@ -58,6 +58,18 @@
 		A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBA1ABC7C280014E71C /* Type+DataModel.m */; };
 		A519BED11ABC7C280014E71C /* Variant+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */; };
 		A519BED21ABC7C280014E71C /* Variant+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */; };
+		A5F145C71ABC7DA700133B8D /* DifficultyList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BC1ABC7DA700133B8D /* DifficultyList.m */; };
+		A5F145C81ABC7DA700133B8D /* DifficultyList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BC1ABC7DA700133B8D /* DifficultyList.m */; };
+		A5F145C91ABC7DA700133B8D /* EditorList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BE1ABC7DA700133B8D /* EditorList.m */; };
+		A5F145CA1ABC7DA700133B8D /* EditorList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BE1ABC7DA700133B8D /* EditorList.m */; };
+		A5F145CB1ABC7DA700133B8D /* GameList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C01ABC7DA700133B8D /* GameList.m */; };
+		A5F145CC1ABC7DA700133B8D /* GameList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C01ABC7DA700133B8D /* GameList.m */; };
+		A5F145CD1ABC7DA700133B8D /* LanguageList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C21ABC7DA700133B8D /* LanguageList.m */; };
+		A5F145CE1ABC7DA700133B8D /* LanguageList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C21ABC7DA700133B8D /* LanguageList.m */; };
+		A5F145CF1ABC7DA700133B8D /* ThemeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C41ABC7DA700133B8D /* ThemeList.m */; };
+		A5F145D01ABC7DA700133B8D /* ThemeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C41ABC7DA700133B8D /* ThemeList.m */; };
+		A5F145D11ABC7DA700133B8D /* TypeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C61ABC7DA700133B8D /* TypeList.m */; };
+		A5F145D21ABC7DA700133B8D /* TypeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C61ABC7DA700133B8D /* TypeList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +139,18 @@
 		A519BEBA1ABC7C280014E71C /* Type+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Type+DataModel.m"; sourceTree = "<group>"; };
 		A519BEBB1ABC7C280014E71C /* Variant+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Variant+DataModel.h"; sourceTree = "<group>"; };
 		A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Variant+DataModel.m"; sourceTree = "<group>"; };
+		A5F145BB1ABC7DA700133B8D /* DifficultyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifficultyList.h; sourceTree = "<group>"; };
+		A5F145BC1ABC7DA700133B8D /* DifficultyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifficultyList.m; sourceTree = "<group>"; };
+		A5F145BD1ABC7DA700133B8D /* EditorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorList.h; sourceTree = "<group>"; };
+		A5F145BE1ABC7DA700133B8D /* EditorList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorList.m; sourceTree = "<group>"; };
+		A5F145BF1ABC7DA700133B8D /* GameList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameList.h; sourceTree = "<group>"; };
+		A5F145C01ABC7DA700133B8D /* GameList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameList.m; sourceTree = "<group>"; };
+		A5F145C11ABC7DA700133B8D /* LanguageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageList.h; sourceTree = "<group>"; };
+		A5F145C21ABC7DA700133B8D /* LanguageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageList.m; sourceTree = "<group>"; };
+		A5F145C31ABC7DA700133B8D /* ThemeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeList.h; sourceTree = "<group>"; };
+		A5F145C41ABC7DA700133B8D /* ThemeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeList.m; sourceTree = "<group>"; };
+		A5F145C51ABC7DA700133B8D /* TypeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeList.h; sourceTree = "<group>"; };
+		A5F145C61ABC7DA700133B8D /* TypeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +192,7 @@
 		A519BE421ABC78230014E71C /* LudoTech */ = {
 			isa = PBXGroup;
 			children = (
+				A5F145BA1ABC7DA700133B8D /* Business */,
 				A519BEA61ABC7C280014E71C /* DataModel */,
 				A519BE791ABC7A7B0014E71C /* CoreData */,
 				A519BE6D1ABC79760014E71C /* Application */,
@@ -281,6 +306,25 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		A5F145BA1ABC7DA700133B8D /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				A5F145BF1ABC7DA700133B8D /* GameList.h */,
+				A5F145C01ABC7DA700133B8D /* GameList.m */,
+				A5F145C51ABC7DA700133B8D /* TypeList.h */,
+				A5F145C61ABC7DA700133B8D /* TypeList.m */,
+				A5F145BB1ABC7DA700133B8D /* DifficultyList.h */,
+				A5F145BC1ABC7DA700133B8D /* DifficultyList.m */,
+				A5F145BD1ABC7DA700133B8D /* EditorList.h */,
+				A5F145BE1ABC7DA700133B8D /* EditorList.m */,
+				A5F145C11ABC7DA700133B8D /* LanguageList.h */,
+				A5F145C21ABC7DA700133B8D /* LanguageList.m */,
+				A5F145C31ABC7DA700133B8D /* ThemeList.h */,
+				A5F145C41ABC7DA700133B8D /* ThemeList.m */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -384,17 +428,22 @@
 				A519BECD1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
 				A519BEC71ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
 				A519BEBF1ABC7C280014E71C /* Edition+DataModel.m in Sources */,
+				A5F145CD1ABC7DA700133B8D /* LanguageList.m in Sources */,
 				A519BECF1ABC7C280014E71C /* Type+DataModel.m in Sources */,
 				A519BEA01ABC7AA70014E71C /* GamePlayed.m in Sources */,
 				A519BE9C1ABC7AA70014E71C /* Edition.m in Sources */,
 				A519BED11ABC7C280014E71C /* Variant+DataModel.m in Sources */,
 				A519BEC31ABC7C280014E71C /* Extension+DataModel.m in Sources */,
+				A5F145CF1ABC7DA700133B8D /* ThemeList.m in Sources */,
 				A519BEC51ABC7C280014E71C /* Game+DataModel.m in Sources */,
 				A519BE981ABC7AA70014E71C /* Editor.m in Sources */,
+				A5F145C71ABC7DA700133B8D /* DifficultyList.m in Sources */,
 				A519BEBD1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BE491ABC78230014E71C /* AppDelegate.m in Sources */,
 				A519BEC91ABC7C280014E71C /* Language+DataModel.m in Sources */,
+				A5F145D11ABC7DA700133B8D /* TypeList.m in Sources */,
 				A519BECB1ABC7C280014E71C /* Person+DataModel.m in Sources */,
+				A5F145C91ABC7DA700133B8D /* EditorList.m in Sources */,
 				A519BE8C1ABC7AA70014E71C /* Variant.m in Sources */,
 				A519BE7C1ABC7AA60014E71C /* Theme.m in Sources */,
 				A519BE881ABC7AA60014E71C /* Extension.m in Sources */,
@@ -406,6 +455,7 @@
 				A519BEC11ABC7C280014E71C /* Editor+DataModel.m in Sources */,
 				A519BE461ABC78230014E71C /* main.m in Sources */,
 				A519BEA41ABC7AA70014E71C /* Language.m in Sources */,
+				A5F145CB1ABC7DA700133B8D /* GameList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +463,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F145CA1ABC7DA700133B8D /* EditorList.m in Sources */,
+				A5F145D01ABC7DA700133B8D /* ThemeList.m in Sources */,
 				A519BE811ABC7AA60014E71C /* Person.m in Sources */,
 				A519BE891ABC7AA60014E71C /* Extension.m in Sources */,
 				A519BE991ABC7AA70014E71C /* Editor.m in Sources */,
@@ -420,9 +472,12 @@
 				A519BE631ABC78230014E71C /* LudoTechTests.m in Sources */,
 				A519BE951ABC7AA70014E71C /* Game.m in Sources */,
 				A519BECC1ABC7C280014E71C /* Person+DataModel.m in Sources */,
+				A5F145D21ABC7DA700133B8D /* TypeList.m in Sources */,
 				A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */,
+				A5F145CE1ABC7DA700133B8D /* LanguageList.m in Sources */,
 				A519BEC81ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
 				A519BE851ABC7AA60014E71C /* Difficulty.m in Sources */,
+				A5F145C81ABC7DA700133B8D /* DifficultyList.m in Sources */,
 				A519BECE1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
 				A519BEC21ABC7C280014E71C /* Editor+DataModel.m in Sources */,
 				A519BE9D1ABC7AA70014E71C /* Edition.m in Sources */,
@@ -434,6 +489,7 @@
 				A519BEBE1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BEA11ABC7AA70014E71C /* GamePlayed.m in Sources */,
 				A519BEC01ABC7C280014E71C /* Edition+DataModel.m in Sources */,
+				A5F145CC1ABC7DA700133B8D /* GameList.m in Sources */,
 				A519BED21ABC7C280014E71C /* Variant+DataModel.m in Sources */,
 				A519BE8D1ABC7AA70014E71C /* Variant.m in Sources */,
 			);
@@ -620,6 +676,7 @@
 				A519BE681ABC78230014E71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A519BE691ABC78230014E71C /* Build configuration list for PBXNativeTarget "LudoTechTests" */ = {
 			isa = XCConfigurationList;
@@ -628,6 +685,7 @@
 				A519BE6B1ABC78230014E71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
