@@ -2,11 +2,14 @@
 //  AppDelegate.m
 //  LudoTech
 //
-//  Created by Valentin Bercot on 20/03/2015.
+//  Created by Valentin Bercot on 19/03/2015.
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "Type+DataModel.h"
+#import "Game+DataModel.h"
+#import "GameTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // pass down our managedObjectContext to our GameViewController
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UINavigationController *navController = tabBarController.viewControllers[0];
+    
+    GameTableViewController * gameTableViewController = (GameTableViewController *) navController.topViewController;
+    
+    gameTableViewController.managedObjectContext = self.managedObjectContext;
+    
     return YES;
 }
 
@@ -86,7 +97,7 @@
         error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
         // Replace this with code to handle the error appropriately.
         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        NSLog(@"Unresolved error persistentStoreCoordinator %@, %@", error, [error userInfo]);
         abort();
     }
     
@@ -118,7 +129,7 @@
         if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
             // Replace this implementation with code to handle the error appropriately.
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            NSLog(@"Unresolved error saveContext %@, %@", error, [error userInfo]);
             abort();
         }
     }
