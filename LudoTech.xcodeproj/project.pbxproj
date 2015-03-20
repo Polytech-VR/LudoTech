@@ -112,6 +112,8 @@
 		A5F146431ABC7E4C00133B8D /* AddVariantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146181ABC7E4C00133B8D /* AddVariantViewController.m */; };
 		A5F146441ABC7E4C00133B8D /* VariantTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */; };
 		A5F146451ABC7E4C00133B8D /* VariantTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */; };
+		ADCA097D1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
+		ADCA097E1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +237,8 @@
 		A5F146181ABC7E4C00133B8D /* AddVariantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVariantViewController.m; sourceTree = "<group>"; };
 		A5F1461A1ABC7E4C00133B8D /* VariantTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariantTableViewController.h; sourceTree = "<group>"; };
 		A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantTableViewController.m; sourceTree = "<group>"; };
+		ADCA097B1ABC819100C46720 /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
+		ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -668,6 +672,8 @@
 			children = (
 				A5F146131ABC7E4C00133B8D /* TypeTableViewController.h */,
 				A5F146141ABC7E4C00133B8D /* TypeTableViewController.m */,
+				ADCA097B1ABC819100C46720 /* TypeTableViewCell.h */,
+				ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -835,6 +841,7 @@
 				A519BE901ABC7AA70014E71C /* Type.m in Sources */,
 				A519BE941ABC7AA70014E71C /* Game.m in Sources */,
 				A5F1463A1ABC7E4C00133B8D /* AddThemeViewController.m in Sources */,
+				ADCA097D1ABC819100C46720 /* TypeTableViewCell.m in Sources */,
 				A5F1462C1ABC7E4C00133B8D /* AddGameViewController.m in Sources */,
 				A519BE801ABC7AA60014E71C /* Person.m in Sources */,
 				A519BE781ABC79D90014E71C /* LudoTech.xcdatamodeld in Sources */,
@@ -891,6 +898,7 @@
 				A5F146411ABC7E4C00133B8D /* TypeTableViewController.m in Sources */,
 				A519BEC21ABC7C280014E71C /* Editor+DataModel.m in Sources */,
 				A5F146391ABC7E4C00133B8D /* LanguageTableViewController.m in Sources */,
+				ADCA097E1ABC819100C46720 /* TypeTableViewCell.m in Sources */,
 				A5F1462F1ABC7E4C00133B8D /* GameTableViewCell.m in Sources */,
 				A519BE9D1ABC7AA70014E71C /* Edition.m in Sources */,
 				A5F146251ABC7E4C00133B8D /* AddEditorViewController.m in Sources */,
