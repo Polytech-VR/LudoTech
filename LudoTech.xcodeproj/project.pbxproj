@@ -14,6 +14,28 @@
 		A519BE731ABC79C50014E71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A519BE701ABC79C50014E71C /* Main.storyboard */; };
 		A519BE751ABC79D00014E71C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A519BE741ABC79D00014E71C /* Images.xcassets */; };
 		A519BE781ABC79D90014E71C /* LudoTech.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A519BE761ABC79D90014E71C /* LudoTech.xcdatamodeld */; };
+		A519BE7C1ABC7AA60014E71C /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE7B1ABC7AA60014E71C /* Theme.m */; };
+		A519BE7D1ABC7AA60014E71C /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE7B1ABC7AA60014E71C /* Theme.m */; };
+		A519BE801ABC7AA60014E71C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE7F1ABC7AA60014E71C /* Person.m */; };
+		A519BE811ABC7AA60014E71C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE7F1ABC7AA60014E71C /* Person.m */; };
+		A519BE841ABC7AA60014E71C /* Difficulty.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE831ABC7AA60014E71C /* Difficulty.m */; };
+		A519BE851ABC7AA60014E71C /* Difficulty.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE831ABC7AA60014E71C /* Difficulty.m */; };
+		A519BE881ABC7AA60014E71C /* Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE871ABC7AA60014E71C /* Extension.m */; };
+		A519BE891ABC7AA60014E71C /* Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE871ABC7AA60014E71C /* Extension.m */; };
+		A519BE8C1ABC7AA70014E71C /* Variant.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE8B1ABC7AA70014E71C /* Variant.m */; };
+		A519BE8D1ABC7AA70014E71C /* Variant.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE8B1ABC7AA70014E71C /* Variant.m */; };
+		A519BE901ABC7AA70014E71C /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE8F1ABC7AA70014E71C /* Type.m */; };
+		A519BE911ABC7AA70014E71C /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE8F1ABC7AA70014E71C /* Type.m */; };
+		A519BE941ABC7AA70014E71C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE931ABC7AA70014E71C /* Game.m */; };
+		A519BE951ABC7AA70014E71C /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE931ABC7AA70014E71C /* Game.m */; };
+		A519BE981ABC7AA70014E71C /* Editor.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE971ABC7AA70014E71C /* Editor.m */; };
+		A519BE991ABC7AA70014E71C /* Editor.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE971ABC7AA70014E71C /* Editor.m */; };
+		A519BE9C1ABC7AA70014E71C /* Edition.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE9B1ABC7AA70014E71C /* Edition.m */; };
+		A519BE9D1ABC7AA70014E71C /* Edition.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE9B1ABC7AA70014E71C /* Edition.m */; };
+		A519BEA01ABC7AA70014E71C /* GamePlayed.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE9F1ABC7AA70014E71C /* GamePlayed.m */; };
+		A519BEA11ABC7AA70014E71C /* GamePlayed.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE9F1ABC7AA70014E71C /* GamePlayed.m */; };
+		A519BEA41ABC7AA70014E71C /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEA31ABC7AA70014E71C /* Language.m */; };
+		A519BEA51ABC7AA70014E71C /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEA31ABC7AA70014E71C /* Language.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +61,28 @@
 		A519BE711ABC79C50014E71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A519BE741ABC79D00014E71C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A519BE771ABC79D90014E71C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A519BE7A1ABC7AA60014E71C /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Theme.h; path = CoreData/Theme.h; sourceTree = "<group>"; };
+		A519BE7B1ABC7AA60014E71C /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Theme.m; path = CoreData/Theme.m; sourceTree = "<group>"; };
+		A519BE7E1ABC7AA60014E71C /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = CoreData/Person.h; sourceTree = "<group>"; };
+		A519BE7F1ABC7AA60014E71C /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = CoreData/Person.m; sourceTree = "<group>"; };
+		A519BE821ABC7AA60014E71C /* Difficulty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Difficulty.h; path = CoreData/Difficulty.h; sourceTree = "<group>"; };
+		A519BE831ABC7AA60014E71C /* Difficulty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Difficulty.m; path = CoreData/Difficulty.m; sourceTree = "<group>"; };
+		A519BE861ABC7AA60014E71C /* Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Extension.h; path = CoreData/Extension.h; sourceTree = "<group>"; };
+		A519BE871ABC7AA60014E71C /* Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Extension.m; path = CoreData/Extension.m; sourceTree = "<group>"; };
+		A519BE8A1ABC7AA70014E71C /* Variant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Variant.h; path = CoreData/Variant.h; sourceTree = "<group>"; };
+		A519BE8B1ABC7AA70014E71C /* Variant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Variant.m; path = CoreData/Variant.m; sourceTree = "<group>"; };
+		A519BE8E1ABC7AA70014E71C /* Type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Type.h; path = CoreData/Type.h; sourceTree = "<group>"; };
+		A519BE8F1ABC7AA70014E71C /* Type.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Type.m; path = CoreData/Type.m; sourceTree = "<group>"; };
+		A519BE921ABC7AA70014E71C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = CoreData/Game.h; sourceTree = "<group>"; };
+		A519BE931ABC7AA70014E71C /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = CoreData/Game.m; sourceTree = "<group>"; };
+		A519BE961ABC7AA70014E71C /* Editor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Editor.h; path = CoreData/Editor.h; sourceTree = "<group>"; };
+		A519BE971ABC7AA70014E71C /* Editor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Editor.m; path = CoreData/Editor.m; sourceTree = "<group>"; };
+		A519BE9A1ABC7AA70014E71C /* Edition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Edition.h; path = CoreData/Edition.h; sourceTree = "<group>"; };
+		A519BE9B1ABC7AA70014E71C /* Edition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Edition.m; path = CoreData/Edition.m; sourceTree = "<group>"; };
+		A519BE9E1ABC7AA70014E71C /* GamePlayed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlayed.h; path = CoreData/GamePlayed.h; sourceTree = "<group>"; };
+		A519BE9F1ABC7AA70014E71C /* GamePlayed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlayed.m; path = CoreData/GamePlayed.m; sourceTree = "<group>"; };
+		A519BEA21ABC7AA70014E71C /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Language.h; path = CoreData/Language.h; sourceTree = "<group>"; };
+		A519BEA31ABC7AA70014E71C /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Language.m; path = CoreData/Language.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +124,7 @@
 		A519BE421ABC78230014E71C /* LudoTech */ = {
 			isa = PBXGroup;
 			children = (
+				A519BE791ABC7A7B0014E71C /* CoreData */,
 				A519BE6D1ABC79760014E71C /* Application */,
 				A519BE6C1ABC79700014E71C /* Ressources */,
 				A519BE431ABC78230014E71C /* Supporting Files */,
@@ -131,6 +176,35 @@
 				A519BE481ABC78230014E71C /* AppDelegate.m */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		A519BE791ABC7A7B0014E71C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A519BE921ABC7AA70014E71C /* Game.h */,
+				A519BE931ABC7AA70014E71C /* Game.m */,
+				A519BE8A1ABC7AA70014E71C /* Variant.h */,
+				A519BE8B1ABC7AA70014E71C /* Variant.m */,
+				A519BE9A1ABC7AA70014E71C /* Edition.h */,
+				A519BE9B1ABC7AA70014E71C /* Edition.m */,
+				A519BE861ABC7AA60014E71C /* Extension.h */,
+				A519BE871ABC7AA60014E71C /* Extension.m */,
+				A519BE9E1ABC7AA70014E71C /* GamePlayed.h */,
+				A519BE9F1ABC7AA70014E71C /* GamePlayed.m */,
+				A519BE8E1ABC7AA70014E71C /* Type.h */,
+				A519BE8F1ABC7AA70014E71C /* Type.m */,
+				A519BE821ABC7AA60014E71C /* Difficulty.h */,
+				A519BE831ABC7AA60014E71C /* Difficulty.m */,
+				A519BE7E1ABC7AA60014E71C /* Person.h */,
+				A519BE7F1ABC7AA60014E71C /* Person.m */,
+				A519BE961ABC7AA70014E71C /* Editor.h */,
+				A519BE971ABC7AA70014E71C /* Editor.m */,
+				A519BEA21ABC7AA70014E71C /* Language.h */,
+				A519BEA31ABC7AA70014E71C /* Language.m */,
+				A519BE7A1ABC7AA60014E71C /* Theme.h */,
+				A519BE7B1ABC7AA60014E71C /* Theme.m */,
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,9 +307,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A519BEA01ABC7AA70014E71C /* GamePlayed.m in Sources */,
+				A519BE9C1ABC7AA70014E71C /* Edition.m in Sources */,
+				A519BE981ABC7AA70014E71C /* Editor.m in Sources */,
 				A519BE491ABC78230014E71C /* AppDelegate.m in Sources */,
+				A519BE8C1ABC7AA70014E71C /* Variant.m in Sources */,
+				A519BE7C1ABC7AA60014E71C /* Theme.m in Sources */,
+				A519BE881ABC7AA60014E71C /* Extension.m in Sources */,
+				A519BE901ABC7AA70014E71C /* Type.m in Sources */,
+				A519BE941ABC7AA70014E71C /* Game.m in Sources */,
+				A519BE801ABC7AA60014E71C /* Person.m in Sources */,
 				A519BE781ABC79D90014E71C /* LudoTech.xcdatamodeld in Sources */,
+				A519BE841ABC7AA60014E71C /* Difficulty.m in Sources */,
 				A519BE461ABC78230014E71C /* main.m in Sources */,
+				A519BEA41ABC7AA70014E71C /* Language.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +328,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A519BE811ABC7AA60014E71C /* Person.m in Sources */,
+				A519BE891ABC7AA60014E71C /* Extension.m in Sources */,
+				A519BE991ABC7AA70014E71C /* Editor.m in Sources */,
 				A519BE631ABC78230014E71C /* LudoTechTests.m in Sources */,
+				A519BE951ABC7AA70014E71C /* Game.m in Sources */,
+				A519BE851ABC7AA60014E71C /* Difficulty.m in Sources */,
+				A519BE9D1ABC7AA70014E71C /* Edition.m in Sources */,
+				A519BE7D1ABC7AA60014E71C /* Theme.m in Sources */,
+				A519BE911ABC7AA70014E71C /* Type.m in Sources */,
+				A519BEA51ABC7AA70014E71C /* Language.m in Sources */,
+				A519BEA11ABC7AA70014E71C /* GamePlayed.m in Sources */,
+				A519BE8D1ABC7AA70014E71C /* Variant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
