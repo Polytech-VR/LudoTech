@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Difficulty" representedClassName="Difficulty" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Edition" representedClassName="Edition" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="editor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Editor" syncable="YES"/>
+        <relationship name="language" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" syncable="YES"/>
+        <relationship name="listAuthor" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Person" syncable="YES"/>
+        <relationship name="listIllustrator" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Person" syncable="YES"/>
+        <relationship name="theme" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theme" syncable="YES"/>
+    </entity>
+    <entity name="Editor" representedClassName="Editor" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Extension" representedClassName="Extension" parentEntity="Variant" syncable="YES">
+        <attribute name="playAlone" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="basicGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Variant" inverseName="listExtension" inverseEntity="Variant" syncable="YES"/>
+    </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listVariant" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Variant" syncable="YES"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Type" syncable="YES"/>
+    </entity>
+    <entity name="GamePlayed" representedClassName="GamePlayed" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nbPlayer" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rank" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Language" representedClassName="Language" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Theme" representedClassName="Theme" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Type" representedClassName="Type" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Variant" representedClassName="Variant" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="difficulty" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Difficulty" syncable="YES"/>
+        <relationship name="listEdition" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Edition" syncable="YES"/>
+        <relationship name="listExtension" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Extension" inverseName="basicGame" inverseEntity="Extension" syncable="YES"/>
+        <relationship name="listGamePlayed" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GamePlayed" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Difficulty" positionX="216" positionY="-72" width="128" height="58"/>
+        <element name="Edition" positionX="-342" positionY="81" width="128" height="148"/>
+        <element name="Editor" positionX="70" positionY="302" width="128" height="58"/>
+        <element name="Extension" positionX="214" positionY="72" width="128" height="73"/>
+        <element name="Game" positionX="-72" positionY="-207" width="128" height="88"/>
+        <element name="GamePlayed" positionX="-65" positionY="65" width="128" height="88"/>
+        <element name="Language" positionX="-74" positionY="302" width="128" height="58"/>
+        <element name="Person" positionX="-486" positionY="308" width="128" height="88"/>
+        <element name="Theme" positionX="-218" positionY="302" width="128" height="58"/>
+        <element name="Type" positionX="216" positionY="-207" width="128" height="58"/>
+        <element name="Variant" positionX="-200" positionY="-72" width="128" height="118"/>
+    </elements>
+</model>

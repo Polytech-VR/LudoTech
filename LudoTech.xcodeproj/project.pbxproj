@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		A519BE461ABC78230014E71C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE451ABC78230014E71C /* main.m */; };
 		A519BE491ABC78230014E71C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE481ABC78230014E71C /* AppDelegate.m */; };
-		A519BE4C1ABC78230014E71C /* LudoTech.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A519BE4A1ABC78230014E71C /* LudoTech.xcdatamodeld */; };
-		A519BE4F1ABC78230014E71C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE4E1ABC78230014E71C /* ViewController.m */; };
-		A519BE521ABC78230014E71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A519BE501ABC78230014E71C /* Main.storyboard */; };
-		A519BE541ABC78230014E71C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A519BE531ABC78230014E71C /* Images.xcassets */; };
-		A519BE571ABC78230014E71C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A519BE551ABC78230014E71C /* LaunchScreen.xib */; };
 		A519BE631ABC78230014E71C /* LudoTechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BE621ABC78230014E71C /* LudoTechTests.m */; };
+		A519BE721ABC79C50014E71C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A519BE6E1ABC79C50014E71C /* LaunchScreen.xib */; };
+		A519BE731ABC79C50014E71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A519BE701ABC79C50014E71C /* Main.storyboard */; };
+		A519BE751ABC79D00014E71C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A519BE741ABC79D00014E71C /* Images.xcassets */; };
+		A519BE781ABC79D90014E71C /* LudoTech.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A519BE761ABC79D90014E71C /* LudoTech.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +32,13 @@
 		A519BE451ABC78230014E71C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A519BE471ABC78230014E71C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A519BE481ABC78230014E71C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A519BE4B1ABC78230014E71C /* LudoTech.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LudoTech.xcdatamodel; sourceTree = "<group>"; };
-		A519BE4D1ABC78230014E71C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A519BE4E1ABC78230014E71C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A519BE511ABC78230014E71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A519BE531ABC78230014E71C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A519BE561ABC78230014E71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A519BE5C1ABC78230014E71C /* LudoTechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LudoTechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A519BE611ABC78230014E71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A519BE621ABC78230014E71C /* LudoTechTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LudoTechTests.m; sourceTree = "<group>"; };
+		A519BE6F1ABC79C50014E71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A519BE711ABC79C50014E71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A519BE741ABC79D00014E71C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A519BE771ABC79D90014E71C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +80,8 @@
 		A519BE421ABC78230014E71C /* LudoTech */ = {
 			isa = PBXGroup;
 			children = (
-				A519BE471ABC78230014E71C /* AppDelegate.h */,
-				A519BE481ABC78230014E71C /* AppDelegate.m */,
-				A519BE4D1ABC78230014E71C /* ViewController.h */,
-				A519BE4E1ABC78230014E71C /* ViewController.m */,
-				A519BE501ABC78230014E71C /* Main.storyboard */,
-				A519BE531ABC78230014E71C /* Images.xcassets */,
-				A519BE551ABC78230014E71C /* LaunchScreen.xib */,
-				A519BE4A1ABC78230014E71C /* LudoTech.xcdatamodeld */,
+				A519BE6D1ABC79760014E71C /* Application */,
+				A519BE6C1ABC79700014E71C /* Ressources */,
 				A519BE431ABC78230014E71C /* Supporting Files */,
 			);
 			path = LudoTech;
@@ -120,6 +111,26 @@
 				A519BE611ABC78230014E71C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A519BE6C1ABC79700014E71C /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				A519BE761ABC79D90014E71C /* LudoTech.xcdatamodeld */,
+				A519BE701ABC79C50014E71C /* Main.storyboard */,
+				A519BE741ABC79D00014E71C /* Images.xcassets */,
+				A519BE6E1ABC79C50014E71C /* LaunchScreen.xib */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		A519BE6D1ABC79760014E71C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A519BE471ABC78230014E71C /* AppDelegate.h */,
+				A519BE481ABC78230014E71C /* AppDelegate.m */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A519BE521ABC78230014E71C /* Main.storyboard in Resources */,
-				A519BE571ABC78230014E71C /* LaunchScreen.xib in Resources */,
-				A519BE541ABC78230014E71C /* Images.xcassets in Resources */,
+				A519BE751ABC79D00014E71C /* Images.xcassets in Resources */,
+				A519BE721ABC79C50014E71C /* LaunchScreen.xib in Resources */,
+				A519BE731ABC79C50014E71C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A519BE491ABC78230014E71C /* AppDelegate.m in Sources */,
-				A519BE4C1ABC78230014E71C /* LudoTech.xcdatamodeld in Sources */,
-				A519BE4F1ABC78230014E71C /* ViewController.m in Sources */,
+				A519BE781ABC79D90014E71C /* LudoTech.xcdatamodeld in Sources */,
 				A519BE461ABC78230014E71C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,20 +258,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A519BE501ABC78230014E71C /* Main.storyboard */ = {
+		A519BE6E1ABC79C50014E71C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A519BE511ABC78230014E71C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A519BE551ABC78230014E71C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A519BE561ABC78230014E71C /* Base */,
+				A519BE6F1ABC79C50014E71C /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A519BE701ABC79C50014E71C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A519BE711ABC79C50014E71C /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,12 +440,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A519BE4A1ABC78230014E71C /* LudoTech.xcdatamodeld */ = {
+		A519BE761ABC79D90014E71C /* LudoTech.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A519BE4B1ABC78230014E71C /* LudoTech.xcdatamodel */,
+				A519BE771ABC79D90014E71C /* Model.xcdatamodel */,
 			);
-			currentVersion = A519BE4B1ABC78230014E71C /* LudoTech.xcdatamodel */;
+			currentVersion = A519BE771ABC79D90014E71C /* Model.xcdatamodel */;
 			path = LudoTech.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
