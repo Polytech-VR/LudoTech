@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LanguageTableViewController : UITableViewController
+@interface LanguageTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @end
