@@ -12,4 +12,6 @@
 
 @interface Difficulty (DataModel)
 
++(Difficulty *) getObjectWithName:(NSString *)name withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end
