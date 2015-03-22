@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "Type+DataModel.h"
+#import "Difficulty+DataModel.h"
 #import "AppDelegate.h"
 
 @interface LudoTechTests : XCTestCase
@@ -108,4 +109,79 @@
      XCTAssertEqual([result count], 1, @"De type missing or in more than one exemplary");
      XCTAssertEqual([result[0] name], @"De", @"De type not returned");
 }
+
+- (void)testAddDifficulty
+{
+    NSError *fetchError=[[NSError alloc] init];
+    
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Difficulty" inManagedObjectContext:context];
+    
+    // Create a fetch request
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Difficulty"];
+    
+    // Check if no type exist
+    NSArray *result = [context executeFetchRequest:fetchRequest error:&fetchError];
+    
+    XCTAssertNotNil(fetchError, @"Fetch Request fails");
+    XCTAssertEqual([result count], 0, @"Some Difficulty already exists");
+    
+    // Add types
+    Difficulty *difficulty = [Difficulty getObjectWithName:@"Facile" withEntityDescription:entityDescription inManagedObjectContext:context];
+    Difficulty *difficulty2 = [Difficulty getObjectWithName:@"Difficile" withEntityDescription:entityDescription inManagedObjectContext:context];
+    Difficulty *difficulty3 = [Difficulty getObjectWithName:@"Expert" withEntityDescription:entityDescription inManagedObjectContext:context];
+    
+    [Difficulty getObjectWithName:@"Moyen" withEntityDescription:entityDescription inManagedObjectContext:context];
+    
+    // Check if they are in context
+    result = [context executeFetchRequest:fetchRequest error:&fetchError];
+    
+    XCTAssertNotNil(fetchError, @"Fetch Request fails");
+    XCTAssertEqual([result count], 4, @"Some Difficulty missing");
+    
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"%K == %@", @"name", @"Facile"]];
+    result = [context executeFetchRequest:fetchRequest error:&fetchError];
+    
+    XCTAssertNotNil(fetchError, @"Fetch Request fails");
+    XCTAssertEqual([result count], 1, @"Facile Difficulty missing or in more than one exemplary");
+    XCTAssertEqual(result[0], difficulty, @"Facile Difficulty not returned");
+    XCTAssertEqualObjects(result[0], difficulty, @"Facile Difficulty not returned");
+    
+    difficulty2 = nil;
+    
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"%K == %@", @"name", @"Difficile"]];
+    result = [context executeFetchRequest:fetchRequest error:&fetchError];
+    
+    XCTAssertNotNil(fetchError, @"Fetch Request fails");
+    XCTAssertEqual([result count], 1, @"Difficile Difficulty missing or in more than one exemplary");
+    
+    NSLog(@"Difficulty Difficile ? : %@", ((Difficulty *) result[0]).name);
+    
+    XCTAssertEqual([result[0] name], @"Difficile", @"Difficile Difficulty not returned");
+    XCTAssertNotEqualObjects(result[0], difficulty2, @"Same object as previously while it was deleted");
+    
+    // Change one
+    difficulty3 = nil;
+    
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"%K == %@", @"name", @"Expert"]];
+    result = [context executeFetchRequest:fetchRequest error:&fetchError];
+    
+    XCTAssertNotNil(fetchError, @"Fetch Request fails");
+    XCTAssertEqual([result count], 1, @"Expert Difficulty missing or in more than one exemplary");
+    XCTAssertEqual([result[0] name], @"Expert", @"Expert Difficulty not returned");
+    
+    [(Difficulty *) result[0] setName:@"Experts"];
+    result = [context executeFetchRequest:fetchRequest error:&fetchError];
+    
+    XCTAssertNotNil(fetchError, @"Fetch Request fails");
+    XCTAssertEqual([result count], 1, @"Expert Difficulty missing or in more than one exemplary");
+    XCTAssertEqual([result[0] name], @"Expert", @"Experts Difficulty not returned");
+    
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"%K == %@", @"name", @"De"]];
+    result = [context executeFetchRequest:fetchRequest error:&fetchError];
+    
+    XCTAssertEqual([result count], 1, @"Experts Difficulty missing or in more than one exemplary");
+    XCTAssertEqual([result[0] name], @"Experts", @"Experts Difficulty not returned");
+}
+
 @end
