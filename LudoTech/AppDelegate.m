@@ -22,21 +22,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // pass down our managedObjectContext to our GameViewController
     
-    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    UINavigationController *navController = tabBarController.viewControllers[0];
-    
-    TypeTableViewController * typeTableViewController=(TypeTableViewController *) navController.topViewController;
-    
-    typeTableViewController.managedObjectContext = self.managedObjectContext;
-    
-    
-    GameTableViewController * gameTableViewController = (GameTableViewController *) navController.topViewController;
-    
-    gameTableViewController.managedObjectContext = self.managedObjectContext;
-    
-
-    
-    
     return YES;
 }
 

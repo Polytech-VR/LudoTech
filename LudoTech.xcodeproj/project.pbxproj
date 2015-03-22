@@ -112,6 +112,14 @@
 		A5F146431ABC7E4C00133B8D /* AddVariantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F146181ABC7E4C00133B8D /* AddVariantViewController.m */; };
 		A5F146441ABC7E4C00133B8D /* VariantTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */; };
 		A5F146451ABC7E4C00133B8D /* VariantTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */; };
+		AD72DB2D1ABEFF7E00449A49 /* DifficultyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB2C1ABEFF7E00449A49 /* DifficultyTableViewCell.m */; };
+		AD72DB2E1ABEFF7E00449A49 /* DifficultyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB2C1ABEFF7E00449A49 /* DifficultyTableViewCell.m */; };
+		AD72DB311ABF03BF00449A49 /* EditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB301ABF03BF00449A49 /* EditorTableViewCell.m */; };
+		AD72DB321ABF03BF00449A49 /* EditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB301ABF03BF00449A49 /* EditorTableViewCell.m */; };
+		AD72DB351ABF052D00449A49 /* LanguageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB341ABF052D00449A49 /* LanguageTableViewCell.m */; };
+		AD72DB361ABF052D00449A49 /* LanguageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB341ABF052D00449A49 /* LanguageTableViewCell.m */; };
+		AD72DB391ABF07D500449A49 /* ThemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */; };
+		AD72DB3A1ABF07D500449A49 /* ThemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */; };
 		ADCA097D1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 		ADCA097E1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -237,6 +245,14 @@
 		A5F146181ABC7E4C00133B8D /* AddVariantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddVariantViewController.m; sourceTree = "<group>"; };
 		A5F1461A1ABC7E4C00133B8D /* VariantTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariantTableViewController.h; sourceTree = "<group>"; };
 		A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantTableViewController.m; sourceTree = "<group>"; };
+		AD72DB2B1ABEFF7E00449A49 /* DifficultyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifficultyTableViewCell.h; sourceTree = "<group>"; };
+		AD72DB2C1ABEFF7E00449A49 /* DifficultyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifficultyTableViewCell.m; sourceTree = "<group>"; };
+		AD72DB2F1ABF03BF00449A49 /* EditorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorTableViewCell.h; sourceTree = "<group>"; };
+		AD72DB301ABF03BF00449A49 /* EditorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorTableViewCell.m; sourceTree = "<group>"; };
+		AD72DB331ABF052D00449A49 /* LanguageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageTableViewCell.h; sourceTree = "<group>"; };
+		AD72DB341ABF052D00449A49 /* LanguageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageTableViewCell.m; sourceTree = "<group>"; };
+		AD72DB371ABF07D500449A49 /* ThemeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeTableViewCell.h; sourceTree = "<group>"; };
+		AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeTableViewCell.m; sourceTree = "<group>"; };
 		ADCA097B1ABC819100C46720 /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
 		ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -454,6 +470,8 @@
 			children = (
 				A5F145D91ABC7E4C00133B8D /* DifficultyTableViewController.h */,
 				A5F145DA1ABC7E4C00133B8D /* DifficultyTableViewController.m */,
+				AD72DB2B1ABEFF7E00449A49 /* DifficultyTableViewCell.h */,
+				AD72DB2C1ABEFF7E00449A49 /* DifficultyTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -508,6 +526,8 @@
 			children = (
 				A5F145E71ABC7E4C00133B8D /* EditorTableViewController.h */,
 				A5F145E81ABC7E4C00133B8D /* EditorTableViewController.m */,
+				AD72DB2F1ABF03BF00449A49 /* EditorTableViewCell.h */,
+				AD72DB301ABF03BF00449A49 /* EditorTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -618,6 +638,8 @@
 			children = (
 				A5F146051ABC7E4C00133B8D /* LanguageTableViewController.h */,
 				A5F146061ABC7E4C00133B8D /* LanguageTableViewController.m */,
+				AD72DB341ABF052D00449A49 /* LanguageTableViewCell.m */,
+				AD72DB331ABF052D00449A49 /* LanguageTableViewCell.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -645,6 +667,8 @@
 			children = (
 				A5F1460C1ABC7E4C00133B8D /* ThemeTableViewController.h */,
 				A5F1460D1ABC7E4C00133B8D /* ThemeTableViewController.m */,
+				AD72DB371ABF07D500449A49 /* ThemeTableViewCell.h */,
+				AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -810,7 +834,9 @@
 				A5F1462E1ABC7E4C00133B8D /* GameTableViewCell.m in Sources */,
 				A519BEBF1ABC7C280014E71C /* Edition+DataModel.m in Sources */,
 				A5F146241ABC7E4C00133B8D /* AddEditorViewController.m in Sources */,
+				AD72DB311ABF03BF00449A49 /* EditorTableViewCell.m in Sources */,
 				A5F145CD1ABC7DA700133B8D /* LanguageList.m in Sources */,
+				AD72DB2D1ABEFF7E00449A49 /* DifficultyTableViewCell.m in Sources */,
 				A5F146341ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */,
 				A5F146321ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */,
 				A5F1461E1ABC7E4C00133B8D /* DifficultyTableViewController.m in Sources */,
@@ -836,7 +862,9 @@
 				A5F145C91ABC7DA700133B8D /* EditorList.m in Sources */,
 				A5F1461C1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
 				A519BE8C1ABC7AA70014E71C /* Variant.m in Sources */,
+				AD72DB351ABF052D00449A49 /* LanguageTableViewCell.m in Sources */,
 				A519BE7C1ABC7AA60014E71C /* Theme.m in Sources */,
+				AD72DB391ABF07D500449A49 /* ThemeTableViewCell.m in Sources */,
 				A519BE881ABC7AA60014E71C /* Extension.m in Sources */,
 				A519BE901ABC7AA70014E71C /* Type.m in Sources */,
 				A519BE941ABC7AA70014E71C /* Game.m in Sources */,
@@ -867,6 +895,7 @@
 			files = (
 				A5F145CA1ABC7DA700133B8D /* EditorList.m in Sources */,
 				A5F145D01ABC7DA700133B8D /* ThemeList.m in Sources */,
+				AD72DB2E1ABEFF7E00449A49 /* DifficultyTableViewCell.m in Sources */,
 				A519BE811ABC7AA60014E71C /* Person.m in Sources */,
 				A519BE891ABC7AA60014E71C /* Extension.m in Sources */,
 				A519BE991ABC7AA70014E71C /* Editor.m in Sources */,
@@ -883,7 +912,9 @@
 				A5F146311ABC7E4C00133B8D /* GameTableViewController.m in Sources */,
 				A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */,
 				A5F146451ABC7E4C00133B8D /* VariantTableViewController.m in Sources */,
+				AD72DB361ABF052D00449A49 /* LanguageTableViewCell.m in Sources */,
 				A5F1461F1ABC7E4C00133B8D /* DifficultyTableViewController.m in Sources */,
+				AD72DB3A1ABF07D500449A49 /* ThemeTableViewCell.m in Sources */,
 				A5F1463D1ABC7E4C00133B8D /* ThemeTableViewController.m in Sources */,
 				A5F145CE1ABC7DA700133B8D /* LanguageList.m in Sources */,
 				A519BEC81ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
@@ -894,6 +925,7 @@
 				A5F146271ABC7E4C00133B8D /* EditorTableViewController.m in Sources */,
 				A5F146351ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */,
 				A519BECE1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
+				AD72DB321ABF03BF00449A49 /* EditorTableViewCell.m in Sources */,
 				A5F1462B1ABC7E4C00133B8D /* ExtensionTableViewController.m in Sources */,
 				A5F146411ABC7E4C00133B8D /* TypeTableViewController.m in Sources */,
 				A519BEC21ABC7C280014E71C /* Editor+DataModel.m in Sources */,
