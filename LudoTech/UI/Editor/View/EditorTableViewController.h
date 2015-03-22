@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditorTableViewController : UITableViewController
+@interface EditorTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @end
