@@ -11,6 +11,4 @@
 
 @interface TypeTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
-@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
-
 @end
