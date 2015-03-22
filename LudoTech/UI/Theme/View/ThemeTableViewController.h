@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ThemeTableViewController : UITableViewController
+@interface ThemeTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 @end
