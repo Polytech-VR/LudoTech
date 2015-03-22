@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CoreData/CoreData.h"
-#import "AddGameViewController.h"
 
 @interface GameTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
-
-@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
 @end
