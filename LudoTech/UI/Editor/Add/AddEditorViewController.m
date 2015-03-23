@@ -14,9 +14,23 @@
 
 // ===== INSTANCE METHODS =====
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Button
+
 - (IBAction)save:(id)sender
 {
-#warning TODO Save in database
+    // TODO Save in database
     [self.navigationController popViewControllerAnimated:YES];
 }
 

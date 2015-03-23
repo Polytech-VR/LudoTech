@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+// ===== DECLARATION =====
+
 @interface DifficultyTableViewCell : UITableViewCell
+
+// ===== PROPERTIES =====
+
 @property (weak, nonatomic) IBOutlet UILabel *name;
+
 @end

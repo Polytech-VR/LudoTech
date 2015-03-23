@@ -7,11 +7,16 @@
 //
 
 #import "AppDelegate.h"
+
 #import "TypeTableViewController.h"
-#import "TypeTableViewCell.h"
+
 #import "Type+DataModel.h"
 
+// ===== DEFINITION =====
+
 @interface TypeTableViewController () <NSFetchedResultsControllerDelegate>
+
+// ===== PROPERTIES =====
 
 @property (weak, nonatomic) AppDelegate* appDelegate;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -20,6 +25,8 @@
 @end
 
 @implementation TypeTableViewController
+
+// ===== INSTANCE METHODS =====
 
 - (void) appDelegateAndfetchedResultControllerInit
 {

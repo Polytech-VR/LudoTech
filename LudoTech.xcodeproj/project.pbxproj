@@ -479,8 +479,8 @@
 		A5F145DB1ABC7E4C00133B8D /* Edition */ = {
 			isa = PBXGroup;
 			children = (
-				A5F145DC1ABC7E4C00133B8D /* Add */,
 				A5F145DF1ABC7E4C00133B8D /* View */,
+				A5F145DC1ABC7E4C00133B8D /* Add */,
 			);
 			path = Edition;
 			sourceTree = "<group>";
@@ -580,10 +580,10 @@
 		A5F145F41ABC7E4C00133B8D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A5F145F51ABC7E4C00133B8D /* GameTableViewCell.h */,
-				A5F145F61ABC7E4C00133B8D /* GameTableViewCell.m */,
 				A5F145F71ABC7E4C00133B8D /* GameTableViewController.h */,
 				A5F145F81ABC7E4C00133B8D /* GameTableViewController.m */,
+				A5F145F51ABC7E4C00133B8D /* GameTableViewCell.h */,
+				A5F145F61ABC7E4C00133B8D /* GameTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -638,8 +638,8 @@
 			children = (
 				A5F146051ABC7E4C00133B8D /* LanguageTableViewController.h */,
 				A5F146061ABC7E4C00133B8D /* LanguageTableViewController.m */,
-				AD72DB341ABF052D00449A49 /* LanguageTableViewCell.m */,
 				AD72DB331ABF052D00449A49 /* LanguageTableViewCell.h */,
+				AD72DB341ABF052D00449A49 /* LanguageTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";

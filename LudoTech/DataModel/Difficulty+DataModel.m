@@ -12,6 +12,8 @@
 
 @implementation Difficulty (DataModel)
 
+
+
 +(Difficulty *) getObjectWithName:(NSString *)name withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
 {
     Difficulty *retValue = nil;

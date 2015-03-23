@@ -7,11 +7,16 @@
 //
 
 #import "AppDelegate.h"
+
 #import "ThemeTableViewController.h"
-#import "ThemeTableViewCell.h"
+
 #import "Theme+DataModel.h"
 
+// ===== DEFINITION =====
+
 @interface ThemeTableViewController() <NSFetchedResultsControllerDelegate>
+
+// ===== PROPERTIES =====
 
 @property (weak, nonatomic) AppDelegate* appDelegate;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -20,6 +25,8 @@
 @end
 
 @implementation ThemeTableViewController
+
+// ===== INSTANCE METHODS =====
 
 - (void) appDelegateAndfetchedResultControllerInit
 {

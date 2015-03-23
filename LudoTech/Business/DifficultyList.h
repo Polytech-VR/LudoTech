@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Difficulty+DataModel.h"
 
-// ===== DEFINITION =====
+// ===== DECLARATION =====
 
 @interface DifficultyList : NSObject
 
-// ===== DECLARATION =====
+// ===== PROPERTIES =====
 
 @property (strong, nonatomic) NSMutableOrderedSet *list;
 

@@ -8,7 +8,7 @@
 
 #import "ThemeList.h"
 
-// ===== DECLARATION =====
+// ===== DEFINITION =====
 
 @implementation ThemeList
 

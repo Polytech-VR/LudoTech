@@ -12,4 +12,8 @@
 
 @interface Language (DataModel)
 
+// ===== METHODS =====
+
++(Language *) getObjectWithName:(NSString *)name withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

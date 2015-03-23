@@ -8,7 +8,7 @@
 
 #import "TypeList.h"
 
-// ===== DECLARATION =====
+// ===== DEFINITION =====
 
 @implementation TypeList
 

@@ -7,12 +7,17 @@
 //
 
 #import "AppDelegate.h"
-#import "GameTableViewCell.h"
+
 #import "GameTableViewController.h"
+
 #import "Game+DataModel.h"
-#import "Type.h"
+#import "Type+DataModel.h"
+
+// ===== DEFINITION =====
 
 @interface GameTableViewController () <NSFetchedResultsControllerDelegate>
+
+// ===== PROPERTIES =====
 
 @property (weak, nonatomic) AppDelegate* appDelegate;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -22,31 +27,36 @@
 
 @implementation GameTableViewController
 
+// ===== INSTANCE METHODS =====
+
 - (void) appDelegateAndfetchedResultControllerInit
 {
     // appDelegate initialization
     self->_appDelegate = [[UIApplication sharedApplication] delegate];
+    
     // fetchedResultController initialization
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Game"];
+    
     // Configure the request's entity, and optionally its predicate.
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
-    self.fetchedResultsController = [[NSFetchedResultsController alloc]
-                                     initWithFetchRequest:fetchRequest
-                                     managedObjectContext:self.appDelegate.managedObjectContext
-                                     sectionNameKeyPath:nil
-                                     cacheName:nil];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.appDelegate.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    
     // Configure Fetched Results Controller
     [self.fetchedResultsController setDelegate:self];
+    
     NSError *error;
     [self.fetchedResultsController performFetch:&error];
-    if (error) {
+    
+    if (error)
+    {
         NSLog(@"Unable to perform fetch.");
         NSLog(@"%@, %@", error, error.localizedDescription);
         
         [super viewDidLoad];
         
         NSError *error = nil;
-        if (![[self fetchedResultsController] performFetch:&error]) {
+        if (![[self fetchedResultsController] performFetch:&error])
+        {
             /*
              Replace this implementation with code to handle the error appropriately.
              
@@ -55,20 +65,24 @@
             NSLog(@"Unresolved error viewDidLoad GameTableViewController %@, %@", error, [error userInfo]);
             abort();
         }
-
     }
 }
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
+    
+    if (self)
+    {
         // Custom initialization
         [self appDelegateAndfetchedResultControllerInit];
     }
+    
     return self;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -78,7 +92,8 @@
     [self appDelegateAndfetchedResultControllerInit];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -86,26 +101,25 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     NSLog(@"sections=%lu",(unsigned long)[[self.fetchedResultsController sections] count]);
+    
     return [[self.fetchedResultsController sections] count];
-
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     // Return the number of rows in the section.
     NSArray *sections = [self.fetchedResultsController sections];
     id<NSFetchedResultsSectionInfo> sectionInfo = [sections objectAtIndex:section];
     NSLog(@"rows=%lu",(unsigned long)[sectionInfo numberOfObjects]);
     
     return [sectionInfo numberOfObjects];
-    
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *CellIdentifier = @"GameTableViewCell";
     // dequeue a GameTableViewCell, then set its game to the game for the current row
     GameTableViewCell *gameCell =
@@ -162,28 +176,38 @@
  */
 
 #pragma mark - FetchResultDelegate
-//
-- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
+{
     [self.tableView beginUpdates];
 }
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
     [self.tableView endUpdates];
 }
-- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
-    switch (type) {
-        case NSFetchedResultsChangeInsert: {
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath
+{
+    switch (type)
+    {
+        case NSFetchedResultsChangeInsert:
+        {
             [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
         }
-        case NSFetchedResultsChangeDelete: {
+        case NSFetchedResultsChangeDelete:
+        {
             [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
         }
-        case NSFetchedResultsChangeUpdate: {
+        case NSFetchedResultsChangeUpdate:
+        {
             [self configureCell:(GameTableViewCell *)[self.tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
         }
-        case NSFetchedResultsChangeMove: {
+        case NSFetchedResultsChangeMove:
+        {
             [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
             [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
@@ -193,7 +217,8 @@
 
 #pragma mark - Helper methods
 
-- (void)configureCell:(GameTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+- (void)configureCell:(GameTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
     // Fetch Record
     Game *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
@@ -204,5 +229,3 @@
 }
 
 @end
-
-

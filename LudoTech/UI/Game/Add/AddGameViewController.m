@@ -26,8 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
- #pragma mark - Button
+#pragma mark - Button
  
 - (IBAction)save:(id)sender
 {
@@ -41,5 +40,3 @@
 }
 
 @end
-
-

@@ -11,5 +11,5 @@
 // ===== DEFINITION =====
 
 @implementation GamePlayed (DataModel)
-
+    
 @end

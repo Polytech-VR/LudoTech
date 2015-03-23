@@ -12,4 +12,8 @@
 
 @interface Editor (DataModel)
 
+// ===== METHODS =====
+
++(Editor *) getObjectWithName:(NSString *)name withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

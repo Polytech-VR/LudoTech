@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+// ===== DECLARATION =====
+
 @interface ThemeTableViewCell : UITableViewCell
+
+// ===== PROPERTIES =====
 
 @property (weak, nonatomic) IBOutlet UILabel *name;
 

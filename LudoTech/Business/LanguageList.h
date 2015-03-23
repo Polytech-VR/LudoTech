@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Language+DataModel.h"
 
-// ===== DEFINITION =====
+// ===== DECLARATION =====
 
 @interface LanguageList : NSObject
 
-// ===== DECLARATION =====
+// ===== PROPERTIES =====
 
 @property (strong, nonatomic) NSMutableOrderedSet *list;
 

@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Theme+DataModel.h"
 
-// ===== DEFINITION =====
+// ===== DECLARATION =====
 
 @interface ThemeList : NSObject
 
-// ===== DECLARATION =====
+// ===== PROPERTIES =====
 
 @property (strong, nonatomic) NSMutableOrderedSet *list;
 

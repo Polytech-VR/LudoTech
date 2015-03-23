@@ -7,11 +7,16 @@
 //
 
 #import "AppDelegate.h"
+
 #import "DifficultyTableViewController.h"
-#import "DifficultyTableViewCell.h"
+
 #import "Difficulty+DataModel.h"
 
+// ===== DEFINITION =====
+
 @interface DifficultyTableViewController() <NSFetchedResultsControllerDelegate>
+
+// ===== PROPERTIES =====
 
 @property (weak, nonatomic) AppDelegate* appDelegate;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -20,6 +25,8 @@
 @end
 
 @implementation DifficultyTableViewController
+
+// ===== INSTANCE METHODS =====
 
 - (void) appDelegateAndfetchedResultControllerInit
 {

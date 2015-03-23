@@ -8,7 +8,7 @@
 
 #import "DifficultyList.h"
 
-// ===== DECLARATION =====
+// ===== DEFINITION =====
 
 @implementation DifficultyList
 

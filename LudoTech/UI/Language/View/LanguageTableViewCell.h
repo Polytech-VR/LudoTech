@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+// ===== DECLARATION =====
+
 @interface LanguageTableViewCell : UITableViewCell
+
+// ===== PROPERTIES =====
+
 @property (weak, nonatomic) IBOutlet UILabel *name;
 
 @end

@@ -7,11 +7,16 @@
 //
 
 #import "AppDelegate.h"
+
 #import "LanguageTableViewController.h"
-#import "LanguageTableViewCell.h"
+
 #import "Language+DataModel.h"
 
+// ===== DEFINITION =====
+
 @interface LanguageTableViewController() <NSFetchedResultsControllerDelegate>
+
+// ===== PROPERTIES =====
 
 @property (weak, nonatomic) AppDelegate* appDelegate;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -21,6 +26,7 @@
 
 @implementation LanguageTableViewController
 
+// ===== INSTANCE METHODS =====
 
 - (void) appDelegateAndfetchedResultControllerInit
 {

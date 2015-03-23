@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Editor+DataModel.h"
 
-// ===== DEFINITION =====
+// ===== DECLARATION =====
 
 @interface EditorList : NSObject
 
-// ===== DECLARATION =====
+// ===== PROPERTIES =====
 
 @property (strong, nonatomic) NSMutableOrderedSet *list;
 

@@ -8,7 +8,7 @@
 
 #import "LanguageList.h"
 
-// ===== DECLARATION =====
+// ===== DEFINITION =====
 
 @implementation LanguageList
 

@@ -12,4 +12,8 @@
 
 @interface Theme (DataModel)
 
+// ===== METHODS =====
+
++(Theme *) getObjectWithName:(NSString *)name withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

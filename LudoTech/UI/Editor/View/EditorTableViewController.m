@@ -7,11 +7,16 @@
 //
 
 #import "AppDelegate.h"
+
 #import "EditorTableViewController.h"
-#import "EditorTableViewCell.h"
+
 #import "Editor+DataModel.h"
 
+// ===== DEFINITION =====
+
 @interface EditorTableViewController() <NSFetchedResultsControllerDelegate>
+
+// ===== PROPERTIES =====
 
 @property (weak, nonatomic) AppDelegate* appDelegate;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -20,6 +25,8 @@
 @end
 
 @implementation EditorTableViewController
+
+// ===== INSTANCE METHODS =====
 
 - (void) appDelegateAndfetchedResultControllerInit
 {

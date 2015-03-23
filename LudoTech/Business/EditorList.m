@@ -8,7 +8,7 @@
 
 #import "EditorList.h"
 
-// ===== DECLARATION =====
+// ===== DEFINITION =====
 
 @implementation EditorList
 
