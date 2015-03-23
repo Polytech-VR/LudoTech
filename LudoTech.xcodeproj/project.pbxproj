@@ -58,6 +58,18 @@
 		A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBA1ABC7C280014E71C /* Type+DataModel.m */; };
 		A519BED11ABC7C280014E71C /* Variant+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */; };
 		A519BED21ABC7C280014E71C /* Variant+DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */; };
+		A59F909D1AC050E700AA96E8 /* AuthorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F909C1AC050E700AA96E8 /* AuthorTableViewController.m */; };
+		A59F909E1AC050E700AA96E8 /* AuthorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F909C1AC050E700AA96E8 /* AuthorTableViewController.m */; };
+		A59F90A11AC0516F00AA96E8 /* AuthorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90A01AC0516F00AA96E8 /* AuthorTableViewCell.m */; };
+		A59F90A21AC0516F00AA96E8 /* AuthorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90A01AC0516F00AA96E8 /* AuthorTableViewCell.m */; };
+		A59F90A51AC0518A00AA96E8 /* AddAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90A41AC0518A00AA96E8 /* AddAuthorViewController.m */; };
+		A59F90A61AC0518A00AA96E8 /* AddAuthorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90A41AC0518A00AA96E8 /* AddAuthorViewController.m */; };
+		A59F90A91AC0528E00AA96E8 /* AddIllustratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90A81AC0528E00AA96E8 /* AddIllustratorViewController.m */; };
+		A59F90AA1AC0528E00AA96E8 /* AddIllustratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90A81AC0528E00AA96E8 /* AddIllustratorViewController.m */; };
+		A59F90AD1AC0530500AA96E8 /* IllustratorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90AC1AC0530500AA96E8 /* IllustratorTableViewController.m */; };
+		A59F90AE1AC0530500AA96E8 /* IllustratorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90AC1AC0530500AA96E8 /* IllustratorTableViewController.m */; };
+		A59F90B11AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90B01AC0535600AA96E8 /* IllustratorTableViewCell.m */; };
+		A59F90B21AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90B01AC0535600AA96E8 /* IllustratorTableViewCell.m */; };
 		A5F145C71ABC7DA700133B8D /* DifficultyList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BC1ABC7DA700133B8D /* DifficultyList.m */; };
 		A5F145C81ABC7DA700133B8D /* DifficultyList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BC1ABC7DA700133B8D /* DifficultyList.m */; };
 		A5F145C91ABC7DA700133B8D /* EditorList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BE1ABC7DA700133B8D /* EditorList.m */; };
@@ -191,6 +203,18 @@
 		A519BEBA1ABC7C280014E71C /* Type+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Type+DataModel.m"; sourceTree = "<group>"; };
 		A519BEBB1ABC7C280014E71C /* Variant+DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Variant+DataModel.h"; sourceTree = "<group>"; };
 		A519BEBC1ABC7C280014E71C /* Variant+DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Variant+DataModel.m"; sourceTree = "<group>"; };
+		A59F909B1AC050E700AA96E8 /* AuthorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthorTableViewController.h; path = Author/View/AuthorTableViewController.h; sourceTree = "<group>"; };
+		A59F909C1AC050E700AA96E8 /* AuthorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthorTableViewController.m; path = Author/View/AuthorTableViewController.m; sourceTree = "<group>"; };
+		A59F909F1AC0516F00AA96E8 /* AuthorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthorTableViewCell.h; path = Author/View/AuthorTableViewCell.h; sourceTree = "<group>"; };
+		A59F90A01AC0516F00AA96E8 /* AuthorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthorTableViewCell.m; path = Author/View/AuthorTableViewCell.m; sourceTree = "<group>"; };
+		A59F90A31AC0518A00AA96E8 /* AddAuthorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddAuthorViewController.h; path = Author/Add/AddAuthorViewController.h; sourceTree = "<group>"; };
+		A59F90A41AC0518A00AA96E8 /* AddAuthorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddAuthorViewController.m; path = Author/Add/AddAuthorViewController.m; sourceTree = "<group>"; };
+		A59F90A71AC0528E00AA96E8 /* AddIllustratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddIllustratorViewController.h; path = Illustrator/Add/AddIllustratorViewController.h; sourceTree = "<group>"; };
+		A59F90A81AC0528E00AA96E8 /* AddIllustratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddIllustratorViewController.m; path = Illustrator/Add/AddIllustratorViewController.m; sourceTree = "<group>"; };
+		A59F90AB1AC0530500AA96E8 /* IllustratorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IllustratorTableViewController.h; path = Illustrator/View/IllustratorTableViewController.h; sourceTree = "<group>"; };
+		A59F90AC1AC0530500AA96E8 /* IllustratorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IllustratorTableViewController.m; path = Illustrator/View/IllustratorTableViewController.m; sourceTree = "<group>"; };
+		A59F90AF1AC0535600AA96E8 /* IllustratorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IllustratorTableViewCell.h; path = Illustrator/View/IllustratorTableViewCell.h; sourceTree = "<group>"; };
+		A59F90B01AC0535600AA96E8 /* IllustratorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IllustratorTableViewCell.m; path = Illustrator/View/IllustratorTableViewCell.m; sourceTree = "<group>"; };
 		A5F145BB1ABC7DA700133B8D /* DifficultyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifficultyList.h; sourceTree = "<group>"; };
 		A5F145BC1ABC7DA700133B8D /* DifficultyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifficultyList.m; sourceTree = "<group>"; };
 		A5F145BD1ABC7DA700133B8D /* EditorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorList.h; sourceTree = "<group>"; };
@@ -411,6 +435,64 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		A59F90951AC0502100AA96E8 /* Author */ = {
+			isa = PBXGroup;
+			children = (
+				A59F90991AC0505500AA96E8 /* View */,
+				A59F909A1AC0505C00AA96E8 /* Add */,
+			);
+			name = Author;
+			sourceTree = "<group>";
+		};
+		A59F90961AC0502C00AA96E8 /* Illustrator */ = {
+			isa = PBXGroup;
+			children = (
+				A59F90971AC0503F00AA96E8 /* View */,
+				A59F90981AC0504B00AA96E8 /* Add */,
+			);
+			name = Illustrator;
+			sourceTree = "<group>";
+		};
+		A59F90971AC0503F00AA96E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A59F90AB1AC0530500AA96E8 /* IllustratorTableViewController.h */,
+				A59F90AC1AC0530500AA96E8 /* IllustratorTableViewController.m */,
+				A59F90AF1AC0535600AA96E8 /* IllustratorTableViewCell.h */,
+				A59F90B01AC0535600AA96E8 /* IllustratorTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A59F90981AC0504B00AA96E8 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A59F90A71AC0528E00AA96E8 /* AddIllustratorViewController.h */,
+				A59F90A81AC0528E00AA96E8 /* AddIllustratorViewController.m */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		A59F90991AC0505500AA96E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A59F909B1AC050E700AA96E8 /* AuthorTableViewController.h */,
+				A59F909C1AC050E700AA96E8 /* AuthorTableViewController.m */,
+				A59F909F1AC0516F00AA96E8 /* AuthorTableViewCell.h */,
+				A59F90A01AC0516F00AA96E8 /* AuthorTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A59F909A1AC0505C00AA96E8 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				A59F90A31AC0518A00AA96E8 /* AddAuthorViewController.h */,
+				A59F90A41AC0518A00AA96E8 /* AddAuthorViewController.m */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
 		A5F145BA1ABC7DA700133B8D /* Business */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +518,8 @@
 				A5F145F01ABC7E4C00133B8D /* Game */,
 				A5F146151ABC7E4C00133B8D /* Variant */,
 				A5F145DB1ABC7E4C00133B8D /* Edition */,
+				A59F90951AC0502100AA96E8 /* Author */,
+				A59F90961AC0502C00AA96E8 /* Illustrator */,
 				A5F145E91ABC7E4C00133B8D /* Extension */,
 				A5F145F91ABC7E4C00133B8D /* GamePlayed */,
 				A5F1460E1ABC7E4C00133B8D /* Type */,
@@ -833,6 +917,8 @@
 				A519BEC71ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
 				A5F1462E1ABC7E4C00133B8D /* GameTableViewCell.m in Sources */,
 				A519BEBF1ABC7C280014E71C /* Edition+DataModel.m in Sources */,
+				A59F90A11AC0516F00AA96E8 /* AuthorTableViewCell.m in Sources */,
+				A59F90A91AC0528E00AA96E8 /* AddIllustratorViewController.m in Sources */,
 				A5F146241ABC7E4C00133B8D /* AddEditorViewController.m in Sources */,
 				AD72DB311ABF03BF00449A49 /* EditorTableViewCell.m in Sources */,
 				A5F145CD1ABC7DA700133B8D /* LanguageList.m in Sources */,
@@ -843,9 +929,11 @@
 				A519BECF1ABC7C280014E71C /* Type+DataModel.m in Sources */,
 				A5F1463E1ABC7E4C00133B8D /* AddTypeViewController.m in Sources */,
 				A5F146441ABC7E4C00133B8D /* VariantTableViewController.m in Sources */,
+				A59F909D1AC050E700AA96E8 /* AuthorTableViewController.m in Sources */,
 				A519BEA01ABC7AA70014E71C /* GamePlayed.m in Sources */,
 				A519BE9C1ABC7AA70014E71C /* Edition.m in Sources */,
 				A519BED11ABC7C280014E71C /* Variant+DataModel.m in Sources */,
+				A59F90A51AC0518A00AA96E8 /* AddAuthorViewController.m in Sources */,
 				A519BEC31ABC7C280014E71C /* Extension+DataModel.m in Sources */,
 				A5F145CF1ABC7DA700133B8D /* ThemeList.m in Sources */,
 				A519BEC51ABC7C280014E71C /* Game+DataModel.m in Sources */,
@@ -862,6 +950,7 @@
 				A5F145C91ABC7DA700133B8D /* EditorList.m in Sources */,
 				A5F1461C1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
 				A519BE8C1ABC7AA70014E71C /* Variant.m in Sources */,
+				A59F90B11AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */,
 				AD72DB351ABF052D00449A49 /* LanguageTableViewCell.m in Sources */,
 				A519BE7C1ABC7AA60014E71C /* Theme.m in Sources */,
 				AD72DB391ABF07D500449A49 /* ThemeTableViewCell.m in Sources */,
@@ -885,6 +974,7 @@
 				A5F146201ABC7E4C00133B8D /* AddEditionViewController.m in Sources */,
 				A5F146361ABC7E4C00133B8D /* AddLanguageViewController.m in Sources */,
 				A5F146421ABC7E4C00133B8D /* AddVariantViewController.m in Sources */,
+				A59F90AD1AC0530500AA96E8 /* IllustratorTableViewController.m in Sources */,
 				A5F1463C1ABC7E4C00133B8D /* ThemeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -893,6 +983,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59F90B21AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */,
 				A5F145CA1ABC7DA700133B8D /* EditorList.m in Sources */,
 				A5F145D01ABC7DA700133B8D /* ThemeList.m in Sources */,
 				AD72DB2E1ABEFF7E00449A49 /* DifficultyTableViewCell.m in Sources */,
@@ -910,17 +1001,20 @@
 				A5F145D21ABC7DA700133B8D /* TypeList.m in Sources */,
 				A5F1462D1ABC7E4C00133B8D /* AddGameViewController.m in Sources */,
 				A5F146311ABC7E4C00133B8D /* GameTableViewController.m in Sources */,
+				A59F90AA1AC0528E00AA96E8 /* AddIllustratorViewController.m in Sources */,
 				A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */,
 				A5F146451ABC7E4C00133B8D /* VariantTableViewController.m in Sources */,
 				AD72DB361ABF052D00449A49 /* LanguageTableViewCell.m in Sources */,
 				A5F1461F1ABC7E4C00133B8D /* DifficultyTableViewController.m in Sources */,
 				AD72DB3A1ABF07D500449A49 /* ThemeTableViewCell.m in Sources */,
 				A5F1463D1ABC7E4C00133B8D /* ThemeTableViewController.m in Sources */,
+				A59F90A21AC0516F00AA96E8 /* AuthorTableViewCell.m in Sources */,
 				A5F145CE1ABC7DA700133B8D /* LanguageList.m in Sources */,
 				A519BEC81ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
 				A519BE851ABC7AA60014E71C /* Difficulty.m in Sources */,
 				A5F146331ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */,
 				A5F1463B1ABC7E4C00133B8D /* AddThemeViewController.m in Sources */,
+				A59F90A61AC0518A00AA96E8 /* AddAuthorViewController.m in Sources */,
 				A5F145C81ABC7DA700133B8D /* DifficultyList.m in Sources */,
 				A5F146271ABC7E4C00133B8D /* EditorTableViewController.m in Sources */,
 				A5F146351ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */,
@@ -936,11 +1030,13 @@
 				A5F146251ABC7E4C00133B8D /* AddEditorViewController.m in Sources */,
 				A519BEC61ABC7C280014E71C /* Game+DataModel.m in Sources */,
 				A5F146431ABC7E4C00133B8D /* AddVariantViewController.m in Sources */,
+				A59F90AE1AC0530500AA96E8 /* IllustratorTableViewController.m in Sources */,
 				A5F146291ABC7E4C00133B8D /* AddExtensionViewController.m in Sources */,
 				A519BE7D1ABC7AA60014E71C /* Theme.m in Sources */,
 				A519BE911ABC7AA70014E71C /* Type.m in Sources */,
 				A519BEA51ABC7AA70014E71C /* Language.m in Sources */,
 				A519BECA1ABC7C280014E71C /* Language+DataModel.m in Sources */,
+				A59F909E1AC050E700AA96E8 /* AuthorTableViewController.m in Sources */,
 				A5F1461D1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
 				A519BEBE1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BEA11ABC7AA70014E71C /* GamePlayed.m in Sources */,
