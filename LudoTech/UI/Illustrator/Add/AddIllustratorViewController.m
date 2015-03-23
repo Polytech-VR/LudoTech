@@ -40,6 +40,22 @@
 }
 */
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    if (textField == self.firstName)
+    {
+        [self.lastName becomeFirstResponder];
+    }
+    else if (textField == self.lastName)
+    {
+        [self.nationality becomeFirstResponder];
+    }
+    
+    return YES;
+}
+
 #pragma mark - Button
 
 - (IBAction)save:(id)sender

@@ -15,7 +15,10 @@
 // ===== PROPERTIES =====
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
+@property (weak, nonatomic) IBOutlet UITextField *language;
 @property (weak, nonatomic) IBOutlet UITextField *year;
+@property (weak, nonatomic) IBOutlet UITextField *editor;
+@property (weak, nonatomic) IBOutlet UITextField *theme;
 
 // ===== METHODS =====
 

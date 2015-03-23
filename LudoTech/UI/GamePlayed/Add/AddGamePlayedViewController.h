@@ -14,7 +14,7 @@
 
 // ===== PROPERTIES =====
 
-@property (weak, nonatomic) IBOutlet UIDatePicker *date;
+@property (weak, nonatomic) IBOutlet UITextField *date;
 @property (weak, nonatomic) IBOutlet UITextField *nbPlayer;
 @property (weak, nonatomic) IBOutlet UITextField *rank;
 

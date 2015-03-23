@@ -26,6 +26,30 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    if (textField == self.name)
+    {
+        [self.language becomeFirstResponder];
+    }
+    else if (textField == self.language)
+    {
+        [self.year becomeFirstResponder];
+    }
+    else if (textField == self.year)
+    {
+        [self.editor becomeFirstResponder];
+    }
+    else if (textField == self.editor)
+    {
+        [self.theme becomeFirstResponder];
+    }
+    
+    return YES;
+}
+
 #pragma mark - Button
 
 - (IBAction)save:(id)sender

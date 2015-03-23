@@ -15,6 +15,7 @@
 // ===== PROPERTIES =====
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
+@property (weak, nonatomic) IBOutlet UITextField *difficulty;
 
 // ===== METHODS =====
 

@@ -26,6 +26,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    if (textField == self.date)
+    {
+        [self.nbPlayer becomeFirstResponder];
+    }
+    else if (textField == self.nbPlayer)
+    {
+        [self.rank becomeFirstResponder];
+    }
+    
+    return YES;
+}
+
 #pragma mark - Button
 
 - (IBAction)save:(id)sender

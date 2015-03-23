@@ -10,11 +10,15 @@
 
 // ===== DECLARATION =====
 
-@interface AddGameViewController : UIViewController
+@interface AddGameViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 // ===== PROPERTIES =====
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
+@property (weak, nonatomic) IBOutlet UITextField *type;
+@property (weak, nonatomic) IBOutlet UIPickerView *listType;
+@property (weak, nonatomic) UIPickerView *listEdition;
+@property (weak, nonatomic) NSString *edition;
 
 // ===== METHODS =====
 
