@@ -73,13 +73,13 @@ Une **édition** ne change pas le "style" de jeu de la variante. Ce sont des mod
 
 *Lorsque l'on supprime une édition on supprime également toutes les personnes liées.*
 
-Une extension est associé à un jeu de base, elle a la possibilité de se jouer seule.
+Une **extension** est associé à un jeu de base, elle a la possibilité de se jouer seule.
 
-Une variante peut également posséder plusieurs parties jouées. Les joueurs jouent à des éditions de jeu, en effet, cependant cela ne change ni la difficulté, ni la manière de jouer. Il est donc plus logique de la lié à une variante.
+Une variante peut également posséder plusieurs **parties jouées**. Les joueurs jouent à des éditions de jeu, en effet, cependant cela ne change ni la difficulté, ni la manière de jouer. Il est donc plus logique de la lié à une variante.
 
 ### Les paramètres
 
-Nous avons les types, difficultés, éditeurs, langues et thèmes qui possèdent pour chacune un nom. Les valeurs de ces paramètres pourront être séléctionnées lors d'ajouts de jeux, variantes, éditions et extensions.
+Nous avons les **types**, **difficultés**, **éditeurs**, **langues** et **thèmes** qui possèdent pour chacune un nom. Les valeurs de ces paramètres pourront être séléctionnées lors d'ajouts de jeux, variantes, éditions et extensions.
 
 Nous avons fait le choix de séparé ces entités étant donné qu'elles se révelent assez récurrentes lorsque l'on a beaucoup de jeu. Ce qui n'est pas le cas des auteurs et illustrateurs (en général ces personnes ne font qu'un ou deux jeux et nous n'avons donc pas jugé nécessaire de séparer les personnes).
 
