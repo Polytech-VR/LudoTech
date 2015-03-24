@@ -81,7 +81,7 @@ Une variante peut également posséder plusieurs **parties jouées**. Les joueur
 
 Nous avons les **types**, **difficultés**, **éditeurs**, **langues** et **thèmes** qui possèdent pour chacune un nom. Les valeurs de ces paramètres pourront être séléctionnées lors d'ajouts de jeux, variantes, éditions et extensions.
 
-Nous avons fait le choix de séparé ces entités étant donné qu'elles se révelent assez récurrentes lorsque l'on a beaucoup de jeu. Ce qui n'est pas le cas des auteurs et illustrateurs (en général ces personnes ne font qu'un ou deux jeux et nous n'avons donc pas jugé nécessaire de séparer les personnes).
+Nous avons fait le choix de séparer ces entités étant donné qu'elles se révèlent assez récurrentes lorsque l'on a beaucoup de jeu. Ce qui n'est pas le cas des auteurs et illustrateurs (en général ces personnes ne font qu'un ou deux jeux et nous n'avons donc pas jugé nécessaire de séparer les personnes).
 
 # Annexes
 Veuillez trouver dans [le lien de notre dossier Google Drive](https://drive.google.com/open?id=0B01-tgRvXhqRfnZCRWlnMGdMcEUxVlBBR1pMT1BHLUlPZ2FvSl9PTHJRZ3FxdU1PN2p1XzA&authuser=0), les documents relatifs à nos étapes de conception. Ce dernier comporte :
