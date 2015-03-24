@@ -3,7 +3,7 @@
 LudoTech est une application iOS pour la gestion d'une librairie de jeux dans le cadre d'un projet de développement d'application mobile à Polytech Montpellier encadré par M. Fiorio
 
 ## Utiliser LudoTech
-Faites “Download ZIP” sur le repository et lancez `LudoTech.xcdatamodel`
+Faites “Download ZIP” sur le repository et lancez `LudoTech.xcodeproj`
 
 ## Fonctionnalités
 Vous pouvez créer, supprimer et voir des **jeux**, un jeu se compose de :
