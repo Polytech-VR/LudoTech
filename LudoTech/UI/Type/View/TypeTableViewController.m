@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
 #import "TypeTableViewController.h"
-
 #import "Type+DataModel.h"
 
 // ===== DEFINITION =====
@@ -36,11 +34,13 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Type"];
     // Configure the request's entity, and optionally its predicate.
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
+    
     self.fetchedResultsController = [[NSFetchedResultsController alloc]
                                      initWithFetchRequest:fetchRequest
                                      managedObjectContext:self.appDelegate.managedObjectContext
                                      sectionNameKeyPath:nil
                                      cacheName:nil];
+    
     // Configure Fetched Results Controller
     [self.fetchedResultsController setDelegate:self];
     NSError *error;
