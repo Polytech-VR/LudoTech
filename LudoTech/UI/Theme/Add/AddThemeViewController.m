@@ -6,9 +6,18 @@
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "AddThemeViewController.h"
+#import "Theme+DataModel.h"
 
 // ===== DEFINITION =====
+@interface AddThemeViewController ()
+
+// ===== PROPERTIES =====
+
+@property (weak, nonatomic) AppDelegate* appDelegate;
+
+@end
 
 @implementation AddThemeViewController
 
@@ -17,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // appDelegate initialization
+    self->_appDelegate = [[UIApplication sharedApplication] delegate];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +47,12 @@
 
 - (IBAction)save:(id)sender
 {
-    // TODO Save in database
+    NSString *nameTheme = self.name.text;
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Theme" inManagedObjectContext:context];
+    
+    [Theme getObjectWithName:nameTheme withEntityDescription:entityDescription inManagedObjectContext:context];
+
     [self.navigationController popViewControllerAnimated:YES];
 }
 
