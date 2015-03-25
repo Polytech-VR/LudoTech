@@ -6,9 +6,18 @@
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "AddVariantViewController.h"
+#import "Variant+DataModel.h"
 
 // ===== DEFINITION =====
+@interface AddVariantViewController ()
+
+// ===== PROPERTIES =====
+
+@property (weak, nonatomic) AppDelegate* appDelegate;
+
+@end
 
 @implementation AddVariantViewController
 
@@ -17,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+     self->_appDelegate = [[UIApplication sharedApplication] delegate];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,7 +51,11 @@
 
 - (IBAction)save:(id)sender
 {
-    // TODO Save in database
+    NSString *nameVariant = self.name.text;
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Variant" inManagedObjectContext:context];
+    
+    [Variant getObjectWithName:nameVariant withEntityDescription:entityDescription inManagedObjectContext:context];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
