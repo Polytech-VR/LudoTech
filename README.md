@@ -92,5 +92,5 @@ Veuillez trouver dans [le lien de notre dossier Google Drive](https://drive.goog
 * étape 5 : schéma E-A
 
 # Auteurs
-Valentin Bercot
-Rémy Tartière
+* Valentin Bercot
+* Rémy Tartière
