@@ -63,15 +63,15 @@ Nous avons découpé l'application en deux parties. Une partie où l'on gère no
 
 Pour nous, un **jeu** possède un ensemble de variante. Par exemple un jeu peut contenir plusieurs variantes (junior, classique, senior ...).
 
-*Lorsque l'on supprime un jeu on supprime également toutes les variantes liées.*
+*Lorsque l'on supprime un jeu, on supprime également toutes les variantes liées.*
 
 Pour nous, une **variante** a un impact sur la manière de jouer, si on joue au Monopoly Junior, la difficulté sera différente du senior. Une variante peut avoir des éditions, des extensions et des parties jouées.
 
-*Lorsque l'on supprime une variante on supprime également toutes les éditions, extensions et parties jouées liées.*
+*Lorsque l'on supprime une variante, on supprime également toutes les éditions, extensions et parties jouées liées.*
 
 Une **édition** ne change pas le "style" de jeu de la variante. Ce sont des modifications esthétiques (tailles des cartes, pions différents, ajout de systèmes électroniques ...). Elle possède des auteurs et des illustrateurs (Personne).
 
-*Lorsque l'on supprime une édition on supprime également toutes les personnes liées.*
+*Lorsque l'on supprime une édition, on supprime également toutes les personnes liées.*
 
 Une **extension** est associé à un jeu de base, elle a la possibilité de se jouer seule.
 
@@ -90,3 +90,7 @@ Veuillez trouver dans [le lien de notre dossier Google Drive](https://drive.goog
 * étape 3 : use case
 * étape 4 : maquettes écran
 * étape 5 : schéma E-A
+
+# Auteurs
+Valentin Bercot
+Rémy Tartière
