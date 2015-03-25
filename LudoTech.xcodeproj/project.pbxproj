@@ -132,6 +132,7 @@
 		AD72DB361ABF052D00449A49 /* LanguageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB341ABF052D00449A49 /* LanguageTableViewCell.m */; };
 		AD72DB391ABF07D500449A49 /* ThemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */; };
 		AD72DB3A1ABF07D500449A49 /* ThemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */; };
+		ADA59FA01AC2AA7200F050D1 /* VariantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA59F9F1AC2AA7200F050D1 /* VariantTableViewCell.m */; };
 		ADCA097D1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 		ADCA097E1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -277,6 +278,8 @@
 		AD72DB341ABF052D00449A49 /* LanguageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageTableViewCell.m; sourceTree = "<group>"; };
 		AD72DB371ABF07D500449A49 /* ThemeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeTableViewCell.h; sourceTree = "<group>"; };
 		AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeTableViewCell.m; sourceTree = "<group>"; };
+		ADA59F9E1AC2AA7200F050D1 /* VariantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariantTableViewCell.h; sourceTree = "<group>"; };
+		ADA59F9F1AC2AA7200F050D1 /* VariantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantTableViewCell.m; sourceTree = "<group>"; };
 		ADCA097B1ABC819100C46720 /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
 		ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -809,6 +812,8 @@
 			children = (
 				A5F1461A1ABC7E4C00133B8D /* VariantTableViewController.h */,
 				A5F1461B1ABC7E4C00133B8D /* VariantTableViewController.m */,
+				ADA59F9E1AC2AA7200F050D1 /* VariantTableViewCell.h */,
+				ADA59F9F1AC2AA7200F050D1 /* VariantTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -922,6 +927,7 @@
 				A5F146241ABC7E4C00133B8D /* AddEditorViewController.m in Sources */,
 				AD72DB311ABF03BF00449A49 /* EditorTableViewCell.m in Sources */,
 				A5F145CD1ABC7DA700133B8D /* LanguageList.m in Sources */,
+				ADA59FA01AC2AA7200F050D1 /* VariantTableViewCell.m in Sources */,
 				AD72DB2D1ABEFF7E00449A49 /* DifficultyTableViewCell.m in Sources */,
 				A5F146341ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */,
 				A5F146321ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */,
