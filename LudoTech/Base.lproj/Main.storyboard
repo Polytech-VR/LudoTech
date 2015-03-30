@@ -246,6 +246,7 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="difficulty" destination="8F1-p8-smc" id="yW5-tn-5Lf"/>
                                     <outlet property="nameVariant" destination="vTK-Yb-YcZ" id="ZXb-e3-EXk"/>
                                     <segue destination="F7a-WY-LO7" kind="show" id="UbQ-er-3HN"/>
                                 </connections>
