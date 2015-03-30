@@ -221,11 +221,10 @@
 {
     // Fetch Record
     GamePlayed *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
-
+    NSString *rankToShow = [NSString stringWithFormat:@"%@/%@/%@", record.rank.stringValue, @" / ",record.nbPlayer.stringValue];
     // Update Cell
     [cell.date setText:record.date.description];
-    [cell.rank setText:record.rank.stringValue];
-    #warning rank contient le nb de joueur aussi
+    [cell.rank setText:rankToShow];
 
 }
 
