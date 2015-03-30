@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "GameTableViewController.h"
+#import "VariantTableViewController.h"
 
 #import "Game+DataModel.h"
 #import "Type+DataModel.h"
@@ -128,7 +129,6 @@
     [self configureCell:gameCell atIndexPath:indexPath];
     
     return gameCell;
-    
 }
 
 /*
@@ -169,15 +169,15 @@
  }
  */
 
-/*
+
  #pragma mark - Navigation
  
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+/* - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}*/
 
 #pragma mark - FetchResultDelegate
 
@@ -232,4 +232,19 @@
 
 }
 
+#pragma mark - Segue methods
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if([[segue identifier] isEqualToString:@"gameToVariant"])
+    {
+        VariantTableViewController *destinationViewController = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        destinationViewController.game = (Game *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    }
+}
 @end

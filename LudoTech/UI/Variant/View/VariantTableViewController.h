@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Game+DataModel.h"
 
 @interface VariantTableViewController : UITableViewController
+
+@property (strong, nonatomic) Game *game;
 
 @end
