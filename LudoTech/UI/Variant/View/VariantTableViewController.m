@@ -12,6 +12,7 @@
 #import "Variant+DataModel.h"
 #import "Difficulty.h"
 #import "AddVariantViewController.h"
+#import "VariantStaticTableViewController.h"
 
 @interface  VariantTableViewController () <NSFetchedResultsControllerDelegate>
 
@@ -185,6 +186,12 @@
     {
         AddVariantViewController *destinationViewController = [segue destinationViewController];
         destinationViewController.game = self.game;
+    }
+    else if ([[segue identifier] isEqualToString:@"variantToStatic"])
+    {
+        VariantStaticTableViewController *destinationViewController = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        destinationViewController.variant = (Variant *)[self.fetchedResultsController objectAtIndexPath:indexPath];
     }
  }
 

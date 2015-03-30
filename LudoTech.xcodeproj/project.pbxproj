@@ -47,6 +47,10 @@
 		A52F58BB1AC97507005DE112 /* Type.m in Sources */ = {isa = PBXBuildFile; fileRef = A52F58BA1AC97507005DE112 /* Type.m */; };
 		A52F58BE1AC97507005DE112 /* Difficulty.m in Sources */ = {isa = PBXBuildFile; fileRef = A52F58BD1AC97507005DE112 /* Difficulty.m */; };
 		A52F58C11AC97507005DE112 /* Variant.m in Sources */ = {isa = PBXBuildFile; fileRef = A52F58C01AC97507005DE112 /* Variant.m */; };
+		A597AF9E1ACA0ED4007F0AFA /* VariantStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A597AF9D1ACA0ED4007F0AFA /* VariantStaticTableViewController.m */; };
+		A597AF9F1ACA0ED4007F0AFA /* VariantStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A597AF9D1ACA0ED4007F0AFA /* VariantStaticTableViewController.m */; };
+		A597AFA21ACA0EE1007F0AFA /* EditionStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A597AFA11ACA0EE1007F0AFA /* EditionStaticTableViewController.m */; };
+		A597AFA31ACA0EE1007F0AFA /* EditionStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A597AFA11ACA0EE1007F0AFA /* EditionStaticTableViewController.m */; };
 		A59F909D1AC050E700AA96E8 /* AuthorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F909C1AC050E700AA96E8 /* AuthorTableViewController.m */; };
 		A59F909E1AC050E700AA96E8 /* AuthorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F909C1AC050E700AA96E8 /* AuthorTableViewController.m */; };
 		A59F90A11AC0516F00AA96E8 /* AuthorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90A01AC0516F00AA96E8 /* AuthorTableViewCell.m */; };
@@ -199,6 +203,10 @@
 		A52F58BD1AC97507005DE112 /* Difficulty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Difficulty.m; path = CoreData/Difficulty.m; sourceTree = "<group>"; };
 		A52F58BF1AC97507005DE112 /* Variant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Variant.h; path = CoreData/Variant.h; sourceTree = "<group>"; };
 		A52F58C01AC97507005DE112 /* Variant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Variant.m; path = CoreData/Variant.m; sourceTree = "<group>"; };
+		A597AF9C1ACA0ED4007F0AFA /* VariantStaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VariantStaticTableViewController.h; path = Static/VariantStaticTableViewController.h; sourceTree = "<group>"; };
+		A597AF9D1ACA0ED4007F0AFA /* VariantStaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VariantStaticTableViewController.m; path = Static/VariantStaticTableViewController.m; sourceTree = "<group>"; };
+		A597AFA01ACA0EE1007F0AFA /* EditionStaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditionStaticTableViewController.h; path = Static/EditionStaticTableViewController.h; sourceTree = "<group>"; };
+		A597AFA11ACA0EE1007F0AFA /* EditionStaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditionStaticTableViewController.m; path = Static/EditionStaticTableViewController.m; sourceTree = "<group>"; };
 		A59F909B1AC050E700AA96E8 /* AuthorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthorTableViewController.h; path = Author/View/AuthorTableViewController.h; sourceTree = "<group>"; };
 		A59F909C1AC050E700AA96E8 /* AuthorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthorTableViewController.m; path = Author/View/AuthorTableViewController.m; sourceTree = "<group>"; };
 		A59F909F1AC0516F00AA96E8 /* AuthorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthorTableViewCell.h; path = Author/View/AuthorTableViewCell.h; sourceTree = "<group>"; };
@@ -439,6 +447,17 @@
 			path = DataModel;
 			sourceTree = "<group>";
 		};
+		A597AF9B1ACA0E92007F0AFA /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				A597AF9C1ACA0ED4007F0AFA /* VariantStaticTableViewController.h */,
+				A597AF9D1ACA0ED4007F0AFA /* VariantStaticTableViewController.m */,
+				A597AFA01ACA0EE1007F0AFA /* EditionStaticTableViewController.h */,
+				A597AFA11ACA0EE1007F0AFA /* EditionStaticTableViewController.m */,
+			);
+			name = Static;
+			sourceTree = "<group>";
+		};
 		A59F90951AC0502100AA96E8 /* Author */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,6 +550,7 @@
 				A5F145E21ABC7E4C00133B8D /* Editor */,
 				A5F146001ABC7E4C00133B8D /* Language */,
 				A5F146071ABC7E4C00133B8D /* Theme */,
+				A597AF9B1ACA0E92007F0AFA /* Static */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -976,12 +996,14 @@
 				A519BE781ABC79D90014E71C /* LudoTech.xcdatamodeld in Sources */,
 				A519BEC11ABC7C280014E71C /* Editor+DataModel.m in Sources */,
 				A52F58B21AC97507005DE112 /* Language.m in Sources */,
+				A597AFA21ACA0EE1007F0AFA /* EditionStaticTableViewController.m in Sources */,
 				A519BE461ABC78230014E71C /* main.m in Sources */,
 				A52F58A31AC97505005DE112 /* Editor.m in Sources */,
 				A5F145CB1ABC7DA700133B8D /* GameList.m in Sources */,
 				A5F1462A1ABC7E4C00133B8D /* ExtensionTableViewController.m in Sources */,
 				A52F58A91AC97506005DE112 /* Extension.m in Sources */,
 				A5F146221ABC7E4C00133B8D /* EditionTableViewController.m in Sources */,
+				A597AF9E1ACA0ED4007F0AFA /* VariantStaticTableViewController.m in Sources */,
 				A52F58AC1AC97506005DE112 /* GamePlayed.m in Sources */,
 				A5F146261ABC7E4C00133B8D /* EditorTableViewController.m in Sources */,
 				A5F146381ABC7E4C00133B8D /* LanguageTableViewController.m in Sources */,
@@ -1026,6 +1048,7 @@
 				A519BEC81ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
 				A5F146331ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */,
 				A5F1463B1ABC7E4C00133B8D /* AddThemeViewController.m in Sources */,
+				A597AF9F1ACA0ED4007F0AFA /* VariantStaticTableViewController.m in Sources */,
 				A59F90A61AC0518A00AA96E8 /* AddAuthorViewController.m in Sources */,
 				A5F145C81ABC7DA700133B8D /* DifficultyList.m in Sources */,
 				A5F146271ABC7E4C00133B8D /* EditorTableViewController.m in Sources */,
@@ -1048,6 +1071,7 @@
 				A59F909E1AC050E700AA96E8 /* AuthorTableViewController.m in Sources */,
 				A5F1461D1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
 				ADBED3821AC98FED00C409D2 /* ExtensionTableViewCell.m in Sources */,
+				A597AFA31ACA0EE1007F0AFA /* EditionStaticTableViewController.m in Sources */,
 				A519BEBE1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BEC01ABC7C280014E71C /* Edition+DataModel.m in Sources */,
 				A5F145CC1ABC7DA700133B8D /* GameList.m in Sources */,

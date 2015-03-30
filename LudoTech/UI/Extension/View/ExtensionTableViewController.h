@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Variant+DataModel.h"
 
 @interface ExtensionTableViewController : UITableViewController
 
-
+@property (strong, nonatomic) Variant *variant;
 
 @end
