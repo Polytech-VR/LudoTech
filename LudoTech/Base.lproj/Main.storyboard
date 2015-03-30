@@ -2606,10 +2606,10 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8OE-P2-NBE"/>
-        <segue reference="pmp-Km-EZS"/>
-        <segue reference="dvN-L0-fzM"/>
         <segue reference="kq5-5r-RWd"/>
-        <segue reference="a6O-SM-8BQ"/>
+        <segue reference="5QM-2w-MlN"/>
+        <segue reference="pmp-Km-EZS"/>
+        <segue reference="8OE-P2-NBE"/>
+        <segue reference="dvN-L0-fzM"/>
     </inferredMetricsTieBreakers>
 </document>

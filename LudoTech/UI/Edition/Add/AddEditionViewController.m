@@ -93,7 +93,7 @@
     self.yearList = [[NSMutableArray alloc] init];
     for (int ind = today; ind >= 1800; ind--)
     {
-        [self.yearList addObject:[NSString stringWithFormat:@"%d",ind]];
+        [self.yearList addObject:[NSString stringWithFormat:@"%d", ind]];
     }
 }
 
@@ -137,7 +137,7 @@
     [fetchRequestEditor setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
     
     self.fetchedResultsControllerEditor = [[NSFetchedResultsController alloc]
-                                             initWithFetchRequest:fetchRequestLanguage
+                                             initWithFetchRequest:fetchRequestEditor
                                              managedObjectContext:self.appDelegate.managedObjectContext
                                              sectionNameKeyPath:nil
                                              cacheName:nil];
@@ -152,14 +152,14 @@
         NSLog(@"%@, %@", errorEditor, errorEditor.localizedDescription);
     }
     
-    // fetchedResultControllerEditor initialization
+    // fetchedResultControllerTheme initialization
     NSFetchRequest *fetchRequestTheme = [[NSFetchRequest alloc] initWithEntityName:@"Theme"];
     
     // Configure the request's entity, and optionally its predicate.
     [fetchRequestTheme setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
     
     self.fetchedResultsControllerTheme = [[NSFetchedResultsController alloc]
-                                           initWithFetchRequest:fetchRequestLanguage
+                                           initWithFetchRequest:fetchRequestTheme
                                            managedObjectContext:self.appDelegate.managedObjectContext
                                            sectionNameKeyPath:nil
                                            cacheName:nil];
