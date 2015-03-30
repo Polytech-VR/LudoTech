@@ -54,6 +54,8 @@
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Type" inManagedObjectContext:context];
     
     [Type getObjectWithName:nameType withEntityDescription:entityDescription inManagedObjectContext:context];
+    
+    [self->_appDelegate saveContext];
 
     [self.navigationController popViewControllerAnimated:YES];
 }
