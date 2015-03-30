@@ -102,7 +102,7 @@
     
     NSEntityDescription *entityDescriptionGamePlayed = [NSEntityDescription entityForName:@"GamePlayed" inManagedObjectContext:context];
     
-    [GamePlayed getObjectWithDate:date withRank:rank withNbPlayer:nbPlayer withEntityDescription:entityDescriptionGamePlayed inManagedObjectContext:context];
+    [GamePlayed getObjectWithDate:date withVariant: self.variant withRank:rank withNbPlayer:nbPlayer withEntityDescription:entityDescriptionGamePlayed inManagedObjectContext:context];
     
     [self->_appDelegate saveContext];
     
