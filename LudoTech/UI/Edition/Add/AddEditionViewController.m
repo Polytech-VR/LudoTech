@@ -341,7 +341,7 @@
     
     NSEntityDescription *entityDescriptionEdition = [NSEntityDescription entityForName:@"Edition" inManagedObjectContext:context];
     
-    [Edition getObjectWithName:nameEdition withEditor:editorEdition  withLanguage:languageEdition  withTheme:themeEdition withYear:year withEntityDescription:entityDescriptionEdition inManagedObjectContext:context];
+    [Edition getObjectWithName:nameEdition withVariant:self.variant withEditor:editorEdition  withLanguage:languageEdition  withTheme:themeEdition withYear:year withEntityDescription:entityDescriptionEdition inManagedObjectContext:context];
     
     [self->_appDelegate saveContext];
     

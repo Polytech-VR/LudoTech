@@ -56,7 +56,7 @@
     return retValue;
 }
 
-+(Edition *) getObjectWithName:(NSString *)name withEditor:(Editor *)editorEdition withLanguage: (Language *)languageEdition withTheme:(Theme *)themeEdition withYear:(NSString *)year withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
++(Edition *) getObjectWithName:(NSString *)name withVariant:(Variant *)variant withEditor:(Editor *)editorEdition withLanguage: (Language *)languageEdition withTheme:(Theme *)themeEdition withYear:(NSString *)year withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
 {
     Edition *retValue = nil;
     
@@ -70,7 +70,7 @@
     else
     {
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Edition"];
-        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"name", name]];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"(%K == %@) AND (%K == %@)", @"name", name,@"variant", variant]];
         
         // Execute Fetch Request
         NSError *fetchError = nil;
@@ -94,6 +94,7 @@
                     retValue.language = languageEdition;
                     retValue.theme = themeEdition;
                     retValue.year = year;
+                    retValue.variant = variant;
                 }
             }
         }

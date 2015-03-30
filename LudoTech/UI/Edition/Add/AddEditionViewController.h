@@ -10,6 +10,7 @@
 #import "Language+DataModel.h"
 #import "Editor+DataModel.h"
 #import "Theme+DataModel.h"
+#import "Variant.h"
 
 // ===== DECLARATION =====
 
@@ -35,6 +36,10 @@
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerViewYear;
 @property (strong, nonatomic) NSMutableArray *yearList;
 @property (strong, nonatomic) NSString *yearToChoose;
+
+@property (strong, nonatomic) Variant *variant;
+
+
 
 // ===== METHODS =====
 
