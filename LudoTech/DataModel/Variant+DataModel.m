@@ -56,12 +56,12 @@
     return retValue;
 }
 
-+(Variant *) getObjectWithName:(NSString *)name withDifficulty: (Difficulty*)difficulty withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
++(Variant *) getObjectWithName:(NSString *)name withGame:(Game *)game withDifficulty: (Difficulty*)difficulty withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
 {
     Variant *retValue = nil;
     
     // If no name given, method fails
-    if (!name & !difficulty)
+    if (!name | !difficulty)
     {
         retValue = nil;
     }
@@ -71,7 +71,7 @@
     {
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Variant"];
         [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"name", name]];
-        
+
         // Execute Fetch Request
         NSError *fetchError = nil;
         NSArray *result = [context executeFetchRequest:fetchRequest error:&fetchError];
@@ -91,6 +91,7 @@
                 {
                     retValue.name = name;
                     retValue.difficulty = difficulty;
+                    retValue.game = game;
                 }
             }
         }

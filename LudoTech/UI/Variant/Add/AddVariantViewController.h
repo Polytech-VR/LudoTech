@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Difficulty+DataModel.h"
+#import "Game.h"
 
 // ===== DECLARATION =====
 
@@ -20,6 +21,8 @@
 
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerViewDifficulty;
 @property (strong, nonatomic) Difficulty *difficultyToChoose;
+
+@property (strong, nonatomic) Game *game;
 
 // ===== METHODS =====
 
