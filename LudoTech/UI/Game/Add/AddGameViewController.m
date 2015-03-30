@@ -140,6 +140,8 @@
     NSEntityDescription *entityDescriptionGame = [NSEntityDescription entityForName:@"Game" inManagedObjectContext:context];
     
     [Game getObjectWithName:nameGame withType:typeGame withEntityDescription:entityDescriptionGame inManagedObjectContext:context];
+    
+    [self->_appDelegate saveContext];
 
     [self.navigationController popViewControllerAnimated:YES];
 }

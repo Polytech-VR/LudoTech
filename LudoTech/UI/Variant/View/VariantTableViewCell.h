@@ -14,7 +14,7 @@
 
 // ===== PROPERTIES =====
 
-@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *nameVariant;
 @property (weak, nonatomic) IBOutlet UILabel *difficulty;
 
 @end

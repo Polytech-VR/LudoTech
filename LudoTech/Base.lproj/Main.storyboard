@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -70,7 +70,7 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="name" destination="dyi-bz-Iah" id="GcM-db-4XQ"/>
+                                    <outlet property="nameGame" destination="dyi-bz-Iah" id="N4v-gA-VGe"/>
                                     <outlet property="type" destination="wtx-a6-V12" id="q9K-hk-QZO"/>
                                     <segue destination="qnh-Rt-IQJ" kind="show" id="UCQ-LG-IaD"/>
                                 </connections>
@@ -208,7 +208,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VariantTableViewCell" id="yCx-aB-Gk0">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VariantTableViewCell" id="yCx-aB-Gk0" customClass="VariantTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yCx-aB-Gk0" id="eXe-Af-bXu">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -246,6 +246,7 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="nameVariant" destination="vTK-Yb-YcZ" id="ZXb-e3-EXk"/>
                                     <segue destination="F7a-WY-LO7" kind="show" id="UbQ-er-3HN"/>
                                 </connections>
                             </tableViewCell>

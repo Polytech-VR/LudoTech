@@ -227,7 +227,7 @@
     Game *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     // Update Cell
-    [cell.name setText:record.name];
+    [cell.nameGame setText:record.name];
     [cell.type setText:record.type.name];
 
 }

@@ -224,7 +224,7 @@
     Variant *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     // Update Cell
-    [cell.name setText:record.name];
+    [cell.nameVariant setText:record.name];
     [cell.difficulty setText:record.difficulty.name];
     
 }
