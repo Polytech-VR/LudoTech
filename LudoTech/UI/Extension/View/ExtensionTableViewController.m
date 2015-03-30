@@ -226,8 +226,9 @@
     // Update Cell
     [cell.nameExtension setText:record.name];
     [cell.difficultyExtension setText:record.difficulty.name];
+
     
-    if (record.playAlone)
+    if ([record.playAlone isEqualToNumber:[NSNumber numberWithInt:1]] )
     {
         [cell.isAlone setText:@"Can play alone"];
     }

@@ -137,7 +137,6 @@
     Difficulty *difficultyExtension = [Difficulty getObjectWithName:nameDifficulty withEntityDescription:entityDescription inManagedObjectContext:context];
     
     /*    Play Alone    */
-    
     NSNumber *playAlone = [[NSNumber alloc] initWithBool:self.isAlone.isOn];
     
     /*    Extension     */

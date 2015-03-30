@@ -61,7 +61,7 @@
     Extension *retValue = nil;
     
     // If no name given, method fails
-    if (!name & !difficultyExtension )
+    if (!name & !difficultyExtension &!playAlone)
     {
         retValue = nil;
     }
@@ -91,7 +91,7 @@
                 {
                     retValue.name = name;
                     retValue.difficulty = difficultyExtension;
-                    //retValue.playAlone = playAlone;
+                    retValue.playAlone = playAlone;
                 }
             }
         }
