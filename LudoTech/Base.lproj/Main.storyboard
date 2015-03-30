@@ -751,7 +751,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IllustratorTableViewCell" rowHeight="70" id="TMs-iU-1wg">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IllustratorTableViewCell" rowHeight="70" id="TMs-iU-1wg" customClass="IllustratorTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TMs-iU-1wg" id="wyh-EW-oUi">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -799,6 +799,11 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="firstname" destination="4Jg-ck-kDN" id="slQ-lD-ntV"/>
+                                    <outlet property="lastname" destination="drn-DE-zFM" id="dua-n7-0rw"/>
+                                    <outlet property="nationality" destination="XR6-4r-qU2" id="U74-kH-tsh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

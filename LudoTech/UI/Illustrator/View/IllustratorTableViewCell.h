@@ -11,5 +11,8 @@
 // ===== DECLARATION =====
 
 @interface IllustratorTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *firstname;
+@property (weak, nonatomic) IBOutlet UILabel *lastname;
+@property (weak, nonatomic) IBOutlet UILabel *nationality;
 
 @end

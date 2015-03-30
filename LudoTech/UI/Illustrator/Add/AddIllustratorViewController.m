@@ -5,23 +5,29 @@
 //  Created by Valentin Bercot on 23/03/2015.
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
-
+#import "AppDelegate.h"
 #import "AddIllustratorViewController.h"
+#import "Person+DataModel.h"
 
 // ===== DEFINITION =====
 
 @interface AddIllustratorViewController ()
 
+@property (weak, nonatomic) AppDelegate* appDelegate;
+
 @end
 
 @implementation AddIllustratorViewController
+
 
 // ===== INSTANCE METHODS =====
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // AppDelegate initialization
+    self->_appDelegate = [[UIApplication sharedApplication] delegate];
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,28 +36,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
-    
-    if (textField == self.firstName)
-    {
-        [self.lastName becomeFirstResponder];
-    }
-    else if (textField == self.lastName)
-    {
-        [self.nationality becomeFirstResponder];
-    }
     
     return YES;
 }
@@ -60,7 +47,17 @@
 
 - (IBAction)save:(id)sender
 {
-    // TODO Save in database
+    NSString *firstname = self.firstName.text;
+    NSString *lastname = self.lastName.text;
+    NSString *nationality = self.nationality.text;
+    
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:context];
+    
+    [Person getObjectWithFirstName:firstname withLastName:lastname withNationality:nationality withEntityDescription:entityDescription inManagedObjectContext:context];
+    
+    [self->_appDelegate saveContext];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
