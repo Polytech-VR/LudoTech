@@ -56,4 +56,47 @@
     return retValue;
 }
 
++(Extension *) getObjectWithName:(NSString *)name withDifficulty:(Difficulty *)difficultyExtension withIsAlone:(BOOL *)playAlone withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
+{
+    Extension *retValue = nil;
+    
+    // If no name given, method fails
+    if (!name & !difficultyExtension )
+    {
+        retValue = nil;
+    }
+    
+    // Else we search for an object with this into the persistent store ...
+    else
+    {
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Extension"];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"name", name]];
+        
+        // Execute Fetch Request
+        NSError *fetchError = nil;
+        NSArray *result = [context executeFetchRequest:fetchRequest error:&fetchError];
+        
+        if (!fetchError)
+        {
+            if ([result count] > 0)
+            {
+                retValue = result[0];
+            }
+            
+            else
+            {
+                retValue = [[Extension alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
+                
+                if (retValue)
+                {
+                    retValue.name = name;
+                    retValue.difficulty = difficultyExtension;
+                    //retValue.playAlone = playAlone;
+                }
+            }
+        }
+    }
+    return retValue;
+}
+
 @end

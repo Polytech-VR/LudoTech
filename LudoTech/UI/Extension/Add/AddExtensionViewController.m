@@ -126,7 +126,29 @@
 
 - (IBAction)save:(id)sender
 {
-    // TODO Save in database
+    /*    Extension     */
+    
+    NSString *nameDifficulty = self.difficulty.text;
+    
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Difficulty" inManagedObjectContext:context];
+    
+    Difficulty *difficultyExtension = [Difficulty getObjectWithName:nameDifficulty withEntityDescription:entityDescription inManagedObjectContext:context];
+    
+    /*    Play Alone    */
+    
+    BOOL playAlone = self.isAlone.on;
+    
+    /*    Extension     */
+    
+    NSString *nameExtension = self.name.text;
+    
+    NSEntityDescription *entityDescriptionExtension = [NSEntityDescription entityForName:@"Extension" inManagedObjectContext:context];
+    
+    [Extension getObjectWithName:nameExtension withDifficulty:difficultyExtension withIsAlone:playAlone withEntityDescription:entityDescriptionExtension inManagedObjectContext:context];
+    
+    [self->_appDelegate saveContext];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

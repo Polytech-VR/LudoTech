@@ -124,6 +124,8 @@
 		ADA59FA01AC2AA7200F050D1 /* VariantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA59F9F1AC2AA7200F050D1 /* VariantTableViewCell.m */; };
 		ADBED37D1AC95BFA00C409D2 /* EditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */; };
 		ADBED37E1AC95BFA00C409D2 /* EditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */; };
+		ADBED3811AC98FED00C409D2 /* ExtensionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED3801AC98FED00C409D2 /* ExtensionTableViewCell.m */; };
+		ADBED3821AC98FED00C409D2 /* ExtensionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED3801AC98FED00C409D2 /* ExtensionTableViewCell.m */; };
 		ADCA097D1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 		ADCA097E1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -273,6 +275,8 @@
 		ADA59F9F1AC2AA7200F050D1 /* VariantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantTableViewCell.m; sourceTree = "<group>"; };
 		ADBED37B1AC95BFA00C409D2 /* EditionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditionTableViewCell.h; sourceTree = "<group>"; };
 		ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditionTableViewCell.m; sourceTree = "<group>"; };
+		ADBED37F1AC98FED00C409D2 /* ExtensionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionTableViewCell.h; sourceTree = "<group>"; };
+		ADBED3801AC98FED00C409D2 /* ExtensionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionTableViewCell.m; sourceTree = "<group>"; };
 		ADCA097B1ABC819100C46720 /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
 		ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -637,6 +641,8 @@
 			children = (
 				A5F145EE1ABC7E4C00133B8D /* ExtensionTableViewController.h */,
 				A5F145EF1ABC7E4C00133B8D /* ExtensionTableViewController.m */,
+				ADBED37F1AC98FED00C409D2 /* ExtensionTableViewCell.h */,
+				ADBED3801AC98FED00C409D2 /* ExtensionTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -974,6 +980,7 @@
 				A5F146381ABC7E4C00133B8D /* LanguageTableViewController.m in Sources */,
 				A52F58BE1AC97507005DE112 /* Difficulty.m in Sources */,
 				A5F146201ABC7E4C00133B8D /* AddEditionViewController.m in Sources */,
+				ADBED3811AC98FED00C409D2 /* ExtensionTableViewCell.m in Sources */,
 				A5F146361ABC7E4C00133B8D /* AddLanguageViewController.m in Sources */,
 				A5F146421ABC7E4C00133B8D /* AddVariantViewController.m in Sources */,
 				A59F90AD1AC0530500AA96E8 /* IllustratorTableViewController.m in Sources */,
@@ -1032,6 +1039,7 @@
 				A519BECA1ABC7C280014E71C /* Language+DataModel.m in Sources */,
 				A59F909E1AC050E700AA96E8 /* AuthorTableViewController.m in Sources */,
 				A5F1461D1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
+				ADBED3821AC98FED00C409D2 /* ExtensionTableViewCell.m in Sources */,
 				A519BEBE1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BEC01ABC7C280014E71C /* Edition+DataModel.m in Sources */,
 				A5F145CC1ABC7DA700133B8D /* GameList.m in Sources */,

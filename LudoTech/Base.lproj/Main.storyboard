@@ -1206,7 +1206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExtensionTableViewCell" rowHeight="70" id="026-ZT-YEJ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExtensionTableViewCell" rowHeight="70" id="026-ZT-YEJ" customClass="ExtensionTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="026-ZT-YEJ" id="KtB-OD-LCf">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1254,6 +1254,11 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="difficultyExtension" destination="GYK-oc-EwM" id="YeB-t1-FEg"/>
+                                    <outlet property="isAlone" destination="Hnt-vT-a17" id="q7j-c6-SgB"/>
+                                    <outlet property="nameExtension" destination="iQH-sH-kfs" id="cEu-gY-28o"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2624,9 +2629,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kq5-5r-RWd"/>
-        <segue reference="5QM-2w-MlN"/>
-        <segue reference="pmp-Km-EZS"/>
         <segue reference="8OE-P2-NBE"/>
+        <segue reference="pmp-Km-EZS"/>
         <segue reference="dvN-L0-fzM"/>
+        <segue reference="XWf-Cy-ABf"/>
     </inferredMetricsTieBreakers>
 </document>
