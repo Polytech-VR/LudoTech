@@ -34,6 +34,8 @@
     // fetchedResultController initialization
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Extension"];
     
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"variant.name", self.variant.name]];
+    
     // Configure the request's entity, and optionally its predicate.
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.appDelegate.managedObjectContext sectionNameKeyPath:nil cacheName:nil];

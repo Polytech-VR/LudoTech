@@ -145,7 +145,7 @@
     
     NSEntityDescription *entityDescriptionExtension = [NSEntityDescription entityForName:@"Extension" inManagedObjectContext:context];
     
-    [Extension getObjectWithName:nameExtension withDifficulty:difficultyExtension withIsAlone:playAlone withEntityDescription:entityDescriptionExtension inManagedObjectContext:context];
+    [Extension getObjectWithName:nameExtension withVariant:self.variant withDifficulty:difficultyExtension withIsAlone:playAlone withEntityDescription:entityDescriptionExtension inManagedObjectContext:context];
     
     [self->_appDelegate saveContext];
     [self.navigationController popViewControllerAnimated:YES];
