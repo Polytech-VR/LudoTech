@@ -12,4 +12,8 @@
 
 @interface Person (DataModel)
 
+// ===== METHODS =====
+
++(Person *) getObjectWithFirstName:(NSString *)firstname withLastName:(NSString *)lastname withEntityDescription:(NSEntityDescription *)entityDescription inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

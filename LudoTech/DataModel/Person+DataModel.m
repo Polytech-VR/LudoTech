@@ -12,4 +12,49 @@
 
 @implementation Person (DataModel)
 
+// ===== STATIC METHODS =====
+
++(Person *) getObjectWithFirstName:(NSString *)firstname withLastName:(NSString *)lastname withEntityDescription:(NSEntityDescription *)entityDescription inManagedObjectContext:(NSManagedObjectContext *)context
+{
+    Person *retValue = nil;
+    
+    // If no name given, method fails
+    if (!firstname & !lastname)
+    {
+        retValue = nil;
+    }
+    
+    // Else we search for an object with this into the persistent store ...
+    else
+    {
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Person"];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"firstName", firstname]];
+        
+        // Execute Fetch Request
+        NSError *fetchError = nil;
+        NSArray *result = [context executeFetchRequest:fetchRequest error:&fetchError];
+        
+        if (!fetchError)
+        {
+            if ([result count] > 0)
+            {
+                retValue = result[0];
+            }
+            
+            else
+            {
+                retValue = [[Person alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:context];
+                
+                if (retValue)
+                {
+                    retValue.firstName = firstname;
+                    retValue.lastName = lastname;
+                }
+            }
+        }
+    }
+    
+    return retValue;
+}
+
 @end
