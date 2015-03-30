@@ -42,6 +42,8 @@
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.appDelegate.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"variant.name", self.variant.name]];
+    
     // Configure Fetched Results Controller
     [self.fetchedResultsController setDelegate:self];
     
