@@ -61,7 +61,7 @@
     Game *retValue = nil;
     
     // If no name given, method fails
-    if (!name & !type)
+    if (!name | !type)
     {
         retValue = nil;
     }

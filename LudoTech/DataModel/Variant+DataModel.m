@@ -61,7 +61,7 @@
     Variant *retValue = nil;
     
     // If no name given, method fails
-    if (!name | !difficulty)
+    if (!name | !difficulty | !game)
     {
         retValue = nil;
     }
