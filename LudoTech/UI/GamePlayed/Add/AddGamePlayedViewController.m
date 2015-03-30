@@ -30,12 +30,33 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Creation of the pickerViewDate like a keyboard
+    self.pickerViewDate = [[UIDatePicker alloc] init];
+    self.pickerViewDate.datePickerMode = UIDatePickerModeDate;
+    [self.pickerViewDate addTarget:self action:@selector(updateTextField:)
+         forControlEvents:UIControlEventValueChanged];
+    [self.date setInputView:self.pickerViewDate];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(void)updateTextField:(UIDatePicker *)sender
+{
+    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MM-dd-yyyy"];
+    self.date.text = [formatter stringFromDate:sender.date];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    [self.view endEditing:YES];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -71,7 +92,10 @@
     NSNumber *nbPlayer = [formatter numberFromString:self.nbPlayer.text];
     
     /*     Date     */
-    NSDate * date = self.date.text;
+    NSDateFormatter *formatterDate = [[NSDateFormatter alloc] init];
+    [formatterDate setDateFormat:@"MM-dd-yyyy"];
+    NSDate * date = [[NSDate alloc] init];
+    date = [formatterDate dateFromString:self.date.text];
     
     NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
     

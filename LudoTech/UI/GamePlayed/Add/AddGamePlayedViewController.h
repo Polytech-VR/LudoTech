@@ -18,6 +18,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *nbPlayer;
 @property (weak, nonatomic) IBOutlet UITextField *rank;
 
+@property (strong, nonatomic) IBOutlet UIDatePicker *pickerViewDate;
+@property (strong, nonatomic) NSDate *dateToChoose;
+
 // ===== METHODS =====
 
 - (IBAction)save:(id)sender;
