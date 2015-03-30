@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *lastName;
 @property (weak, nonatomic) IBOutlet UITextField *nationality;
 
+@property (strong, nonatomic) Edition *edition;
+
 // ===== METHODS =====
 
 - (IBAction)save:(id)sender;

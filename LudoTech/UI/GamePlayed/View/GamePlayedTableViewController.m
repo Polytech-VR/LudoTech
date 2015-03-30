@@ -10,6 +10,7 @@
 #import "GamePlayedTableViewController.h"
 #import "GamePlayedTableViewCell.h"
 #import "GamePlayed.h"
+#import "AddGamePlayedViewController.h"
 
 @interface GamePlayedTableViewController ()<NSFetchedResultsControllerDelegate>
 
@@ -165,15 +166,21 @@
  }
  */
 
-/*
- #pragma mark - Navigation
+
+#pragma mark - Navigation
  
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"gamePlayedToAdd"])
+    {
+        AddGamePlayedViewController *destinationViewController = [segue destinationViewController];
+        destinationViewController.variant = self.variant;
+    }
+}
 
 #pragma mark - FetchResultDelegate
 

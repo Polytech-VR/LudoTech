@@ -39,8 +39,6 @@
 
 @property (strong, nonatomic) Variant *variant;
 
-
-
 // ===== METHODS =====
 
 - (IBAction)save:(id)sender;

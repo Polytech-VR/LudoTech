@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Edition+DataModel.h"
 
 // ===== DECLARATION =====
 
@@ -17,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstName;
 @property (weak, nonatomic) IBOutlet UITextField *lastName;
 @property (weak, nonatomic) IBOutlet UITextField *nationality;
+
+@property (strong, nonatomic) Edition *edition;
 
 // ===== METHODS =====
 

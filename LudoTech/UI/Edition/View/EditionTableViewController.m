@@ -14,6 +14,7 @@
 #import "Language.h"
 #import "Theme.h"
 #import "EditionStaticTableViewController.h"
+#import "AddEditionViewController.h"
 
 @interface  EditionTableViewController () <NSFetchedResultsControllerDelegate>
 
@@ -186,6 +187,11 @@
         EditionStaticTableViewController *destinationViewController = [segue destinationViewController];
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         destinationViewController.edition = (Edition *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    }
+    else if ([[segue identifier] isEqualToString:@"editionToAdd"])
+    {
+        AddEditionViewController *destinationViewController = [segue destinationViewController];
+        destinationViewController.variant = self.variant;
     }
 }
 

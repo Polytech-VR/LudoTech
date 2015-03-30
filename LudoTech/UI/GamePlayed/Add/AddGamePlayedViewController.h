@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Variant+DataModel.h"
 
 // ===== DECLARATION =====
 
@@ -20,6 +21,8 @@
 
 @property (strong, nonatomic) IBOutlet UIDatePicker *pickerViewDate;
 @property (strong, nonatomic) NSDate *dateToChoose;
+
+@property (strong, nonatomic) Variant *variant;
 
 // ===== METHODS =====
 
