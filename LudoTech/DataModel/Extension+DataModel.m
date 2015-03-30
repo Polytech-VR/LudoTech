@@ -56,12 +56,12 @@
     return retValue;
 }
 
-+(Extension *) getObjectWithName:(NSString *)name withDifficulty:(Difficulty *)difficultyExtension withIsAlone:(NSNumber *)playAlone withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
++(Extension *) getObjectWithName:(NSString *)name withVariant:(Variant *)variant withDifficulty:(Difficulty *)difficultyExtension withIsAlone:(NSNumber *)playAlone withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
 {
     Extension *retValue = nil;
     
     // If no name given, method fails
-    if (!name & !difficultyExtension &!playAlone)
+    if (!name | !difficultyExtension | !playAlone | !variant)
     {
         retValue = nil;
     }
@@ -70,7 +70,7 @@
     else
     {
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Extension"];
-        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"name", name]];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"(%K == %@) AND (%K == %@)", @"name", name,@"variant", variant]];
         
         // Execute Fetch Request
         NSError *fetchError = nil;
@@ -92,6 +92,7 @@
                     retValue.name = name;
                     retValue.difficulty = difficultyExtension;
                     retValue.playAlone = playAlone;
+                    retValue.variant = variant;
                 }
             }
         }

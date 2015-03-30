@@ -12,6 +12,6 @@
 
 @interface GamePlayed (DataModel)
 
-+(GamePlayed *) getObjectWithDate:(NSDate *)date withRank:(NSNumber *)rank withNbPlayer:(NSNumber *)nbPlayer withEntityDescription:entityDescriptionGamedPlayed inManagedObjectContext:context;
++(GamePlayed *) getObjectWithDate:(NSDate *)date withVariant:(Variant *)variant withRank:(NSNumber *)rank withNbPlayer:(NSNumber *)nbPlayer withEntityDescription:entityDescriptionGamedPlayed inManagedObjectContext:context;
 
 @end

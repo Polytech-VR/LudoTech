@@ -12,12 +12,12 @@
 
 @implementation GamePlayed (DataModel)
 
-+(GamePlayed *) getObjectWithDate:(NSDate *)date withRank:(NSNumber *)rank withNbPlayer:(NSNumber *)nbPlayer withEntityDescription:entityDescriptionGamedPlayed inManagedObjectContext:context
++(GamePlayed *) getObjectWithDate:(NSDate *)date withVariant:(Variant *)variant withRank:(NSNumber *)rank withNbPlayer:(NSNumber *)nbPlayer withEntityDescription:entityDescriptionGamedPlayed inManagedObjectContext:context
 {
     GamePlayed *retValue = nil;
     
     // If no date given, method fails
-    if (!date & !rank & !nbPlayer)
+    if (!date | !rank | !nbPlayer |!variant)
     {
         retValue = nil;
     }
@@ -48,6 +48,7 @@
                     retValue.date = date;
                     retValue.rank = rank;
                     retValue.nbPlayer = nbPlayer;
+                    retValue.variant = variant;
                 }
             }
         }
