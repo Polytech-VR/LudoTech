@@ -26,7 +26,7 @@
     else
     {
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"GamePlayed"];
-        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"date", date]];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"(%K == %@) AND (%K == %@)", @"date", date,@"variant", variant]];
         
         // Execute Fetch Request
         NSError *fetchError = nil;
