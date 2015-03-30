@@ -2,7 +2,7 @@
 //  Game.h
 //  LudoTech
 //
-//  Created by Valentin Bercot on 20/03/2015.
+//  Created by Valentin Bercot on 30/03/2015.
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
@@ -14,8 +14,8 @@
 @interface Game : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *listVariant;
 @property (nonatomic, retain) Type *type;
+@property (nonatomic, retain) NSSet *listVariant;
 @end
 
 @interface Game (CoreDataGeneratedAccessors)

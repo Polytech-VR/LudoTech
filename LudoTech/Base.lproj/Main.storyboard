@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -582,7 +582,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="206" y="14" width="186" height="21"/>
+                                                <rect key="frame" x="206" y="16" width="160" height="21"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -623,7 +623,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJe-Fk-8QG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10668" y="-1497"/>
+            <point key="canvasLocation" x="10668" y="-1499"/>
         </scene>
         <!--Add an author-->
         <scene sceneID="g0A-YP-uiA">
@@ -751,7 +751,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="TMs-iU-1wg">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IllustratorTableViewCell" rowHeight="70" id="TMs-iU-1wg">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TMs-iU-1wg" id="wyh-EW-oUi">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -780,7 +780,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="206" y="14" width="186" height="21"/>
+                                                <rect key="frame" x="206" y="16" width="160" height="21"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -816,7 +816,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yPt-I4-ZVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10668" y="-757"/>
+            <point key="canvasLocation" x="10668" y="-759"/>
         </scene>
         <!--Add an illustrator-->
         <scene sceneID="J4M-d9-Zbs">
@@ -1230,7 +1230,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="206" y="13" width="186" height="21"/>
+                                                <rect key="frame" x="206" y="15" width="160" height="21"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -1266,7 +1266,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QA2-Bv-IuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7140" y="-418"/>
+            <point key="canvasLocation" x="7140" y="-417"/>
         </scene>
         <!--Games Played-->
         <scene sceneID="x7l-ZD-TKe">
@@ -1297,7 +1297,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="206" y="12" width="186" height="21"/>
+                                                <rect key="frame" x="206" y="14" width="160" height="21"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -1331,7 +1331,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzM-60-uai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7140" y="394"/>
+            <point key="canvasLocation" x="7140" y="392"/>
         </scene>
         <!--Add a game played-->
         <scene sceneID="nzR-yX-Pbo">
@@ -1448,7 +1448,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3M6-Rd-r4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7975.5" y="394"/>
+            <point key="canvasLocation" x="7975.5" y="392"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qdh-Tr-HFc">

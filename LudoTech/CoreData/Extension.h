@@ -2,7 +2,7 @@
 //  Extension.h
 //  LudoTech
 //
-//  Created by Valentin Bercot on 20/03/2015.
+//  Created by Valentin Bercot on 30/03/2015.
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
@@ -15,6 +15,6 @@
 @interface Extension : Variant
 
 @property (nonatomic, retain) NSNumber * playAlone;
-@property (nonatomic, retain) Variant *basicGame;
+@property (nonatomic, retain) Variant *variant;
 
 @end
