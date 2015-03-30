@@ -16,4 +16,6 @@
 
 +(Variant *) getObjectWithName:(NSString *)name withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
 
++(Variant *) getObjectWithName:(NSString *)name withDifficulty:(Difficulty *)difficultyGame withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

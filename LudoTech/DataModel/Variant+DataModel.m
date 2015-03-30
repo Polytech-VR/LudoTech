@@ -56,4 +56,46 @@
     return retValue;
 }
 
++(Variant *) getObjectWithName:(NSString *)name withDifficulty: (Difficulty*)difficulty withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
+{
+    Variant *retValue = nil;
+    
+    // If no name given, method fails
+    if (!name & !difficulty)
+    {
+        retValue = nil;
+    }
+    
+    // Else we search for an object with this into the persistent store ...
+    else
+    {
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Variant"];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"name", name]];
+        
+        // Execute Fetch Request
+        NSError *fetchError = nil;
+        NSArray *result = [context executeFetchRequest:fetchRequest error:&fetchError];
+        
+        if (!fetchError)
+        {
+            if ([result count] > 0)
+            {
+                retValue = result[0];
+            }
+            
+            else
+            {
+                retValue = [[Variant alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
+                
+                if (retValue)
+                {
+                    retValue.name = name;
+                    retValue.difficulty = difficulty;
+                }
+            }
+        }
+    }
+    return retValue;
+}
+
 @end
