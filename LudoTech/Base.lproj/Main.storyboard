@@ -382,7 +382,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EditionTableViewCell" rowHeight="70" id="JA9-wB-tMU">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="EditionTableViewCell" rowHeight="70" id="JA9-wB-tMU" customClass="EditionTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JA9-wB-tMU" id="efU-RW-YCn">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -453,6 +453,11 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="editorEdition" destination="egg-XI-4UI" id="FUp-kj-ols"/>
+                                    <outlet property="languageEdition" destination="neY-dh-hod" id="SC6-30-jLE"/>
+                                    <outlet property="nameEdition" destination="Sju-jL-rX1" id="mDS-Jt-sFe"/>
+                                    <outlet property="themeEdition" destination="yYu-VC-kfM" id="HXB-mx-Y4s"/>
+                                    <outlet property="yearEdition" destination="Aqe-N0-zN0" id="jSY-9K-qEP"/>
                                     <segue destination="GRz-hc-1WX" kind="show" id="RkT-ZG-wXj"/>
                                 </connections>
                             </tableViewCell>

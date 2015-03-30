@@ -16,4 +16,6 @@
 
 +(Edition *) getObjectWithName:(NSString *)name withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
 
++(Edition *) getObjectWithName:(NSString *)name withEditor:(Editor *)editorEdition withLanguage: (Language *)languageEdition withTheme:(Theme *)themeEdition withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

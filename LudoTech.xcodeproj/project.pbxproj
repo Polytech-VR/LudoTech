@@ -133,6 +133,8 @@
 		AD72DB391ABF07D500449A49 /* ThemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */; };
 		AD72DB3A1ABF07D500449A49 /* ThemeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */; };
 		ADA59FA01AC2AA7200F050D1 /* VariantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA59F9F1AC2AA7200F050D1 /* VariantTableViewCell.m */; };
+		ADBED37D1AC95BFA00C409D2 /* EditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */; };
+		ADBED37E1AC95BFA00C409D2 /* EditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */; };
 		ADCA097D1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 		ADCA097E1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -280,6 +282,8 @@
 		AD72DB381ABF07D500449A49 /* ThemeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeTableViewCell.m; sourceTree = "<group>"; };
 		ADA59F9E1AC2AA7200F050D1 /* VariantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariantTableViewCell.h; sourceTree = "<group>"; };
 		ADA59F9F1AC2AA7200F050D1 /* VariantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariantTableViewCell.m; sourceTree = "<group>"; };
+		ADBED37B1AC95BFA00C409D2 /* EditionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditionTableViewCell.h; sourceTree = "<group>"; };
+		ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditionTableViewCell.m; sourceTree = "<group>"; };
 		ADCA097B1ABC819100C46720 /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
 		ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -586,6 +590,8 @@
 			children = (
 				A5F145E01ABC7E4C00133B8D /* EditionTableViewController.h */,
 				A5F145E11ABC7E4C00133B8D /* EditionTableViewController.m */,
+				ADBED37B1AC95BFA00C409D2 /* EditionTableViewCell.h */,
+				ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -957,6 +963,7 @@
 				A5F1461C1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
 				A519BE8C1ABC7AA70014E71C /* Variant.m in Sources */,
 				A59F90B11AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */,
+				ADBED37D1AC95BFA00C409D2 /* EditionTableViewCell.m in Sources */,
 				AD72DB351ABF052D00449A49 /* LanguageTableViewCell.m in Sources */,
 				A519BE7C1ABC7AA60014E71C /* Theme.m in Sources */,
 				AD72DB391ABF07D500449A49 /* ThemeTableViewCell.m in Sources */,
@@ -1027,6 +1034,7 @@
 				A519BECE1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
 				AD72DB321ABF03BF00449A49 /* EditorTableViewCell.m in Sources */,
 				A5F1462B1ABC7E4C00133B8D /* ExtensionTableViewController.m in Sources */,
+				ADBED37E1AC95BFA00C409D2 /* EditionTableViewCell.m in Sources */,
 				A5F146411ABC7E4C00133B8D /* TypeTableViewController.m in Sources */,
 				A519BEC21ABC7C280014E71C /* Editor+DataModel.m in Sources */,
 				A5F146391ABC7E4C00133B8D /* LanguageTableViewController.m in Sources */,

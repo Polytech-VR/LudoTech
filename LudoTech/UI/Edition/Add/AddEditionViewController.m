@@ -305,7 +305,42 @@
 
 - (IBAction)save:(id)sender
 {
-    // TODO Save in database
+    /*        Editor       */
+    
+    NSString *nameEditor = self.editor.text;
+    
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Editor" inManagedObjectContext:context];
+    
+    Editor * editorEdition = [Editor getObjectWithName:nameEditor withEntityDescription:entityDescription inManagedObjectContext:context];
+    
+    /*       Language      */
+    
+    NSString *nameLanguage = self.language.text;
+    
+    NSEntityDescription *entityDescriptionLanguage = [NSEntityDescription entityForName:@"Language" inManagedObjectContext:context];
+    
+    Language * languageEdition = [Language getObjectWithName:nameLanguage withEntityDescription:entityDescriptionLanguage inManagedObjectContext:context];
+    
+    /*         Theme       */
+    
+    NSString *nameTheme = self.theme.text;
+    
+    NSEntityDescription *entityDescriptionTheme = [NSEntityDescription entityForName:@"Theme" inManagedObjectContext:context];
+    
+    Theme * themeEdition = [Theme getObjectWithName:nameTheme withEntityDescription:entityDescriptionTheme inManagedObjectContext:context];
+    
+    /*       Edition       */
+    
+    NSString *nameEdition = self.name.text;
+    
+    NSEntityDescription *entityDescriptionEdition = [NSEntityDescription entityForName:@"Edition" inManagedObjectContext:context];
+    
+    [Edition getObjectWithName:nameEdition withEditor:editorEdition  withLanguage:languageEdition  withTheme:themeEdition withEntityDescription:entityDescriptionEdition inManagedObjectContext:context];
+    
+    [self->_appDelegate saveContext];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
