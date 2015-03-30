@@ -58,12 +58,20 @@
 
 - (IBAction)save:(id)sender
 {
-    /*     Date     */
-    NSString * date = self.date.text;
+    //formatter NSString to NSNumber
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = NSNumberFormatterDecimalStyle;
     
-    NSString *rank = self.rank.text;
-  
-    NSString *nbPlayer = self.nbPlayer.text;
+    /*     Rank     */
+    
+    NSNumber *rank = [formatter numberFromString:self.rank.text];
+    
+    /*     NbPlayer     */
+    
+    NSNumber *nbPlayer = [formatter numberFromString:self.nbPlayer.text];
+    
+    /*     Date     */
+    NSDate * date = self.date.text;
     
     NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
     
