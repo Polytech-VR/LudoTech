@@ -11,5 +11,47 @@
 // ===== DEFINITION =====
 
 @implementation GamePlayed (DataModel)
+
++(GamePlayed *) getObjectWithDate:(NSString *)date withRank:(NSString *)rank withNbPlayer:(NSString *)nbPlayer withEntityDescription:entityDescriptionGamedPlayed inManagedObjectContext:context
+{
+    GamePlayed *retValue = nil;
     
+    // If no name given, method fails
+    if (!date & !rank & !nbPlayer)
+    {
+        retValue = nil;
+    }
+    
+    // Else we search for an object with this into the persistent store ...
+    else
+    {
+        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"GamePlayed"];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"Date", date]];
+        
+        // Execute Fetch Request
+        NSError *fetchError = nil;
+        NSArray *result = [context executeFetchRequest:fetchRequest error:&fetchError];
+        
+        if (!fetchError)
+        {
+            if ([result count] > 0)
+            {
+                retValue = result[0];
+            }
+            
+            else
+            {
+                retValue = [[GamePlayed alloc] initWithEntity:entityDescriptionGamedPlayed insertIntoManagedObjectContext:context];
+                
+                if (retValue)
+                {
+                    retValue.date = date;
+                    retValue.rank = rank;
+                    retValue.nbPlayer = nbPlayer;
+                }
+            }
+        }
+    }
+    return retValue;
+}
 @end

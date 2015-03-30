@@ -1287,7 +1287,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GamePlayedTableViewCell" id="mHy-uc-YEh">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GamePlayedTableViewCell" id="mHy-uc-YEh" customClass="GamePlayedTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mHy-uc-YEh" id="f3Y-9Q-bgz">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1324,6 +1324,10 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="date" destination="G39-tU-Gpv" id="NkQ-bs-iTo"/>
+                                    <outlet property="rank" destination="DN9-tK-jKP" id="GPZ-U9-3mt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -126,6 +126,8 @@
 		ADBED37E1AC95BFA00C409D2 /* EditionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */; };
 		ADBED3811AC98FED00C409D2 /* ExtensionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED3801AC98FED00C409D2 /* ExtensionTableViewCell.m */; };
 		ADBED3821AC98FED00C409D2 /* ExtensionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED3801AC98FED00C409D2 /* ExtensionTableViewCell.m */; };
+		ADBED3851AC99CDC00C409D2 /* GamePlayedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED3841AC99CDC00C409D2 /* GamePlayedTableViewCell.m */; };
+		ADBED3861AC99CDC00C409D2 /* GamePlayedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBED3841AC99CDC00C409D2 /* GamePlayedTableViewCell.m */; };
 		ADCA097D1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 		ADCA097E1ABC819100C46720 /* TypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -277,6 +279,8 @@
 		ADBED37C1AC95BFA00C409D2 /* EditionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditionTableViewCell.m; sourceTree = "<group>"; };
 		ADBED37F1AC98FED00C409D2 /* ExtensionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionTableViewCell.h; sourceTree = "<group>"; };
 		ADBED3801AC98FED00C409D2 /* ExtensionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtensionTableViewCell.m; sourceTree = "<group>"; };
+		ADBED3831AC99CDC00C409D2 /* GamePlayedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayedTableViewCell.h; sourceTree = "<group>"; };
+		ADBED3841AC99CDC00C409D2 /* GamePlayedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayedTableViewCell.m; sourceTree = "<group>"; };
 		ADCA097B1ABC819100C46720 /* TypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeTableViewCell.h; sourceTree = "<group>"; };
 		ADCA097C1ABC819100C46720 /* TypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -699,6 +703,8 @@
 			children = (
 				A5F145FE1ABC7E4C00133B8D /* GamePlayedTableViewController.h */,
 				A5F145FF1ABC7E4C00133B8D /* GamePlayedTableViewController.m */,
+				ADBED3831AC99CDC00C409D2 /* GamePlayedTableViewCell.h */,
+				ADBED3841AC99CDC00C409D2 /* GamePlayedTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -950,6 +956,7 @@
 				A52F58B51AC97507005DE112 /* Person.m in Sources */,
 				A5F146301ABC7E4C00133B8D /* GameTableViewController.m in Sources */,
 				A5F145C71ABC7DA700133B8D /* DifficultyList.m in Sources */,
+				ADBED3851AC99CDC00C409D2 /* GamePlayedTableViewCell.m in Sources */,
 				A519BEBD1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BE491ABC78230014E71C /* AppDelegate.m in Sources */,
 				A519BEC91ABC7C280014E71C /* Language+DataModel.m in Sources */,
@@ -1005,6 +1012,7 @@
 				A5F146211ABC7E4C00133B8D /* AddEditionViewController.m in Sources */,
 				A5F145D21ABC7DA700133B8D /* TypeList.m in Sources */,
 				A5F1462D1ABC7E4C00133B8D /* AddGameViewController.m in Sources */,
+				ADBED3861AC99CDC00C409D2 /* GamePlayedTableViewCell.m in Sources */,
 				A5F146311ABC7E4C00133B8D /* GameTableViewController.m in Sources */,
 				A59F90AA1AC0528E00AA96E8 /* AddIllustratorViewController.m in Sources */,
 				A519BED01ABC7C280014E71C /* Type+DataModel.m in Sources */,

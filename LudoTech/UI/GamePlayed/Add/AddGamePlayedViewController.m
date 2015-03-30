@@ -6,9 +6,21 @@
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "AddGamePlayedViewController.h"
+#import "GamePlayed+DataModel.h"
 
 // ===== DEFINITION =====
+
+@interface AddGamePlayedViewController ()
+
+// ===== PROPERTIES =====
+
+@property (weak, nonatomic) AppDelegate *appDelegate;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) NSIndexPath *selectedFactions; // to handle selected items
+
+@end
 
 @implementation AddGamePlayedViewController
 
@@ -46,7 +58,20 @@
 
 - (IBAction)save:(id)sender
 {
-    // TODO Save in database
+    /*     Date     */
+    NSString * date = self.date.text;
+    
+    NSString *rank = self.rank.text;
+  
+    NSString *nbPlayer = self.nbPlayer.text;
+    
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    
+    NSEntityDescription *entityDescriptionGamedPlayed = [NSEntityDescription entityForName:@"GamePlayed" inManagedObjectContext:context];
+    
+    [GamePlayed getObjectWithDate:date withRank:rank withNbPlayer: nbPlayer withEntityDescription:entityDescriptionGamedPlayed inManagedObjectContext:context];
+    
+    [self->_appDelegate saveContext];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
