@@ -70,8 +70,8 @@
     else
     {
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Variant"];
-        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"name", name]];
-
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"(%K == %@) AND (%K == %@)", @"name", name,@"game", game]];
+        
         // Execute Fetch Request
         NSError *fetchError = nil;
         NSArray *result = [context executeFetchRequest:fetchRequest error:&fetchError];
