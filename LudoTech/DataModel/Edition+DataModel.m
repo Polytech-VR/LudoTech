@@ -61,7 +61,7 @@
     Edition *retValue = nil;
     
     // If no name given, method fails
-    if (!name & !editorEdition & !languageEdition & !themeEdition & !year)
+    if (!name | !editorEdition | !languageEdition | !themeEdition | !year | !variant)
     {
         retValue = nil;
     }
