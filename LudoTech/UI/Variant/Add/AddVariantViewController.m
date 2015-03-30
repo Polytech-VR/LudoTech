@@ -44,6 +44,8 @@
     self.difficulty.inputView = viewDifficulty;
     self.pickerViewDifficulty.delegate = self;
     self.pickerViewDifficulty.dataSource = self;
+    
+    NSLog(@"Dans ajout, mon jeu est %@",self.game.name);
 }
 
 - (void)didReceiveMemoryWarning
