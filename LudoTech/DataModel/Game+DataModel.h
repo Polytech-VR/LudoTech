@@ -16,4 +16,6 @@
 
 +(Game *) getObjectWithName:(NSString *)name withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
 
++(Game *) getObjectWithName:(NSString *)name withType: (Type*)type withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

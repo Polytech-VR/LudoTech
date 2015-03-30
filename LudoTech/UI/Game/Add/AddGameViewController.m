@@ -126,7 +126,21 @@
 
 - (IBAction)save:(id)sender
 {
-    // TODO Save in database
+    
+    NSString *nameType = self.type.text;
+    
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Type" inManagedObjectContext:context];
+    
+    Type *typeGame = [Type getObjectWithName:nameType withEntityDescription:entityDescription inManagedObjectContext:context];
+    
+    NSString *nameGame = self.name.text;
+    
+    NSEntityDescription *entityDescriptionGame = [NSEntityDescription entityForName:@"Game" inManagedObjectContext:context];
+    
+    [Game getObjectWithName:nameGame withType:typeGame withEntityDescription:entityDescriptionGame inManagedObjectContext:context];
+
     [self.navigationController popViewControllerAnimated:YES];
 }
 
