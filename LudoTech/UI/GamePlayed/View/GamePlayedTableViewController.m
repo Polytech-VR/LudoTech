@@ -221,11 +221,12 @@
 {
     // Fetch Record
     GamePlayed *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    
+
     // Update Cell
     [cell.date setText:record.date.description];
     [cell.rank setText:record.rank.stringValue];
-    
+    #warning rank contient le nb de joueur aussi
+
 }
 
 @end
