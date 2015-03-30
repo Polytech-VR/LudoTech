@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -72,7 +72,11 @@
                                 <connections>
                                     <outlet property="nameGame" destination="dyi-bz-Iah" id="N4v-gA-VGe"/>
                                     <outlet property="type" destination="wtx-a6-V12" id="q9K-hk-QZO"/>
-                                    <segue destination="qnh-Rt-IQJ" kind="show" id="UCQ-LG-IaD"/>
+<<<<<<< HEAD
+                                    <segue destination="qnh-Rt-IQJ" kind="show" identifier="gameSegue" id="UCQ-LG-IaD"/>
+=======
+                                    <segue destination="qnh-Rt-IQJ" kind="show" identifier="" id="UCQ-LG-IaD"/>
+>>>>>>> origin/master
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -248,7 +252,7 @@
                                 <connections>
                                     <outlet property="difficulty" destination="8F1-p8-smc" id="yW5-tn-5Lf"/>
                                     <outlet property="nameVariant" destination="vTK-Yb-YcZ" id="ZXb-e3-EXk"/>
-                                    <segue destination="F7a-WY-LO7" kind="show" id="UbQ-er-3HN"/>
+                                    <segue destination="F7a-WY-LO7" kind="show" identifier="EditionViewSegue" id="UbQ-er-3HN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1380,7 +1384,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmV-lJ-aUE">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="231" y="285" width="97" height="30"/>
                                 </variation>
@@ -1400,7 +1404,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-2e-W12">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="231" y="323" width="97" height="30"/>
                                 </variation>
