@@ -6,9 +6,21 @@
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "AddGameViewController.h"
+#import "Game+DataModel.h"
 
 // ===== DEFINITION =====
+
+@interface AddGameViewController () 
+
+// ===== PROPERTIES =====
+
+@property (weak, nonatomic) AppDelegate* appDelegate;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) NSIndexPath *selectedFactions; // to handle selected items
+
+@end
 
 @implementation AddGameViewController
 
@@ -19,27 +31,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIView *pickerBackViewEdition = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 320, 260)];
-    UIToolbar *toolBarEdition = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-    UIBarButtonItem *doneButtonEdition = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleBordered target:self action:@selector(closePickerEdition:)];
-    [toolBarEdition setItems:[NSArray arrayWithObjects: doneButtonEdition, nil]];
-    self.listEdition = [[UIPickerView alloc] initWithFrame:CGRectMake(0.0f, 44.0f, 320.0f, 216.0f)];
-    self.listEdition.showsSelectionIndicator = YES;
-    [pickerBackViewEdition addSubview:self.listEdition];
-    [pickerBackViewEdition addSubview:toolBarEdition];
-    self.type.inputView = pickerBackViewEdition;
-    self.listEdition.delegate = self;
-    self.listEdition.dataSource = self;
-    
-    /*NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyy"];
-    int i2  = [[formatter stringFromDate:[NSDate date]] intValue];
-    
-    self.yearList = [[NSMutableArray alloc] init];
-    for (int i=i2; i>=1900; i--)
-    {
-        [self.yearList addObject:[NSString stringWithFormat:@"%d",i]];
-    }*/
+    // Creation of the pickerViewType like a keyboard
+    CGSize screenSize = [[UIScreen mainScreen] bounds].size;
+    UIView *viewType = [[UIView alloc] initWithFrame:CGRectMake(0, 200, screenSize.width, 260)];
+    UIToolbar *toolBarType = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, screenSize.width, 44)];
+    UIBarButtonItem *doneButtonType = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(closePickerViewType:)];
+    [toolBarType setItems:[NSArray arrayWithObjects: doneButtonType, nil]];
+    self.pickerViewType = [[UIPickerView alloc] initWithFrame:CGRectMake(0.0f, 44.0f, screenSize.width, 216.0f)];
+    self.pickerViewType.showsSelectionIndicator = YES;
+    [viewType addSubview:self.pickerViewType];
+    [viewType addSubview:toolBarType];
+    self.type.inputView = viewType;
+    self.pickerViewType.delegate = self;
+    self.pickerViewType.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,19 +52,48 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)closePickerEdition:(id)sender
+- (void)viewDidAppear:(BOOL)animated
 {
-    self.type.text = self.edition;
+    // AppDelegate initialization
+    self->_appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    // fetchedResultController initialization
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Type"];
+    
+    // Configure the request's entity, and optionally its predicate.
+    [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
+    
+    self.fetchedResultsController = [[NSFetchedResultsController alloc]
+                                     initWithFetchRequest:fetchRequest
+                                     managedObjectContext:self.appDelegate.managedObjectContext
+                                     sectionNameKeyPath:nil
+                                     cacheName:nil];
+    
+    // Configure Fetched Results Controller
+    [self.fetchedResultsController setDelegate:self];
+    NSError *error;
+    [self.fetchedResultsController performFetch:&error];
+    if (error)
+    {
+        NSLog(@"Unable to perform fetch.");
+        NSLog(@"%@, %@", error, error.localizedDescription);
+    }
+}
+
+-(void)closePickerViewType:(id)sender
+{
+    self.type.text = self.typeToChoose.name;
     [self.type resignFirstResponder];
 }
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
     return 1;
 }
 
-
-/*-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return [self.yearList count];
+    return [[self.fetchedResultsController fetchedObjects] count];
 }
 
 #pragma mark - Picker view delegate
@@ -68,14 +101,14 @@
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     
-    return [self.yearList objectAtIndex:row];
-    
+    Type *type = [[self.fetchedResultsController fetchedObjects] objectAtIndex:row];
+    return type.name;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.edition = [self.yearList objectAtIndex:row];
-}*/
+    self.typeToChoose = [[self.fetchedResultsController fetchedObjects] objectAtIndex:row];
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {

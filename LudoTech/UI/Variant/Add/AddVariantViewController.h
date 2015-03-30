@@ -7,15 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Difficulty+DataModel.h"
 
 // ===== DECLARATION =====
 
-@interface AddVariantViewController : UIViewController
+@interface AddVariantViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, NSFetchedResultsControllerDelegate>
 
 // ===== PROPERTIES =====
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *difficulty;
+
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerViewDifficulty;
+@property (strong, nonatomic) Difficulty *difficultyToChoose;
 
 // ===== METHODS =====
 

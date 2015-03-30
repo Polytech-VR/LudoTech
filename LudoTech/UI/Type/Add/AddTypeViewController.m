@@ -11,6 +11,7 @@
 #import "Type+DataModel.h"
 
 // ===== DEFINITION =====
+
 @interface AddTypeViewController ()
 
 // ===== PROPERTIES =====
@@ -26,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // appDelegate initialization
+    
+    // AppDelegate initialization
     self->_appDelegate = [[UIApplication sharedApplication] delegate];
 }
 

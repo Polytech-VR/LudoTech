@@ -7,18 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Type+DataModel.h"
 
 // ===== DECLARATION =====
 
-@interface AddGameViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface AddGameViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, NSFetchedResultsControllerDelegate>
 
 // ===== PROPERTIES =====
 
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *type;
-@property (weak, nonatomic) IBOutlet UIPickerView *listType;
-@property (weak, nonatomic) UIPickerView *listEdition;
-@property (weak, nonatomic) NSString *edition;
+
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerViewType;
+@property (strong, nonatomic) Type *typeToChoose;
 
 // ===== METHODS =====
 
