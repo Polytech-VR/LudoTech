@@ -16,7 +16,7 @@
 
 // ===== PROPERTIES =====
 
-@property (weak, nonatomic) AppDelegate* appDelegate;
+@property (weak, nonatomic) AppDelegate *appDelegate;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSIndexPath *selectedFactions; // to handle selected items
 
@@ -126,7 +126,11 @@
 
 - (IBAction)save:(id)sender
 {
-    // TODO Save in database
+    NSString *nameVariant = self.name.text;
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Variant" inManagedObjectContext:context];
+    
+    [Variant getObjectWithName:nameVariant withEntityDescription:entityDescription inManagedObjectContext:context];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
