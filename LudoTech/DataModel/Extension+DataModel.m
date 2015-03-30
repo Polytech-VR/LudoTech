@@ -56,7 +56,7 @@
     return retValue;
 }
 
-+(Extension *) getObjectWithName:(NSString *)name withDifficulty:(Difficulty *)difficultyExtension withIsAlone:(BOOL *)playAlone withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
++(Extension *) getObjectWithName:(NSString *)name withDifficulty:(Difficulty *)difficultyExtension withIsAlone:(NSNumber *)playAlone withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
 {
     Extension *retValue = nil;
     

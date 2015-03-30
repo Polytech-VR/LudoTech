@@ -138,7 +138,7 @@
     
     /*    Play Alone    */
     
-    BOOL playAlone = self.isAlone.on;
+    NSNumber *playAlone = [[NSNumber alloc] initWithBool:self.isAlone.isOn];
     
     /*    Extension     */
     

@@ -16,7 +16,7 @@
 {
     GamePlayed *retValue = nil;
     
-    // If no name given, method fails
+    // If no date given, method fails
     if (!date & !rank & !nbPlayer)
     {
         retValue = nil;
@@ -26,7 +26,7 @@
     else
     {
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"GamePlayed"];
-        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"Date", date]];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"date", date]];
         
         // Execute Fetch Request
         NSError *fetchError = nil;

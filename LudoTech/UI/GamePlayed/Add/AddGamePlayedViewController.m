@@ -17,8 +17,6 @@
 // ===== PROPERTIES =====
 
 @property (weak, nonatomic) AppDelegate *appDelegate;
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSIndexPath *selectedFactions; // to handle selected items
 
 @end
 
@@ -30,6 +28,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // AppDelegate initialization
+    self->_appDelegate = [[UIApplication sharedApplication] delegate];
     
     // Creation of the pickerViewDate like a keyboard
     self.pickerViewDate = [[UIDatePicker alloc] init];
@@ -80,30 +81,31 @@
 - (IBAction)save:(id)sender
 {
     //formatter NSString to NSNumber
-    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    formatter.numberStyle = NSNumberFormatterDecimalStyle;
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
     
     /*     Rank     */
     
-    NSNumber *rank = [formatter numberFromString:self.rank.text];
+    NSNumber *rank = [numberFormatter numberFromString:self.rank.text];
     
     /*     NbPlayer     */
     
-    NSNumber *nbPlayer = [formatter numberFromString:self.nbPlayer.text];
+    NSNumber *nbPlayer = [numberFormatter numberFromString:self.nbPlayer.text];
     
     /*     Date     */
-    NSDateFormatter *formatterDate = [[NSDateFormatter alloc] init];
-    [formatterDate setDateFormat:@"MM-dd-yyyy"];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy"];
     NSDate * date = [[NSDate alloc] init];
-    date = [formatterDate dateFromString:self.date.text];
+    date = [dateFormatter dateFromString:self.date.text];
     
     NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
     
-    NSEntityDescription *entityDescriptionGamedPlayed = [NSEntityDescription entityForName:@"GamePlayed" inManagedObjectContext:context];
+    NSEntityDescription *entityDescriptionGamePlayed = [NSEntityDescription entityForName:@"GamePlayed" inManagedObjectContext:context];
     
-    [GamePlayed getObjectWithDate:date withRank:rank withNbPlayer: nbPlayer withEntityDescription:entityDescriptionGamedPlayed inManagedObjectContext:context];
+    [GamePlayed getObjectWithDate:date withRank:rank withNbPlayer:nbPlayer withEntityDescription:entityDescriptionGamePlayed inManagedObjectContext:context];
     
     [self->_appDelegate saveContext];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

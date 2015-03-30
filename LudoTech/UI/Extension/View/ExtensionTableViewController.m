@@ -226,7 +226,14 @@
     // Update Cell
     [cell.nameExtension setText:record.name];
     [cell.difficultyExtension setText:record.difficulty.name];
-    [cell.isAlone setText:record.playAlone.stringValue];
     
+    if (record.playAlone)
+    {
+        [cell.isAlone setText:@"Can play alone"];
+    }
+    else
+    {
+        [cell.isAlone setText:@"Can't play alone"];
+    }
 }
 @end

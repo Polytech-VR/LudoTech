@@ -221,11 +221,16 @@
 {
     // Fetch Record
     GamePlayed *record = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    NSString *rankToShow = [NSString stringWithFormat:@"%@/%@/%@", record.rank.stringValue, @" / ",record.nbPlayer.stringValue];
+    NSString *rankToShow = [NSString stringWithFormat:@"%@ / %@", record.rank.stringValue,record.nbPlayer.stringValue];
+    
+    // Date formatter
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MM-dd-yyyy"];
+    NSString *stringDate = [dateFormatter stringFromDate:record.date];
+    
     // Update Cell
-    [cell.date setText:record.date.description];
+    [cell.date setText:stringDate];
     [cell.rank setText:rankToShow];
-
 }
 
 @end
