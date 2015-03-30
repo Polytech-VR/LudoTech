@@ -49,11 +49,12 @@
 {
     NSString *firstname = self.firstName.text;
     NSString *lastname = self.lastName.text;
+    NSString *nationality = self.nationality.text;
     
     NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:context];
     
-    [Person getObjectWithFirstName:firstname withLastName:lastname withEntityDescription:entityDescription inManagedObjectContext:context];
+    [Person getObjectWithFirstName:firstname withLastName:lastname withNationality:nationality withEntityDescription:entityDescription inManagedObjectContext:context];
     
     [self->_appDelegate saveContext];
     

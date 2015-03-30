@@ -14,12 +14,12 @@
 
 // ===== STATIC METHODS =====
 
-+(Person *) getObjectWithFirstName:(NSString *)firstname withLastName:(NSString *)lastname withEntityDescription:(NSEntityDescription *)entityDescription inManagedObjectContext:(NSManagedObjectContext *)context
++(Person *) getObjectWithFirstName:(NSString *)firstname withLastName:(NSString *)lastname withNationality:(NSString *)nationality withEntityDescription:(NSEntityDescription *)entityDescription inManagedObjectContext:(NSManagedObjectContext *)context
 {
     Person *retValue = nil;
     
     // If no name given, method fails
-    if (!firstname & !lastname)
+    if (!firstname & !lastname& !nationality)
     {
         retValue = nil;
     }
@@ -49,6 +49,7 @@
                 {
                     retValue.firstName = firstname;
                     retValue.lastName = lastname;
+                    retValue.nationality = nationality;
                 }
             }
         }

@@ -14,6 +14,6 @@
 
 // ===== METHODS =====
 
-+(Person *) getObjectWithFirstName:(NSString *)firstname withLastName:(NSString *)lastname withEntityDescription:(NSEntityDescription *)entityDescription inManagedObjectContext:(NSManagedObjectContext *)context;
++(Person *) getObjectWithFirstName:(NSString *)firstname withLastName:(NSString *)lastname withNationality:(NSString *)nationality withEntityDescription:(NSEntityDescription *)entityDescription inManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end
