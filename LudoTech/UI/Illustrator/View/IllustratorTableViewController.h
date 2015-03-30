@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Edition+DataModel.h"
 
 // ===== DECLARATION =====
 
 @interface IllustratorTableViewController : UITableViewController
+
+@property (strong, nonatomic) Edition *edition;
 
 @end

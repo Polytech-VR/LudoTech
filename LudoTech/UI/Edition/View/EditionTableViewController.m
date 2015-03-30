@@ -13,6 +13,7 @@
 #import "Editor.h"
 #import "Language.h"
 #import "Theme.h"
+#import "EditionStaticTableViewController.h"
 
 @interface  EditionTableViewController () <NSFetchedResultsControllerDelegate>
 
@@ -169,15 +170,23 @@
  }
  */
 
-/*
+
  #pragma mark - Navigation
  
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"editionToStatic"])
+    {
+        EditionStaticTableViewController *destinationViewController = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        destinationViewController.edition = (Edition *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    }
+}
+
 
 #pragma mark - FetchResultDelegate
 

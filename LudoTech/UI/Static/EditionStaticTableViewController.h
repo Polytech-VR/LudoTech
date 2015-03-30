@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Edition+DataModel.h"
 
 @interface EditionStaticTableViewController : UITableViewController
+
+@property (strong, nonatomic) Edition *edition;
 
 @end

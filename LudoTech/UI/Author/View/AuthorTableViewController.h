@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Edition+DataModel.h"
 
 // ===== DECLARATION =====
 
 @interface AuthorTableViewController : UITableViewController
+
+@property (strong, nonatomic) Edition *edition;
 
 @end
