@@ -56,12 +56,12 @@
     return retValue;
 }
 
-+(Edition *) getObjectWithName:(NSString *)name withEditor:(Editor *)editorEdition withLanguage: (Language *)languageEdition withTheme:(Theme *)themeEdition withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
++(Edition *) getObjectWithName:(NSString *)name withEditor:(Editor *)editorEdition withLanguage: (Language *)languageEdition withTheme:(Theme *)themeEdition withYear:(NSString *)year withEntityDescription:(NSEntityDescription *)entity inManagedObjectContext:(NSManagedObjectContext *)context
 {
     Edition *retValue = nil;
     
     // If no name given, method fails
-    if (!name & !editorEdition & !languageEdition & !themeEdition )
+    if (!name & !editorEdition & !languageEdition & !themeEdition & !year)
     {
         retValue = nil;
     }
@@ -93,6 +93,7 @@
                     retValue.editor = editorEdition;
                     retValue.language = languageEdition;
                     retValue.theme = themeEdition;
+                    retValue.year = year;
                 }
             }
         }

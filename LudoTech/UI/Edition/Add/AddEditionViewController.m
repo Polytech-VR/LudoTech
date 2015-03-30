@@ -305,6 +305,10 @@
 
 - (IBAction)save:(id)sender
 {
+    /*         Year        */
+    
+    NSString *year = self.year.text;
+    
     /*        Editor       */
     
     NSString *nameEditor = self.editor.text;
@@ -337,7 +341,7 @@
     
     NSEntityDescription *entityDescriptionEdition = [NSEntityDescription entityForName:@"Edition" inManagedObjectContext:context];
     
-    [Edition getObjectWithName:nameEdition withEditor:editorEdition  withLanguage:languageEdition  withTheme:themeEdition withEntityDescription:entityDescriptionEdition inManagedObjectContext:context];
+    [Edition getObjectWithName:nameEdition withEditor:editorEdition  withLanguage:languageEdition  withTheme:themeEdition withYear:year withEntityDescription:entityDescriptionEdition inManagedObjectContext:context];
     
     [self->_appDelegate saveContext];
     

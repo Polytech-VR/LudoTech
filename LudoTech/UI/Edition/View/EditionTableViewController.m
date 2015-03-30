@@ -231,7 +231,7 @@
     [cell.editorEdition setText:record.editor.name];
     [cell.languageEdition setText:record.language.name];
     [cell.themeEdition setText:record.theme.name];
-    //[cell.yearEdition setText:(NSString *)record.year];
+    [cell.yearEdition setText:record.year];
     
 }
 
