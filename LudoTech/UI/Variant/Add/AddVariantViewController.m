@@ -126,11 +126,24 @@
 
 - (IBAction)save:(id)sender
 {
-    NSString *nameVariant = self.name.text;
-    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Variant" inManagedObjectContext:context];
     
-    [Variant getObjectWithName:nameVariant withEntityDescription:entityDescription inManagedObjectContext:context];
+    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+    
+    NSString *nameDifficulty = self.difficulty.text;
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Difficulty" inManagedObjectContext:context];
+    
+    Difficulty *difficultyGame = [Difficulty getObjectWithName:nameDifficulty withEntityDescription:entityDescription inManagedObjectContext:context];
+    
+    NSString *nameVariant = self.name.text;
+    
+    NSEntityDescription *entityDescriptionVariant = [NSEntityDescription entityForName:@"Variant" inManagedObjectContext:context];
+    
+    [Variant getObjectWithName:nameVariant withType:difficultyGame withEntityDescription:entityDescriptionVariant inManagedObjectContext:context];
+    
+    [self->_appDelegate saveContext];
+    
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
