@@ -36,7 +36,8 @@
     
     // Configure the request's entity, and optionally its predicate.
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]]];
-    //[fetchRequest setPredicate: predicate];
+    
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"game.name", self.game.name]];
     
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.appDelegate.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     
@@ -89,8 +90,6 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self appDelegateAndfetchedResultControllerInit];
-    
-    NSLog(@"%@", self.game.name);
 }
 
 - (void)didReceiveMemoryWarning
