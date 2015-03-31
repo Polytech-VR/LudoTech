@@ -93,6 +93,7 @@
                     retValue.difficulty = difficultyExtension;
                     retValue.playAlone = playAlone;
                     retValue.variant = variant;
+                    retValue.game = variant.game;
                 }
             }
         }
