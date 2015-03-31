@@ -2,19 +2,21 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Difficulty" representedClassName="Difficulty" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listVariant" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Variant" inverseName="difficulty" inverseEntity="Variant" syncable="YES"/>
     </entity>
     <entity name="Edition" representedClassName="Edition" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="editor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Editor" syncable="YES"/>
-        <relationship name="language" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" syncable="YES"/>
+        <relationship name="editor" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Editor" inverseName="listEdition" inverseEntity="Editor" syncable="YES"/>
+        <relationship name="language" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" inverseName="listEdition" inverseEntity="Language" syncable="YES"/>
         <relationship name="listAuthor" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Person" inverseName="editionAuthor" inverseEntity="Person" syncable="YES"/>
         <relationship name="listIllustrator" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Person" inverseName="editionIllustrator" inverseEntity="Person" syncable="YES"/>
-        <relationship name="theme" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theme" syncable="YES"/>
+        <relationship name="theme" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Theme" inverseName="listEdition" inverseEntity="Theme" syncable="YES"/>
         <relationship name="variant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Variant" inverseName="listEdition" inverseEntity="Variant" syncable="YES"/>
     </entity>
     <entity name="Editor" representedClassName="Editor" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listEdition" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Edition" inverseName="editor" inverseEntity="Edition" syncable="YES"/>
     </entity>
     <entity name="Extension" representedClassName="Extension" parentEntity="Variant" syncable="YES">
         <attribute name="playAlone" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -23,7 +25,7 @@
     <entity name="Game" representedClassName="Game" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="listVariant" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Variant" inverseName="game" inverseEntity="Variant" syncable="YES"/>
-        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Type" syncable="YES"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Type" inverseName="listGame" inverseEntity="Type" syncable="YES"/>
     </entity>
     <entity name="GamePlayed" representedClassName="GamePlayed" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -33,6 +35,7 @@
     </entity>
     <entity name="Language" representedClassName="Language" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listEdition" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Edition" inverseName="language" inverseEntity="Edition" syncable="YES"/>
     </entity>
     <entity name="Person" representedClassName="Person" syncable="YES">
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
@@ -43,29 +46,31 @@
     </entity>
     <entity name="Theme" representedClassName="Theme" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listEdition" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Edition" inverseName="theme" inverseEntity="Edition" syncable="YES"/>
     </entity>
     <entity name="Type" representedClassName="Type" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listGame" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="type" inverseEntity="Game" syncable="YES"/>
     </entity>
     <entity name="Variant" representedClassName="Variant" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="difficulty" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Difficulty" syncable="YES"/>
+        <relationship name="difficulty" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Difficulty" inverseName="listVariant" inverseEntity="Difficulty" syncable="YES"/>
         <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="listVariant" inverseEntity="Game" syncable="YES"/>
         <relationship name="listEdition" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Edition" inverseName="variant" inverseEntity="Edition" syncable="YES"/>
         <relationship name="listExtension" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Extension" inverseName="variant" inverseEntity="Extension" syncable="YES"/>
         <relationship name="listGamePlayed" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GamePlayed" inverseName="variant" inverseEntity="GamePlayed" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Difficulty" positionX="306" positionY="-99" width="128" height="58"/>
+        <element name="Difficulty" positionX="306" positionY="-135" width="128" height="73"/>
         <element name="Edition" positionX="-425" positionY="44" width="128" height="163"/>
-        <element name="Editor" positionX="-569" positionY="18" width="128" height="58"/>
+        <element name="Editor" positionX="-639" positionY="18" width="128" height="73"/>
         <element name="Extension" positionX="304" positionY="-28" width="128" height="73"/>
         <element name="Game" positionX="-101" positionY="-225" width="128" height="88"/>
         <element name="GamePlayed" positionX="-92" positionY="-9" width="128" height="103"/>
-        <element name="Language" positionX="-639" positionY="108" width="128" height="58"/>
+        <element name="Language" positionX="-639" positionY="108" width="128" height="73"/>
         <element name="Person" positionX="-252" positionY="54" width="128" height="118"/>
-        <element name="Theme" positionX="-567" positionY="230" width="128" height="58"/>
-        <element name="Type" positionX="-272" positionY="-175" width="128" height="58"/>
+        <element name="Theme" positionX="-639" positionY="206" width="128" height="73"/>
+        <element name="Type" positionX="-297" positionY="-208" width="128" height="73"/>
         <element name="Variant" positionX="79" positionY="-135" width="128" height="133"/>
     </elements>
 </model>
