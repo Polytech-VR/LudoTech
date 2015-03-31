@@ -123,9 +123,13 @@
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
         NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-        [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
+        Difficulty *difficultyToDelete = (Difficulty *)[self.fetchedResultsController objectAtIndexPath:indexPath];
         
-        [self->_appDelegate saveContext];
+        if ([difficultyToDelete.listVariant count] == 0)
+        {
+            [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
+            [self->_appDelegate saveContext];
+        }
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert)
     {
