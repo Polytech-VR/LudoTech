@@ -38,6 +38,13 @@
     [self.pickerViewDate addTarget:self action:@selector(updateTextField:)
          forControlEvents:UIControlEventValueChanged];
     [self.date setInputView:self.pickerViewDate];
+    
+    [self.errorRankNbPlayer setHidden:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,15 +105,23 @@
     NSDate * date = [[NSDate alloc] init];
     date = [dateFormatter dateFromString:self.date.text];
     
-    NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
-    
-    NSEntityDescription *entityDescriptionGamePlayed = [NSEntityDescription entityForName:@"GamePlayed" inManagedObjectContext:context];
-    
-    [GamePlayed getObjectWithDate:date withVariant: self.variant withRank:rank withNbPlayer:nbPlayer withEntityDescription:entityDescriptionGamePlayed inManagedObjectContext:context];
-    
-    [self->_appDelegate saveContext];
-    
-    [self.navigationController popViewControllerAnimated:YES];
+    if (rank > nbPlayer)
+    {
+        [self.errorRankNbPlayer setHidden:NO];
+        [self.view setNeedsDisplay];
+    }
+    else
+    {
+        NSManagedObjectContext *context = self.appDelegate.managedObjectContext;
+        
+        NSEntityDescription *entityDescriptionGamePlayed = [NSEntityDescription entityForName:@"GamePlayed" inManagedObjectContext:context];
+        
+        [GamePlayed getObjectWithDate:date withVariant: self.variant withRank:rank withNbPlayer:nbPlayer withEntityDescription:entityDescriptionGamePlayed inManagedObjectContext:context];
+        
+        [self->_appDelegate saveContext];
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (IBAction)cancel:(id)sender

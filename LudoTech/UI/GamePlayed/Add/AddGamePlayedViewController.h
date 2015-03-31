@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *date;
 @property (weak, nonatomic) IBOutlet UITextField *nbPlayer;
 @property (weak, nonatomic) IBOutlet UITextField *rank;
+@property (weak, nonatomic) IBOutlet UILabel *errorRankNbPlayer;
 
 @property (strong, nonatomic) IBOutlet UIDatePicker *pickerViewDate;
 @property (strong, nonatomic) NSDate *dateToChoose;

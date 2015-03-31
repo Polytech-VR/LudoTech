@@ -1355,6 +1355,15 @@
                                     <outlet property="delegate" destination="1g0-y8-fy2" id="Bgr-Ym-Bkx"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The rank must be lower than the number of players" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjV-ec-p7N">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="45" y="361" width="311" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -1365,6 +1374,7 @@
                                 <exclude reference="dSx-xc-f9H"/>
                                 <exclude reference="yBd-2e-W12"/>
                                 <exclude reference="PEp-m0-uuw"/>
+                                <exclude reference="UjV-ec-p7N"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -1375,6 +1385,7 @@
                                 <include reference="dSx-xc-f9H"/>
                                 <include reference="yBd-2e-W12"/>
                                 <include reference="PEp-m0-uuw"/>
+                                <include reference="UjV-ec-p7N"/>
                             </mask>
                         </variation>
                     </view>
@@ -1392,6 +1403,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="date" destination="PEp-m0-uuw" id="xKQ-Hj-n0D"/>
+                        <outlet property="errorRankNbPlayer" destination="UjV-ec-p7N" id="dQ6-rM-K1L"/>
                         <outlet property="nbPlayer" destination="rmV-lJ-aUE" id="gXB-43-ZQH"/>
                         <outlet property="rank" destination="yBd-2e-W12" id="2SD-jo-H5I"/>
                     </connections>
