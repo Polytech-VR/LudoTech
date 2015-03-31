@@ -2,7 +2,7 @@
 //  Variant.m
 //  LudoTech
 //
-//  Created by Valentin Bercot on 30/03/2015.
+//  Created by Valentin Bercot on 31/03/2015.
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
@@ -18,9 +18,9 @@
 
 @dynamic name;
 @dynamic difficulty;
+@dynamic game;
 @dynamic listEdition;
 @dynamic listExtension;
 @dynamic listGamePlayed;
-@dynamic game;
 
 @end

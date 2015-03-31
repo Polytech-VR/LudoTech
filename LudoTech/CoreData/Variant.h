@@ -2,7 +2,7 @@
 //  Variant.h
 //  LudoTech
 //
-//  Created by Valentin Bercot on 30/03/2015.
+//  Created by Valentin Bercot on 31/03/2015.
 //  Copyright (c) 2015 Valentin Bercot & Remy Tartiere. All rights reserved.
 //
 
@@ -15,10 +15,10 @@
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) Difficulty *difficulty;
+@property (nonatomic, retain) Game *game;
 @property (nonatomic, retain) NSSet *listEdition;
 @property (nonatomic, retain) NSSet *listExtension;
 @property (nonatomic, retain) NSSet *listGamePlayed;
-@property (nonatomic, retain) Game *game;
 @end
 
 @interface Variant (CoreDataGeneratedAccessors)
