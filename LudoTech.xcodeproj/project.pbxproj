@@ -74,18 +74,6 @@
 		A59F90AE1AC0530500AA96E8 /* IllustratorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90AC1AC0530500AA96E8 /* IllustratorTableViewController.m */; };
 		A59F90B11AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90B01AC0535600AA96E8 /* IllustratorTableViewCell.m */; };
 		A59F90B21AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A59F90B01AC0535600AA96E8 /* IllustratorTableViewCell.m */; };
-		A5F145C71ABC7DA700133B8D /* DifficultyList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BC1ABC7DA700133B8D /* DifficultyList.m */; };
-		A5F145C81ABC7DA700133B8D /* DifficultyList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BC1ABC7DA700133B8D /* DifficultyList.m */; };
-		A5F145C91ABC7DA700133B8D /* EditorList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BE1ABC7DA700133B8D /* EditorList.m */; };
-		A5F145CA1ABC7DA700133B8D /* EditorList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145BE1ABC7DA700133B8D /* EditorList.m */; };
-		A5F145CB1ABC7DA700133B8D /* GameList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C01ABC7DA700133B8D /* GameList.m */; };
-		A5F145CC1ABC7DA700133B8D /* GameList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C01ABC7DA700133B8D /* GameList.m */; };
-		A5F145CD1ABC7DA700133B8D /* LanguageList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C21ABC7DA700133B8D /* LanguageList.m */; };
-		A5F145CE1ABC7DA700133B8D /* LanguageList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C21ABC7DA700133B8D /* LanguageList.m */; };
-		A5F145CF1ABC7DA700133B8D /* ThemeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C41ABC7DA700133B8D /* ThemeList.m */; };
-		A5F145D01ABC7DA700133B8D /* ThemeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C41ABC7DA700133B8D /* ThemeList.m */; };
-		A5F145D11ABC7DA700133B8D /* TypeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C61ABC7DA700133B8D /* TypeList.m */; };
-		A5F145D21ABC7DA700133B8D /* TypeList.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145C61ABC7DA700133B8D /* TypeList.m */; };
 		A5F1461C1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145D71ABC7E4C00133B8D /* AddDifficultyViewController.m */; };
 		A5F1461D1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145D71ABC7E4C00133B8D /* AddDifficultyViewController.m */; };
 		A5F1461E1ABC7E4C00133B8D /* DifficultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F145DA1ABC7E4C00133B8D /* DifficultyTableViewController.m */; };
@@ -230,18 +218,6 @@
 		A59F90AC1AC0530500AA96E8 /* IllustratorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IllustratorTableViewController.m; path = Illustrator/View/IllustratorTableViewController.m; sourceTree = "<group>"; };
 		A59F90AF1AC0535600AA96E8 /* IllustratorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IllustratorTableViewCell.h; path = Illustrator/View/IllustratorTableViewCell.h; sourceTree = "<group>"; };
 		A59F90B01AC0535600AA96E8 /* IllustratorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IllustratorTableViewCell.m; path = Illustrator/View/IllustratorTableViewCell.m; sourceTree = "<group>"; };
-		A5F145BB1ABC7DA700133B8D /* DifficultyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifficultyList.h; sourceTree = "<group>"; };
-		A5F145BC1ABC7DA700133B8D /* DifficultyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifficultyList.m; sourceTree = "<group>"; };
-		A5F145BD1ABC7DA700133B8D /* EditorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorList.h; sourceTree = "<group>"; };
-		A5F145BE1ABC7DA700133B8D /* EditorList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorList.m; sourceTree = "<group>"; };
-		A5F145BF1ABC7DA700133B8D /* GameList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameList.h; sourceTree = "<group>"; };
-		A5F145C01ABC7DA700133B8D /* GameList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameList.m; sourceTree = "<group>"; };
-		A5F145C11ABC7DA700133B8D /* LanguageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageList.h; sourceTree = "<group>"; };
-		A5F145C21ABC7DA700133B8D /* LanguageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageList.m; sourceTree = "<group>"; };
-		A5F145C31ABC7DA700133B8D /* ThemeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeList.h; sourceTree = "<group>"; };
-		A5F145C41ABC7DA700133B8D /* ThemeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeList.m; sourceTree = "<group>"; };
-		A5F145C51ABC7DA700133B8D /* TypeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeList.h; sourceTree = "<group>"; };
-		A5F145C61ABC7DA700133B8D /* TypeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeList.m; sourceTree = "<group>"; };
 		A5F145D61ABC7E4C00133B8D /* AddDifficultyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDifficultyViewController.h; sourceTree = "<group>"; };
 		A5F145D71ABC7E4C00133B8D /* AddDifficultyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDifficultyViewController.m; sourceTree = "<group>"; };
 		A5F145D91ABC7E4C00133B8D /* DifficultyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifficultyTableViewController.h; sourceTree = "<group>"; };
@@ -344,7 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				A5F145D31ABC7E4C00133B8D /* UI */,
-				A5F145BA1ABC7DA700133B8D /* Business */,
 				A519BEA61ABC7C280014E71C /* DataModel */,
 				A519BE791ABC7A7B0014E71C /* CoreData */,
 				A519BE6D1ABC79760014E71C /* Application */,
@@ -525,25 +500,6 @@
 				A59F90A41AC0518A00AA96E8 /* AddAuthorViewController.m */,
 			);
 			name = Add;
-			sourceTree = "<group>";
-		};
-		A5F145BA1ABC7DA700133B8D /* Business */ = {
-			isa = PBXGroup;
-			children = (
-				A5F145BF1ABC7DA700133B8D /* GameList.h */,
-				A5F145C01ABC7DA700133B8D /* GameList.m */,
-				A5F145C51ABC7DA700133B8D /* TypeList.h */,
-				A5F145C61ABC7DA700133B8D /* TypeList.m */,
-				A5F145BB1ABC7DA700133B8D /* DifficultyList.h */,
-				A5F145BC1ABC7DA700133B8D /* DifficultyList.m */,
-				A5F145BD1ABC7DA700133B8D /* EditorList.h */,
-				A5F145BE1ABC7DA700133B8D /* EditorList.m */,
-				A5F145C11ABC7DA700133B8D /* LanguageList.h */,
-				A5F145C21ABC7DA700133B8D /* LanguageList.m */,
-				A5F145C31ABC7DA700133B8D /* ThemeList.h */,
-				A5F145C41ABC7DA700133B8D /* ThemeList.m */,
-			);
-			path = Business;
 			sourceTree = "<group>";
 		};
 		A5F145D31ABC7E4C00133B8D /* UI */ = {
@@ -964,7 +920,6 @@
 				A59F90A91AC0528E00AA96E8 /* AddIllustratorViewController.m in Sources */,
 				A5F146241ABC7E4C00133B8D /* AddEditorViewController.m in Sources */,
 				AD72DB311ABF03BF00449A49 /* EditorTableViewCell.m in Sources */,
-				A5F145CD1ABC7DA700133B8D /* LanguageList.m in Sources */,
 				ADA59FA01AC2AA7200F050D1 /* VariantTableViewCell.m in Sources */,
 				AD72DB2D1ABEFF7E00449A49 /* DifficultyTableViewCell.m in Sources */,
 				A597AFB61ACA26EA007F0AFA /* Editor.m in Sources */,
@@ -982,22 +937,18 @@
 				A597AFCE1ACA26EB007F0AFA /* Variant.m in Sources */,
 				A519BEC31ABC7C280014E71C /* Extension+DataModel.m in Sources */,
 				A597AFC21ACA26EA007F0AFA /* Person.m in Sources */,
-				A5F145CF1ABC7DA700133B8D /* ThemeList.m in Sources */,
 				A519BEC51ABC7C280014E71C /* Game+DataModel.m in Sources */,
 				A597AFCA1ACA26EA007F0AFA /* Type.m in Sources */,
 				A5F146401ABC7E4C00133B8D /* TypeTableViewController.m in Sources */,
 				A5F146301ABC7E4C00133B8D /* GameTableViewController.m in Sources */,
-				A5F145C71ABC7DA700133B8D /* DifficultyList.m in Sources */,
 				ADBED3851AC99CDC00C409D2 /* GamePlayedTableViewCell.m in Sources */,
 				A519BEBD1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BE491ABC78230014E71C /* AppDelegate.m in Sources */,
 				A597AFC61ACA26EA007F0AFA /* Theme.m in Sources */,
 				A519BEC91ABC7C280014E71C /* Language+DataModel.m in Sources */,
 				A5F146281ABC7E4C00133B8D /* AddExtensionViewController.m in Sources */,
-				A5F145D11ABC7DA700133B8D /* TypeList.m in Sources */,
 				A519BECB1ABC7C280014E71C /* Person+DataModel.m in Sources */,
 				A597AFBA1ACA26EA007F0AFA /* Extension.m in Sources */,
-				A5F145C91ABC7DA700133B8D /* EditorList.m in Sources */,
 				A5F1461C1ABC7E4C00133B8D /* AddDifficultyViewController.m in Sources */,
 				A597AFAA1ACA26EA007F0AFA /* Edition.m in Sources */,
 				A59F90B11AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */,
@@ -1012,7 +963,6 @@
 				A519BEC11ABC7C280014E71C /* Editor+DataModel.m in Sources */,
 				A597AFA21ACA0EE1007F0AFA /* EditionStaticTableViewController.m in Sources */,
 				A519BE461ABC78230014E71C /* main.m in Sources */,
-				A5F145CB1ABC7DA700133B8D /* GameList.m in Sources */,
 				A597AFB21ACA26EA007F0AFA /* Difficulty.m in Sources */,
 				A5F1462A1ABC7E4C00133B8D /* ExtensionTableViewController.m in Sources */,
 				A5F146221ABC7E4C00133B8D /* EditionTableViewController.m in Sources */,
@@ -1034,8 +984,6 @@
 			files = (
 				A597AFCB1ACA26EA007F0AFA /* Type.m in Sources */,
 				A59F90B21AC0535600AA96E8 /* IllustratorTableViewCell.m in Sources */,
-				A5F145CA1ABC7DA700133B8D /* EditorList.m in Sources */,
-				A5F145D01ABC7DA700133B8D /* ThemeList.m in Sources */,
 				AD72DB2E1ABEFF7E00449A49 /* DifficultyTableViewCell.m in Sources */,
 				A519BEC41ABC7C280014E71C /* Extension+DataModel.m in Sources */,
 				A597AFAF1ACA26EA007F0AFA /* Game.m in Sources */,
@@ -1045,7 +993,6 @@
 				A5F1463F1ABC7E4C00133B8D /* AddTypeViewController.m in Sources */,
 				A519BECC1ABC7C280014E71C /* Person+DataModel.m in Sources */,
 				A5F146211ABC7E4C00133B8D /* AddEditionViewController.m in Sources */,
-				A5F145D21ABC7DA700133B8D /* TypeList.m in Sources */,
 				A597AFAB1ACA26EA007F0AFA /* Edition.m in Sources */,
 				A597AFB71ACA26EA007F0AFA /* Editor.m in Sources */,
 				A5F1462D1ABC7E4C00133B8D /* AddGameViewController.m in Sources */,
@@ -1061,13 +1008,11 @@
 				AD72DB3A1ABF07D500449A49 /* ThemeTableViewCell.m in Sources */,
 				A5F1463D1ABC7E4C00133B8D /* ThemeTableViewController.m in Sources */,
 				A59F90A21AC0516F00AA96E8 /* AuthorTableViewCell.m in Sources */,
-				A5F145CE1ABC7DA700133B8D /* LanguageList.m in Sources */,
 				A519BEC81ABC7C280014E71C /* GamePlayed+DataModel.m in Sources */,
 				A5F146331ABC7E4C00133B8D /* AddGamePlayedViewController.m in Sources */,
 				A5F1463B1ABC7E4C00133B8D /* AddThemeViewController.m in Sources */,
 				A597AF9F1ACA0ED4007F0AFA /* VariantStaticTableViewController.m in Sources */,
 				A59F90A61AC0518A00AA96E8 /* AddAuthorViewController.m in Sources */,
-				A5F145C81ABC7DA700133B8D /* DifficultyList.m in Sources */,
 				A5F146271ABC7E4C00133B8D /* EditorTableViewController.m in Sources */,
 				A5F146351ABC7E4C00133B8D /* GamePlayedTableViewController.m in Sources */,
 				A519BECE1ABC7C280014E71C /* Theme+DataModel.m in Sources */,
@@ -1096,7 +1041,6 @@
 				A597AFA31ACA0EE1007F0AFA /* EditionStaticTableViewController.m in Sources */,
 				A519BEBE1ABC7C280014E71C /* Difficulty+DataModel.m in Sources */,
 				A519BEC01ABC7C280014E71C /* Edition+DataModel.m in Sources */,
-				A5F145CC1ABC7DA700133B8D /* GameList.m in Sources */,
 				A519BED21ABC7C280014E71C /* Variant+DataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
