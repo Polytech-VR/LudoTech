@@ -272,7 +272,7 @@
         <!--Editions, Extensions & Game Played-->
         <scene sceneID="3eD-2D-qlC">
             <objects>
-                <tableViewController id="WeY-a0-GSw" sceneMemberID="viewController">
+                <tableViewController id="WeY-a0-GSw" customClass="VariantStaticTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3nq-Aw-lkz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -466,7 +466,7 @@
         <!--Authors & Illustrators-->
         <scene sceneID="3h5-yj-OhB">
             <objects>
-                <tableViewController id="azl-fH-bk5" sceneMemberID="viewController">
+                <tableViewController id="azl-fH-bk5" customClass="EditionStaticTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="WB1-O9-OUL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
