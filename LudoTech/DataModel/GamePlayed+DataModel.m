@@ -25,33 +25,16 @@
     // Else we search for an object with this into the persistent store ...
     else
     {
-        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"GamePlayed"];
-        [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"(%K == %@) AND (%K == %@)", @"date", date,@"variant", variant]];
+        retValue = [[GamePlayed alloc] initWithEntity:entityDescriptionGamedPlayed insertIntoManagedObjectContext:context];
         
-        // Execute Fetch Request
-        NSError *fetchError = nil;
-        NSArray *result = [context executeFetchRequest:fetchRequest error:&fetchError];
-        
-        if (!fetchError)
+        if (retValue)
         {
-            if ([result count] > 0)
-            {
-                retValue = result[0];
-            }
-            
-            else
-            {
-                retValue = [[GamePlayed alloc] initWithEntity:entityDescriptionGamedPlayed insertIntoManagedObjectContext:context];
-                
-                if (retValue)
-                {
-                    retValue.date = date;
-                    retValue.rank = rank;
-                    retValue.nbPlayer = nbPlayer;
-                    retValue.variant = variant;
-                }
-            }
+            retValue.date = date;
+            retValue.rank = rank;
+            retValue.nbPlayer = nbPlayer;
+            retValue.variant = variant;
         }
+        
     }
     return retValue;
 }
