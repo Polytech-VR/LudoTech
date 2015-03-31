@@ -12,6 +12,7 @@
 // ===== DECLARATION =====
 
 @interface EditorTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *errorDelete;
 
 // ===== METHODS =====
 

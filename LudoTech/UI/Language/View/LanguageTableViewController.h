@@ -12,6 +12,7 @@
 // ===== DECLARATION =====
 
 @interface LanguageTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *errorDelete;
 
 // ===== METHODS =====
 

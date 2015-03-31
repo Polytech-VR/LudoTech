@@ -69,6 +69,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self appDelegateAndfetchedResultControllerInit];
+    [self.errorDelete setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -129,6 +130,11 @@
         {
             [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
             [self->_appDelegate saveContext];
+        }
+        else
+        {
+            [self.errorDelete setHidden:NO];
+            [self.view setNeedsDisplay];
         }
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert)
