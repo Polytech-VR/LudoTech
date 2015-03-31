@@ -140,8 +140,9 @@
     
     NSEntityDescription *entityDescriptionVariant = [NSEntityDescription entityForName:@"Variant" inManagedObjectContext:context];
     
-    [Variant getObjectWithName:nameVariant withGame:self.game withDifficulty:difficultyGame withEntityDescription:entityDescriptionVariant inManagedObjectContext:context];
+    Variant *variant = [Variant getObjectWithName:nameVariant withGame:self.game withDifficulty:difficultyGame withEntityDescription:entityDescriptionVariant inManagedObjectContext:context];
     
+    [self.game addListVariantObject:variant];
     
     [self->_appDelegate saveContext];
 

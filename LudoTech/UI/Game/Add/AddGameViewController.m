@@ -139,7 +139,9 @@
     
     NSEntityDescription *entityDescriptionGame = [NSEntityDescription entityForName:@"Game" inManagedObjectContext:context];
     
-    [Game getObjectWithName:nameGame withType:typeGame withEntityDescription:entityDescriptionGame inManagedObjectContext:context];
+    Game *game = [Game getObjectWithName:nameGame withType:typeGame withEntityDescription:entityDescriptionGame inManagedObjectContext:context];
+    
+    [typeGame addListGameObject:game];
     
     [self->_appDelegate saveContext];
 
