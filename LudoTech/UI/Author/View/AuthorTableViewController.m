@@ -37,6 +37,8 @@
     // Configure the request's entity, and optionally its predicate.
     [fetchRequest setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"firstName" ascending:YES]]];
     
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat: @"%K == %@", @"editionAuthor.name", self.edition.name]];
+    
     self.fetchedResultsController = [[NSFetchedResultsController alloc]
                                      initWithFetchRequest:fetchRequest
                                      managedObjectContext:self.appDelegate.managedObjectContext
